@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="[姓名] - [科系]應屆畢業生，熱衷於[興趣領域]，期待在[產業]開啟職涯">
+    <meta property="og:title" content="[姓名] - 新鮮人求職 | 個人品牌頁">
+    <meta property="og:description" content="[大學][科系]應屆畢業生，具備[核心技能]，尋找[職位類型]機會">
+    <meta property="og:type" content="website">
+    <title>[姓名] - 新鮮人求職 | 個人品牌頁</title>
+    
+    <style>
+        :root {
+            --primary-color: #3b82f6;
+            --secondary-color: #8b5cf6;
+            --accent-color: #10b981;
+            --text-primary: #1e293b;
+            --text-secondary: #475569;
+            --bg-light: #f8fafc;
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --border-color: #e2e8f0;
+            --card-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section - 新鮮人版：展現活力與熱情 */
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+            background: var(--bg-gradient);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero .status-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .hero .tagline {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 20px;
+            opacity: 0.95;
+        }
+
+        .hero .passion-statement {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+            padding: 15px 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50px;
+            display: inline-block;
+        }
+
+        .hero .cta {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: white;
+            color: var(--secondary-color);
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+
+        .hero .cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+        }
+
+        /* About Me Section - 個人特質與動機 */
+        .about-me {
+            padding: 60px 0;
+            background-color: var(--bg-light);
+        }
+
+        .about-me h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: var(--text-primary);
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content .intro {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+        }
+
+        .personality-traits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .trait-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .trait-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .trait-card .icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .trait-card h3 {
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        /* Skills Section - 技能與學習 */
+        .skills {
+            padding: 60px 0;
+        }
+
+        .skills h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .skill-category {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 25px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill-category::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--primary-color);
+        }
+
+        .skill-category h3 {
+            color: var(--text-primary);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-secondary);
+        }
+
+        .skill-level {
+            display: flex;
+            gap: 4px;
+            margin-left: auto;
+        }
+
+        .skill-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--border-color);
+        }
+
+        .skill-dot.filled {
+            background: var(--primary-color);
+        }
+
+        /* Experience Section - 實習/專題/活動 */
+        .experience {
+            padding: 60px 0;
+            background-color: var(--bg-light);
+        }
+
+        .experience h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        .experience-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .tab-button {
+            padding: 10px 25px;
+            background: white;
+            border: 2px solid var(--border-color);
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        .tab-button.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        .experience-content {
+            display: none;
+        }
+
+        .experience-content.active {
+            display: block;
+        }
+
+        .experience-card {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: var(--card-shadow);
+            position: relative;
+        }
+
+        .experience-card .period {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            background: var(--accent-color);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+        }
+
+        .experience-card h3 {
+            color: var(--text-primary);
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .experience-card .organization {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .experience-highlights {
+            margin-top: 15px;
+            padding-left: 20px;
+        }
+
+        .experience-highlights li {
+            margin-bottom: 8px;
+            color: var(--text-secondary);
+        }
+
+        .achievement-badge {
+            display: inline-block;
+            background: var(--warning-color);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            margin-top: 15px;
+        }
+
+        /* Projects Section - 作品與專題 */
+        .projects {
+            padding: 60px 0;
+        }
+
+        .projects h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-image {
+            height: 200px;
+            background: var(--bg-gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+        }
+
+        .project-content {
+            padding: 25px;
+        }
+
+        .project-content h3 {
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+
+        .project-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .tag {
+            background: var(--bg-light);
+            color: var(--text-secondary);
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+        }
+
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            color: var(--primary-color);
+            text-decoration: none;
+            margin-top: 15px;
+            font-weight: 600;
+        }
+
+        /* Learning Journey - 學習歷程 */
+        .learning {
+            padding: 60px 0;
+            background-color: var(--bg-light);
+        }
+
+        .learning h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        .learning-timeline {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .learning-item {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+            align-items: flex-start;
+        }
+
+        .learning-icon {
+            flex-shrink: 0;
+            width: 60px;
+            height: 60px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .learning-content h3 {
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+
+        .learning-content .period {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        /* Why Me Section - 為什麼選我 */
+        .why-me {
+            padding: 60px 0;
+        }
+
+        .why-me h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        .reasons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .reason-card {
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: 8px;
+            border: 2px solid var(--border-color);
+            transition: all 0.3s;
+        }
+
+        .reason-card:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-5px);
+        }
+
+        .reason-number {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            line-height: 40px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .reason-card h3 {
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 80px 0;
+            background: var(--bg-gradient);
+            color: white;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .availability-info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: white;
+            color: var(--secondary-color);
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            background-color: var(--bg-light);
+        }
+
+        .footer-note {
+            max-width: 600px;
+            margin: 0 auto 20px;
+        }
+
+        .footer-actions {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .footer-actions a {
+            color: var(--primary-color);
+            text-decoration: none;
+            padding: 5px 15px;
+            border: 1px solid var(--primary-color);
+            border-radius: 20px;
+            transition: all 0.2s;
+        }
+
+        .footer-actions a:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero .tagline {
+                font-size: 1.1rem;
+            }
+            
+            .learning-item {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .experience-card .period {
+                position: static;
+                display: inline-block;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section - 展現年輕活力 -->
+    <section class="hero">
+        <div class="container">
+            <span class="status-badge">🎓 2024應屆畢業生</span>
+            <h1>Hi! 我是[姓名]</h1>
+            <p class="tagline">[大學][科系]畢業，對[興趣領域]充滿熱情的新鮮人</p>
+            <div class="passion-statement">
+                💡 我想成為能夠[職涯目標]的[理想職位]
+            </div>
+            <a href="#contact" class="cta">了解我的潛力</a>
+        </div>
+    </section>
+
+    <!-- About Me Section - 個人特質展現 -->
+    <section class="about-me">
+        <div class="container">
+            <h2>關於我</h2>
+            <div class="about-content">
+                <p class="intro">
+                    我是一個[形容詞]的人，大學期間除了專業課程的學習，更積極參與[活動類型]，
+                    培養了[核心能力]。我相信[個人信念]，期待能在職場上[期望貢獻]。
+                </p>
+                
+                <div class="personality-traits">
+                    <div class="trait-card">
+                        <div class="icon">🚀</div>
+                        <h3>積極主動</h3>
+                        <p>主動尋找學習機會，不怕接受新挑戰</p>
+                    </div>
+                    <div class="trait-card">
+                        <div class="icon">💡</div>
+                        <h3>快速學習</h3>
+                        <p>3個月內自學Python並完成專案</p>
+                    </div>
+                    <div class="trait-card">
+                        <div class="icon">🤝</div>
+                        <h3>團隊合作</h3>
+                        <p>擔任專題組長，協調5人團隊</p>
+                    </div>
+                    <div class="trait-card">
+                        <div class="icon">📊</div>
+                        <h3>邏輯思考</h3>
+                        <p>善於分析問題，找出解決方案</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section - 技能展示 -->
+    <section class="skills">
+        <div class="container">
+            <h2>我的技能</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>💻 技術能力</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <span>Python程式設計</span>
+                            <div class="skill-level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span>資料分析 (Excel/SQL)</span>
+                            <div class="skill-level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot"></span>
+                                <span class="skill-dot"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span>網頁開發 (HTML/CSS/JS)</span>
+                            <div class="skill-level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot"></span>
+                                <span class="skill-dot"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span>UI/UX設計基礎</span>
+                            <div class="skill-level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot"></span>
+                                <span class="skill-dot"></span>
+                                <span class="skill-dot"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>🗣 軟實力</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <span>簡報與表達</span>
+                            <div class="skill-level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span>團隊溝通協作</span>
+                            <div class="skill-level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span>時間管理</span>
+                            <div class="skill-level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span>問題解決能力</span>
+                            <div class="skill-level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>🌐 語言能力</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <span>中文 (母語)</span>
+                            <div class="skill-level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span>英文 (TOEIC 800+)</span>
+                            <div class="skill-level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span>日文 (N3)</span>
+                            <div class="skill-level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot"></span>
+                                <span class="skill-dot"></span>
+                                <span class="skill-dot"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section - 實習與活動經歷 -->
+    <section class="experience">
+        <div class="container">
+            <h2>經歷與成就</h2>
+            
+            <div class="experience-tabs">
+                <button class="tab-button active" onclick="showTab('internship')">💼 實習經驗</button>
+                <button class="tab-button" onclick="showTab('activities')">🎯 社團活動</button>
+                <button class="tab-button" onclick="showTab('competitions')">🏆 競賽成果</button>
+            </div>
+
+            <div id="internship" class="experience-content active">
+                <div class="experience-card">
+                    <span class="period">2023.07 - 2023.09</span>
+                    <h3>行銷實習生</h3>
+                    <p class="organization">ABC科技公司</p>
+                    <p>協助社群媒體經營與數據分析，學習數位行銷實務操作</p>
+                    <ul class="experience-highlights">
+                        <li>管理公司Facebook與Instagram帳號，觸及率提升35%</li>
+                        <li>製作10+篇內容文案，平均互動率達8%</li>
+                        <li>協助舉辦線上活動，參與人數超過500人</li>
+                    </ul>
+                    <span class="achievement-badge">🎖 獲得優秀實習生獎</span>
+                </div>
+
+                <div class="experience-card">
+                    <span class="period">2023.01 - 2023.06</span>
+                    <h3>專案助理實習生</h3>
+                    <p class="organization">XYZ顧問公司</p>
+                    <p>支援專案執行與客戶溝通，培養專案管理基礎能力</p>
+                    <ul class="experience-highlights">
+                        <li>協助3個客戶專案的進度追蹤與文件整理</li>
+                        <li>參與客戶會議並撰寫會議記錄</li>
+                        <li>使用Notion建立專案知識庫，提升團隊效率20%</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="activities" class="experience-content">
+                <div class="experience-card">
+                    <span class="period">2021 - 2024</span>
+                    <h3>學生會活動部部長</h3>
+                    <p class="organization">[大學名稱]學生會</p>
+                    <p>領導20人團隊，規劃執行校園大型活動</p>
+                    <ul class="experience-highlights">
+                        <li>主辦校慶演唱會，參與人數3000+人</li>
+                        <li>管理活動預算50萬元，控制在預算內完成</li>
+                        <li>建立活動SOP流程，傳承給下屆使用</li>
+                    </ul>
+                    <span class="achievement-badge">🏆 最佳社團幹部獎</span>
+                </div>
+
+                <div class="experience-card">
+                    <span class="period">2022 - 2023</span>
+                    <h3>程式設計社教學長</h3>
+                    <p class="organization">校園程式設計社</p>
+                    <p>負責Python基礎課程教學，培養教學與溝通能力</p>
+                    <ul class="experience-highlights">
+                        <li>設計12週Python入門課程，學員滿意度95%</li>
+                        <li>輔導30+位同學完成期末專題</li>
+                        <li>製作線上教學影片，累積觀看次數1000+</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="competitions" class="experience-content">
+                <div class="experience-card">
+                    <span class="period">2023.11</span>
+                    <h3>全國大專院校創新創業競賽</h3>
+                    <p class="organization">教育部主辦</p>
+                    <p>提出「智慧校園APP」創業計畫，獲得佳績</p>
+                    <ul class="experience-highlights">
+                        <li>擔任團隊PM，協調技術開發與商業規劃</li>
+                        <li>完成市場調查，訪談100+位潛在用戶</li>
+                        <li>撰寫商業計畫書，獲得評審肯定</li>
+                    </ul>
+                    <span class="achievement-badge">🥈 榮獲銀牌獎</span>
+                </div>
+
+                <div class="experience-card">
+                    <span class="period">2023.05</span>
+                    <h3>黑客松48小時程式競賽</h3>
+                    <p class="organization">台灣微軟主辦</p>
+                    <p>開發「食物銀行媒合平台」，解決剩食問題</p>
+                    <ul class="experience-highlights">
+                        <li>負責前端介面設計與使用者體驗優化</li>
+                        <li>48小時內完成MVP開發與簡報</li>
+                        <li>學習快速原型開發與團隊協作</li>
+                    </ul>
+                    <span class="achievement-badge">🏅 最佳創意獎</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section - 作品集 -->
+    <section class="projects">
+        <div class="container">
+            <h2>專題作品</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image">📱</div>
+                    <div class="project-content">
+                        <h3>智慧記帳APP</h3>
+                        <p>使用React Native開發的個人理財工具，整合AI語音記帳功能</p>
+                        <div class="project-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">AI</span>
+                        </div>
+                        <a href="#" class="project-link">查看專案 →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">📊</div>
+                    <div class="project-content">
+                        <h3>股市數據分析平台</h3>
+                        <p>Python爬蟲結合數據視覺化，協助投資決策分析</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Plotly</span>
+                        </div>
+                        <a href="#" class="project-link">查看專案 →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">🎮</div>
+                    <div class="project-content">
+                        <h3>教育遊戲設計</h3>
+                        <p>結合遊戲化學習的英文單字記憶遊戲，獲系上最佳專題</p>
+                        <div class="project-tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">遊戲設計</span>
+                        </div>
+                        <a href="#" class="project-link">查看專案 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Journey - 學習歷程 -->
+    <section class="learning">
+        <div class="container">
+            <h2>學習成長歷程</h2>
+            <div class="learning-timeline">
+                <div class="learning-item">
+                    <div class="learning-icon">📚</div>
+                    <div class="learning-content">
+                        <h3>大學專業課程</h3>
+                        <p class="period">2020 - 2024</p>
+                        <p>主修[科系]，GPA 3.8/4.0，特別專注於[專業領域]的學習，修習了資料結構、演算法、資料庫等核心課程</p>
+                    </div>
+                </div>
+
+                <div class="learning-item">
+                    <div class="learning-icon">💻</div>
+                    <div class="learning-content">
+                        <h3>自主學習程式設計</h3>
+                        <p class="period">2022 - 持續中</p>
+                        <p>透過線上課程平台自學Python、JavaScript，完成5個以上個人專案，並持續在GitHub上維護</p>
+                    </div>
+                </div>
+
+                <div class="learning-item">
+                    <div class="learning-icon">🌍</div>
+                    <div class="learning-content">
+                        <h3>國際交流經驗</h3>
+                        <p class="period">2023 暑假</p>
+                        <p>參加[國家]暑期交換計畫，提升英文能力與國際視野，學習跨文化溝通技巧</p>
+                    </div>
+                </div>
+
+                <div class="learning-item">
+                    <div class="learning-icon">📈</div>
+                    <div class="learning-content">
+                        <h3>產業實務學習</h3>
+                        <p class="period">2023 - 2024</p>
+                        <p>參加企業參訪、產業講座20+場，了解產業趨勢與實務需求，建立人脈網絡</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Me Section -->
+    <section class="why-me">
+        <div class="container">
+            <h2>為什麼選擇我？</h2>
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <div class="reason-number">1</div>
+                    <h3>學習力強</h3>
+                    <p>3個月自學新技能並應用於專案，證明快速上手的能力</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-number">2</div>
+                    <h3>態度積極</h3>
+                    <p>主動爭取實習與學習機會，不怕挑戰與失敗</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-number">3</div>
+                    <h3>團隊精神</h3>
+                    <p>多次擔任團隊領導角色，懂得溝通協調與互相支持</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-number">4</div>
+                    <h3>責任感強</h3>
+                    <p>承諾的事情一定完成，實習期間從未遲到早退</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-number">5</div>
+                    <h3>創新思維</h3>
+                    <p>參與多項創新競賽獲獎，善於發現問題並提出解決方案</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-number">6</div>
+                    <h3>長期發展</h3>
+                    <p>明確的職涯目標，期待與公司共同成長</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <h2>期待與您相遇！</h2>
+            <p>我準備好踏入職場，為團隊帶來新鮮的想法與滿滿的熱情</p>
+            
+            <div class="availability-info">
+                📅 可上班日期：2024年7月（或更早）<br>
+                📍 期望地點：台北市 / 新北市<br>
+                💼 期望職位：[職位類型]<br>
+                🎯 期望產業：[產業類型]
+            </div>
+            
+            <div class="contact-buttons">
+                <a href="mailto:your.email@example.com" class="contact-btn">📧 Email聯繫</a>
+                <a href="https://linkedin.com/in/yourprofile" class="contact-btn">💼 LinkedIn</a>
+                <a href="tel:+886912345678" class="contact-btn">📱 電話聯繫</a>
+                <a href="#" class="contact-btn">📄 下載履歷</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="footer-note">
+                本頁面展示了我的學習歷程與成長軌跡<br>
+                內容由我與品牌顧問共同訪談整理，真實呈現我的經歷與想法
+            </p>
+            
+            <div class="footer-actions">
+                <a href="#" onclick="window.print(); return false;">🖨 列印版本</a>
+                <a href="#">🌐 English Version</a>
+                <a href="#">📊 成績單</a>
+                <a href="#">🏆 證書作品集</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tab切換功能
+        function showTab(tabName) {
+            // 隱藏所有內容
+            const contents = document.querySelectorAll('.experience-content');
+            contents.forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // 移除所有按鈕的active狀態
+            const buttons = document.querySelectorAll('.tab-button');
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+            
+            // 顯示選中的內容
+            document.getElementById(tabName).classList.add('active');
+            
+            // 設置按鈕的active狀態
+            event.target.classList.add('active');
+        }
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // 動態加載效果
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // 觀察所有卡片
+        document.querySelectorAll('.trait-card, .skill-category, .experience-card, .project-card, .reason-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.5s, transform 0.5s';
+            observer.observe(el);
+        });
+
+        // Schema.org 結構化資料 - 新鮮人版本
+        const schemaData = {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "[姓名]",
+            "jobTitle": "應屆畢業生",
+            "description": "[大學][科系]應屆畢業生，尋找[職位類型]機會",
+            "url": window.location.href,
+            "sameAs": [
+                "https://linkedin.com/in/[profile]",
+                "https://github.com/[username]"
+            ],
+            "alumniOf": {
+                "@type": "EducationalOrganization",
+                "name": "[大學名稱]"
+            },
+            "knowsAbout": ["Python", "資料分析", "專案管理", "團隊合作"],
+            "award": ["全國創業競賽銀牌", "優秀實習生獎", "最佳專題獎"]
+        };
+
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.text = JSON.stringify(schemaData);
+        document.head.appendChild(script);
+    </script>
+</body>
+</html>
