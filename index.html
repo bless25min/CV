@@ -71,6 +71,88 @@
             -moz-osx-font-smoothing: grayscale;
         }
 
+        /* Service Announcement Banner */
+        .service-announcement {
+            background: #991B1B;
+            background: linear-gradient(135deg, #991B1B 0%, #DC2626 100%);
+            color: white;
+            padding: 16px 24px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1002;
+            animation: slideDown 0.5s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .service-announcement.hidden {
+            display: none;
+        }
+
+        .announcement-content {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .announcement-icon {
+            font-size: 1.25rem;
+        }
+
+        .announcement-text {
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+
+        .announcement-close {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            font-size: 1.25rem;
+            line-height: 1;
+        }
+
+        .announcement-close:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        /* Adjust header when announcement is shown */
+        body.has-announcement header {
+            top: 64px; /* 公告的高度 */
+        }
+
         .container {
             max-width: var(--container-max);
             margin: 0 auto;
@@ -190,6 +272,11 @@
             background: var(--gradient-dark);
             position: relative;
             overflow: hidden;
+        }
+
+        /* Adjust hero padding when announcement is shown */
+        body.has-announcement .hero {
+            padding-top: calc(144px + var(--section-padding)); /* 80px header + 64px announcement */
         }
 
         /* Animated Background Pattern */
@@ -1024,6 +1111,10 @@
                 height: 70px;
             }
 
+            body.has-announcement header {
+                top: 64px; /* 公告高度保持一致 */
+            }
+
             .nav-links {
                 display: none;
             }
@@ -1034,6 +1125,10 @@
 
             .hero {
                 padding-top: calc(70px + 60px);
+            }
+
+            body.has-announcement .hero {
+                padding-top: calc(134px + 60px); /* 70px header + 64px announcement + 60px padding */
             }
 
             .hero h1 {
@@ -1119,6 +1214,16 @@
             .footer-links {
                 justify-content: center;
             }
+
+            .announcement-close {
+                position: static;
+                transform: none;
+                margin-left: auto;
+            }
+
+            .announcement-content {
+                padding-right: 0;
+            }
         }
 
         @media (max-width: 480px) {
@@ -1183,14 +1288,27 @@
             .step-content p {
                 font-size: 0.875rem;
             }
+
+            .announcement-text {
+                font-size: 0.875rem;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- Service Announcement Banner -->
+    <div class="service-announcement" id="serviceAnnouncement">
+        <div class="announcement-content">
+            <span class="announcement-icon">📢</span>
+            <span class="announcement-text">因應教育部升學相關規定，25min求職升學救星已終止服務</span>
+            <button class="announcement-close" onclick="closeAnnouncement()" aria-label="關閉公告">×</button>
+        </div>
+    </div>
+
     <!-- Header -->
     <header>
         <nav class="container">
-            <a href="logo.png" class="logo">cv.25min.co</a>
+            <a href="#" class="logo">cv.25min.co</a>
             <div class="nav-links">
                 <a href="#process">服務流程</a>
                 <a href="#templates">範例展示</a>
@@ -1391,8 +1509,6 @@
                         <li>45分鐘深度訪談</li>
                         <li>FAQ 智慧問答設計</li>
                         <li>專案故事深度撰寫</li>
-                        <li>GEO/AI 搜尋優化</li>
-                        <li>GA4 數據追蹤</li>
                         <li>3個月內容微調服務</li>
                     </ul>
                     <a href="#contact" class="pricing-button">立即開始</a>
@@ -1407,9 +1523,7 @@
                     <ul class="pricing-features">
                         <li>60分鐘深度訪談</li>
                         <li>品牌定位策略諮詢</li>
-                        <li>雙語版本（中/英）</li>
-                        <li>PDF 履歷設計</li>
-                        <li>LinkedIn 優化建議</li>
+                        <li>GEO/AI 搜尋優化</li>
                         <li>6個月維護更新</li>
                     </ul>
                     <a href="#contact" class="pricing-button">立即開始</a>
@@ -1501,6 +1615,36 @@
     </footer>
 
     <script>
+        // Announcement Banner Management
+        function closeAnnouncement() {
+            const announcement = document.getElementById('serviceAnnouncement');
+            announcement.classList.add('hidden');
+            // Store in memory that it was closed (not using localStorage as per instructions)
+            window.announcementClosed = true;
+            // Update header position
+            adjustHeaderPosition();
+        }
+
+        // Check if announcement was already closed in this session
+        if (window.announcementClosed) {
+            document.getElementById('serviceAnnouncement').classList.add('hidden');
+        }
+
+        // Adjust header position when announcement is visible
+        function adjustHeaderPosition() {
+            const announcement = document.getElementById('serviceAnnouncement');
+            const body = document.body;
+            
+            if (!announcement.classList.contains('hidden')) {
+                body.classList.add('has-announcement');
+            } else {
+                body.classList.remove('has-announcement');
+            }
+        }
+
+        // Call on page load
+        adjustHeaderPosition();
+
         // Header scroll effect
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
@@ -1536,8 +1680,10 @@
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
                     const headerOffset = 80;
+                    const hasAnnouncement = document.body.classList.contains('has-announcement');
+                    const announcementOffset = hasAnnouncement ? 64 : 0;
                     const elementPosition = target.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset - announcementOffset;
 
                     window.scrollTo({
                         top: offsetPosition,
