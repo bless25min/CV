@@ -589,7 +589,7 @@
 
         .pricing-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 32px;
             max-width: 1100px;
             margin: 0 auto;
@@ -599,16 +599,20 @@
             background: var(--bg-white);
             border: 2px solid var(--border-color);
             border-radius: 24px;
-            padding: 48px 40px;
+            padding: 48px 32px;
             text-align: center;
             position: relative;
             transition: all 0.4s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
 
         .pricing-card.featured {
             border-color: var(--primary-color);
             transform: scale(1.05);
             box-shadow: var(--shadow-xl);
+            z-index: 1;
         }
 
         .pricing-card.featured::before {
@@ -623,6 +627,7 @@
             border-radius: 50px;
             font-size: 0.875rem;
             font-weight: 600;
+            white-space: nowrap;
         }
 
         .pricing-card:hover {
@@ -636,41 +641,51 @@
         }
 
         .pricing-card h3 {
-            font-size: 1.75rem;
+            font-size: 1.5rem;
             font-weight: 700;
             margin-bottom: 16px;
             color: var(--text-primary);
         }
 
         .pricing-card .price {
-            font-size: 3.5rem;
+            margin-bottom: 32px;
+        }
+
+        .pricing-card .price span {
+            font-size: 2.5rem;
             font-weight: 800;
             background: var(--gradient-primary);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 32px;
+            background-clip: text;
+            display: block;
+            line-height: 1;
         }
 
         .pricing-card .price small {
+            display: block;
             font-size: 1rem;
             font-weight: 400;
             color: var(--text-secondary);
-            -webkit-text-fill-color: initial;
+            margin-top: 8px;
         }
 
         .pricing-features {
             list-style: none;
-            margin-bottom: 40px;
+            margin: 32px 0;
             text-align: left;
+            flex: 1;
         }
 
         .pricing-features li {
-            padding: 16px 0;
+            padding: 12px 0;
             border-bottom: 1px solid var(--border-color);
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 12px;
             color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.5;
         }
 
         .pricing-features li:last-child {
@@ -682,6 +697,8 @@
             color: var(--success-color);
             font-weight: bold;
             font-size: 1.2rem;
+            flex-shrink: 0;
+            margin-top: -2px;
         }
 
         .pricing-button {
@@ -693,9 +710,10 @@
             text-decoration: none;
             border-radius: 50px;
             font-weight: 600;
-            font-size: 1.125rem;
+            font-size: 1rem;
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(91, 33, 182, 0.2);
+            margin-top: auto;
         }
 
         .pricing-button:hover {
@@ -918,6 +936,30 @@
         }
 
         /* Responsive Design */
+        @media (max-width: 1200px) {
+            .pricing-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+            }
+
+            .pricing-card.featured {
+                transform: scale(1.02);
+            }
+        }
+
+        @media (max-width: 900px) {
+            .pricing-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+
+            .pricing-card.featured {
+                transform: scale(1);
+            }
+        }
+
         @media (max-width: 1024px) {
             :root {
                 --section-padding: 80px;
@@ -944,6 +986,28 @@
                 width: 50px;
                 height: 50px;
                 font-size: 1.125rem;
+            }
+
+            .pricing-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+                max-width: 500px;
+            }
+
+            .pricing-card.featured {
+                transform: scale(1);
+            }
+
+            .pricing-card {
+                padding: 36px 28px;
+            }
+
+            .pricing-features {
+                margin: 24px 0;
+            }
+
+            .pricing-card {
+                padding: 40px 32px;
             }
         }
 
@@ -993,10 +1057,16 @@
                 justify-content: center;
             }
 
-            .value-grid,
-            .pricing-grid {
+            .value-grid {
                 grid-template-columns: 1fr;
                 gap: 24px;
+            }
+
+            .pricing-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                max-width: 400px;
+                margin: 0 auto;
             }
 
             .template-grid {
@@ -1074,6 +1144,19 @@
 
             .pricing-card {
                 padding: 32px 24px;
+            }
+
+            .pricing-card h3 {
+                font-size: 1.25rem;
+            }
+
+            .pricing-card .price span {
+                font-size: 2rem;
+            }
+
+            .pricing-features li {
+                font-size: 0.875rem;
+                padding: 10px 0;
             }
 
             .faq-question {
@@ -1285,7 +1368,7 @@
                 <div class="pricing-card fade-in">
                     <h3>✨ Entry 展示型</h3>
                     <div class="price">
-                        NT$12,800
+                        <span>NT$12,800</span>
                         <small>/ 一次性</small>
                     </div>
                     <ul class="pricing-features">
@@ -1301,7 +1384,7 @@
                 <div class="pricing-card featured fade-in">
                     <h3>🚀 Pro 精準對話型</h3>
                     <div class="price">
-                        NT$19,800
+                        <span>NT$19,800</span>
                         <small>/ 一次性</small>
                     </div>
                     <ul class="pricing-features">
@@ -1318,7 +1401,7 @@
                 <div class="pricing-card fade-in">
                     <h3>🧠 Expert 職涯加值型</h3>
                     <div class="price">
-                        NT$29,800
+                        <span>NT$29,800</span>
                         <small>/ 一次性</small>
                     </div>
                     <ul class="pricing-features">
@@ -1382,7 +1465,8 @@
                         <p>可以的！我們會提供完整的更新教學手冊，您可以隨時更新內容。如果需要協助，我們也提供年度維護服務（NT$3,600-8,800/年）。</p>
                     </div>
                 </div>
- 
+               
+             
             </div>
         </div>
     </section>
