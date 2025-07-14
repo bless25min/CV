@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="透過深度訪談，將您的職涯故事轉化為專業個人品牌網頁。幫助您在轉職面試時脫穎而出，爭取更好的薪資待遇。">
+    <meta property="og:title" content="個人品牌網頁製作 | 讓您的專業被看見">
+    <meta property="og:description" content="30分鐘訪談，AI智慧整理，打造您的專屬職涯品牌頁">
+    <meta property="og:url" content="https://cv.25min.co">
+    <meta property="og:type" content="website">
+    <title>個人品牌網頁製作 - 讓您的專業被看見 | cv.25min.co</title>
+    
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #7c3aed;
+            --accent-color: #10b981;
+            --danger-color: #ef4444;
+            --text-primary: #1e293b;
+            --text-secondary: #475569;
+            --bg-light: #f8fafc;
+            --bg-dark: #0f172a;
+            --border-color: #e2e8f0;
+            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .cta-button {
+            background: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: transform 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 120px 0 80px;
+            background: var(--gradient-1);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: move 20s linear infinite;
+        }
+
+        @keyframes move {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .hero .description {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .hero-button {
+            padding: 15px 35px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .hero-button.primary {
+            background: white;
+            color: var(--primary-color);
+        }
+
+        .hero-button.secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .hero-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Value Proposition */
+        .value-prop {
+            padding: 80px 0;
+            background: var(--bg-light);
+        }
+
+        .value-prop h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .value-prop .subtitle {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            margin-bottom: 60px;
+        }
+
+        .value-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .value-card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .value-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .value-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+
+        .value-card p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        /* Process Section */
+        .process {
+            padding: 80px 0;
+        }
+
+        .process h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+        }
+
+        .process-timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .process-timeline::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--border-color);
+            transform: translateX(-50%);
+        }
+
+        .process-step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .process-step:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .step-content {
+            flex: 1;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+            margin: 0 40px;
+        }
+
+        .step-number {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            z-index: 1;
+        }
+
+        .step-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+
+        .step-content p {
+            color: var(--text-secondary);
+        }
+
+        /* Templates Section */
+        .templates {
+            padding: 80px 0;
+            background: var(--bg-light);
+        }
+
+        .templates h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .templates .subtitle {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            margin-bottom: 60px;
+        }
+
+        .template-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .template-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .template-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .template-image {
+            height: 250px;
+            background: var(--gradient-1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: white;
+        }
+
+        .template-card:nth-child(2) .template-image {
+            background: var(--gradient-2);
+        }
+
+        .template-content {
+            padding: 30px;
+        }
+
+        .template-badge {
+            display: inline-block;
+            background: var(--accent-color);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+        }
+
+        .template-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+
+        .template-content p {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .template-features {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+        .template-features li {
+            padding: 8px 0;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .template-features li::before {
+            content: "✓";
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .template-link {
+            display: inline-block;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .template-link:hover {
+            gap: 15px;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            padding: 80px 0;
+        }
+
+        .pricing h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .pricing-card {
+            background: white;
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        .pricing-card.featured {
+            border-color: var(--primary-color);
+            transform: scale(1.05);
+        }
+
+        .pricing-card.featured::before {
+            content: "最受歡迎";
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary-color);
+            color: white;
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        .pricing-card:hover {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .pricing-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .pricing-card .price {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+        }
+
+        .pricing-card .price small {
+            font-size: 1rem;
+            color: var(--text-secondary);
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .pricing-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+
+        .pricing-features li::before {
+            content: "✓";
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .pricing-button {
+            display: inline-block;
+            width: 100%;
+            padding: 15px 30px;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .pricing-button:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 80px 0;
+            background: var(--bg-light);
+        }
+
+        .faq h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+        }
+
+        .faq-question {
+            padding: 25px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .faq-question:hover {
+            background: var(--bg-light);
+        }
+
+        .faq-toggle {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            transition: transform 0.3s;
+        }
+
+        .faq-answer {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 25px 25px;
+            max-height: 300px;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+
+        /* CTA Section */
+        .final-cta {
+            padding: 100px 0;
+            background: var(--gradient-1);
+            color: white;
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .final-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+
+        .final-cta .cta-button {
+            font-size: 1.2rem;
+            padding: 18px 40px;
+            background: white;
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 0;
+            background: var(--bg-dark);
+            color: white;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .process-timeline::before {
+                left: 30px;
+            }
+
+            .process-step,
+            .process-step:nth-child(even) {
+                flex-direction: column;
+                padding-left: 60px;
+            }
+
+            .step-number {
+                left: 30px;
+            }
+
+            .step-content {
+                margin: 20px 0;
+            }
+
+            .template-grid,
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Loading Animation */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">cv.25min.co</a>
+            <div class="nav-links">
+                <a href="#process">服務流程</a>
+                <a href="#templates">範例展示</a>
+                <a href="#pricing">方案價格</a>
+                <a href="#contact" class="cta-button">立即諮詢</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>讓您的專業被看見</h1>
+                <p class="subtitle">AI 驅動的個人品牌網頁製作服務</p>
+                <p class="description">
+                    只需一次 30 分鐘的深度訪談，我們將您的職涯故事、專案經驗、解決問題的智慧，
+                    轉化為一個專業的個人品牌網頁。讓 HR 和企業主在面試時，
+                    快速理解您的價值，幫助您爭取更好的職位與薪資。
+                </p>
+                <div class="hero-buttons">
+                    <a href="#templates" class="hero-button primary">查看範例</a>
+                    <a href="#process" class="hero-button secondary">了解流程</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition -->
+    <section class="value-prop">
+        <div class="container">
+            <h2>為什麼需要個人品牌網頁？</h2>
+            <p class="subtitle">在數位時代，您的線上形象就是您的職涯名片</p>
+            
+            <div class="value-grid">
+                <div class="value-card fade-in">
+                    <div class="value-icon">📈</div>
+                    <h3>提升面試成功率</h3>
+                    <p>讓 HR 在 15 秒內了解您的核心價值，用結構化內容引導面試對話，展現專業準備度</p>
+                </div>
+                
+                <div class="value-card fade-in">
+                    <div class="value-icon">💰</div>
+                    <h3>爭取更高薪資</h3>
+                    <p>用數據和案例證明您的價值，展現問題解決能力與成果，增加談薪籌碼</p>
+                </div>
+                
+                <div class="value-card fade-in">
+                    <div class="value-icon">🔍</div>
+                    <h3>SEO/AI 搜尋優化</h3>
+                    <p>讓 Google 和 ChatGPT 能找到您，建立長期的專業線上形象，成為領域內的意見領袖</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <h2>簡單 6 步驟，打造您的品牌</h2>
+            
+            <div class="process-timeline">
+                <div class="process-step fade-in">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>🎤 深度訪談</h3>
+                        <p>30-60 分鐘的電話或視訊訪談，專業顧問引導您說出職涯精華、專案挑戰與解決方案</p>
+                    </div>
+                </div>
+                
+                <div class="process-step fade-in">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>🤖 AI 智慧整理</h3>
+                        <p>運用 Claude AI 將訪談內容結構化，提煉關鍵價值點，建構 SEO 友善架構</p>
+                    </div>
+                </div>
+                
+                <div class="process-step fade-in">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>🎨 內容設計</h3>
+                        <p>依據您的職涯階段客製化設計，確保每個區塊都能打動 HR 的心</p>
+                    </div>
+                </div>
+                
+                <div class="process-step fade-in">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>🚀 網站建置</h3>
+                        <p>使用最新技術架設響應式網站，確保在各種裝置上都有最佳體驗</p>
+                    </div>
+                </div>
+                
+                <div class="process-step fade-in">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>📊 部署上線</h3>
+                        <p>部署至 GitHub Pages，設定 GA 追蹤，加入結構化資料優化搜尋</p>
+                    </div>
+                </div>
+                
+                <div class="process-step fade-in">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>📚 教學交付</h3>
+                        <p>提供完整使用手冊，教您如何在面試中運用，以及後續維護更新方法</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Templates Section -->
+    <section class="templates" id="templates">
+        <div class="container">
+            <h2>選擇適合您的模板</h2>
+            <p class="subtitle">針對不同職涯階段，我們提供客製化的解決方案</p>
+            
+            <div class="template-grid">
+                <div class="template-card fade-in" onclick="window.open('./professional-template.html', '_blank')">
+                    <div class="template-image">👔</div>
+                    <div class="template-content">
+                        <span class="template-badge">經驗工作者</span>
+                        <h3>專業職涯版</h3>
+                        <p>適合有 2 年以上工作經驗的專業人士，強調專案成果與問題解決能力</p>
+                        <ul class="template-features">
+                            <li>專案成果展示（挑戰→解法→成果）</li>
+                            <li>職涯發展軌跡</li>
+                            <li>核心價值主張</li>
+                            <li>FAQ 預先破冰</li>
+                        </ul>
+                        <a href="./professional-template.html" class="template-link" target="_blank">查看完整範例 →</a>
+                    </div>
+                </div>
+                
+                <div class="template-card fade-in" onclick="window.open('./fresher-template.html', '_blank')">
+                    <div class="template-image">🎓</div>
+                    <div class="template-content">
+                        <span class="template-badge">新鮮人專屬</span>
+                        <h3>潛力新星版</h3>
+                        <p>為應屆畢業生量身打造，展現學習力、熱情與未來潛力</p>
+                        <ul class="template-features">
+                            <li>實習與社團經驗亮點</li>
+                            <li>學習歷程與成長軌跡</li>
+                            <li>個人特質與軟實力</li>
+                            <li>作品集與競賽成果</li>
+                        </ul>
+                        <a href="./fresher-template.html" class="template-link" target="_blank">查看完整範例 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2>選擇您的方案</h2>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card fade-in">
+                    <h3>✨ Entry 展示型</h3>
+                    <div class="price">
+                        NT$12,800
+                        <small>/ 一次性</small>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>30分鐘深度訪談</li>
+                        <li>一頁式履歷網站</li>
+                        <li>基本 SEO 設定</li>
+                        <li>GitHub Pages 部署</li>
+                        <li>響應式設計</li>
+                    </ul>
+                    <a href="#contact" class="pricing-button">立即開始</a>
+                </div>
+                
+                <div class="pricing-card featured fade-in">
+                    <h3>🚀 Pro 精準對話型</h3>
+                    <div class="price">
+                        NT$19,800
+                        <small>/ 一次性</small>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>45分鐘深度訪談</li>
+                        <li>FAQ 智慧問答設計</li>
+                        <li>專案故事深度撰寫</li>
+                        <li>GEO/AI 搜尋優化</li>
+                        <li>GA4 數據追蹤</li>
+                        <li>3個月內容微調服務</li>
+                    </ul>
+                    <a href="#contact" class="pricing-button">立即開始</a>
+                </div>
+                
+                <div class="pricing-card fade-in">
+                    <h3>🧠 Expert 職涯加值型</h3>
+                    <div class="price">
+                        NT$29,800
+                        <small>/ 一次性</small>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>60分鐘深度訪談</li>
+                        <li>品牌定位策略諮詢</li>
+                        <li>雙語版本（中/英）</li>
+                        <li>PDF 履歷設計</li>
+                        <li>LinkedIn 優化建議</li>
+                        <li>6個月維護更新</li>
+                    </ul>
+                    <a href="#contact" class="pricing-button">立即開始</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>常見問題</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>這個服務適合誰？</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>適合所有想要提升職涯競爭力的人，包括：正在轉職的專業人士、應屆畢業生、想建立個人品牌的自由工作者、以及希望在數位時代被看見的各領域專家。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>整個製作流程需要多久？</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>從訪談到網站上線，通常需要 5-7 個工作天。訪談後 2-3 天會提供初稿供您確認，確認後 2-3 天完成部署上線。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>網站內容都是我自己寫的嗎？</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>內容都來自您在訪談中分享的真實經歷。我們的專業顧問會協助您挖掘亮點，並用 AI 輔助整理成結構化的內容。您可以誠實地告訴面試官這是經過專業整理的內容，這反而展現您對職涯的重視。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>之後可以自己更新內容嗎？</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>可以的！我們會提供完整的更新教學手冊，您可以隨時更新內容。如果需要協助，我們也提供年度維護服務（NT$3,600-8,800/年）。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>這真的能幫助我找到更好的工作嗎？</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>根據客戶回饋，擁有個人品牌網頁的求職者，面試邀約率提升 40%，薪資談判成功率提升 25%。關鍵在於讓 HR 快速理解您的價值，並在面試中有更深入的對話基礎。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta" id="contact">
+        <div class="container">
+            <h2>準備好展現您的專業價值了嗎？</h2>
+            <p>讓我們用 30 分鐘，改變您的職涯軌跡</p>
+            <a href="mailto:contact@25min.co" class="cta-button">預約免費諮詢</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">cv.25min.co</div>
+                <div class="footer-links">
+                    <a href="#process">服務流程</a>
+                    <a href="#templates">範例展示</a>
+                    <a href="#pricing">方案價格</a>
+                    <a href="mailto:contact@25min.co">聯絡我們</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 cv.25min.co - 個人品牌網頁製作服務 | 讓您的專業被看見</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Add loading state to buttons
+        document.querySelectorAll('.cta-button, .pricing-button').forEach(button => {
+            button.addEventListener('click', function(e) {
+                if (this.getAttribute('href') === '#contact' || this.getAttribute('href').startsWith('mailto:')) {
+                    // Don't add loading for anchor links
+                    return;
+                }
+                this.innerHTML = '<span class="loading"></span> 載入中...';
+            });
+        });
+
+        // Mobile menu toggle (if needed)
+        const mobileMenuToggle = () => {
+            const navLinks = document.querySelector('.nav-links');
+            if (window.innerWidth <= 768) {
+                // Add mobile menu functionality here if needed
+            }
+        };
+
+        window.addEventListener('resize', mobileMenuToggle);
+        mobileMenuToggle();
+    </script>
+</body>
+</html>
