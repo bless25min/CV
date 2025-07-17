@@ -3,62 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="陳雅婷 - 資訊管理系應屆畢業生，積極學習數位行銷與產品管理，期待在科技業開啟職涯">
-    <meta property="og:title" content="陳雅婷 - 新鮮人求職 | 好說個人品牌頁">
-    <meta property="og:description" content="政大資管系畢業，具備程式設計與數據分析能力，熱衷學習與團隊合作">
-    <meta property="og:type" content="profile">
-    <title>陳雅婷 - 新鮮人求職 | 好說個人品牌頁</title>
+    <meta name="description" content="好說客戶案例展示 - 應屆畢業生的職涯簡報頁完整成品">
+    <title>好說客戶案例展示 - 新鮮人從原始履歷到專業簡報頁</title>
     
     <style>
-        /* Import Google Fonts */
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-        
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700;800;900&display=swap');
+
         :root {
-            /* 活潑的色彩組合 */
-            --primary-color: #6366F1;
-            --primary-dark: #4F46E5;
-            --primary-light: #818CF8;
-            --secondary-color: #EC4899;
-            --secondary-light: #F472B6;
-            --accent-color: #14B8A6;
-            --accent-light: #2DD4BF;
-            --warning-color: #F59E0B;
-            --warning-light: #FCD34D;
-            
-            /* 現代中性色 */
-            --text-primary: #1E293B;
-            --text-secondary: #64748B;
-            --text-light: #94A3B8;
+            --primary-color: #2563EB;
+            --primary-dark: #1E40AF;
+            --success-color: #059669;
+            --warning-color: #DC2626;
+            --text-primary: #111827;
+            --text-secondary: #4B5563;
+            --text-light: #6B7280;
             --bg-white: #FFFFFF;
-            --bg-light: #F8FAFC;
-            --bg-gray: #F1F5F9;
-            --border-color: #E2E8F0;
-            --border-light: #F1F5F9;
-            
-            /* 活潑漸變 */
-            --gradient-primary: linear-gradient(135deg, #6366F1 0%, #EC4899 100%);
-            --gradient-secondary: linear-gradient(135deg, #14B8A6 0%, #3B82F6 100%);
-            --gradient-warm: linear-gradient(135deg, #F59E0B 0%, #EC4899 100%);
-            --gradient-cool: linear-gradient(135deg, #06B6D4 0%, #6366F1 100%);
+            --bg-light: #F9FAFB;
+            --bg-gray: #F3F4F6;
+            --border-color: #E5E7EB;
+            --gradient-primary: linear-gradient(135deg, #2563EB 0%, #10B981 100%);
+            --gradient-warm: linear-gradient(135deg, #F59E0B 0%, #DC2626 100%);
             --gradient-fresh: linear-gradient(135deg, #10B981 0%, #14B8A6 100%);
-            
-            /* 動態陰影 */
             --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
             --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
             --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
             --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-            --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-            --shadow-colored: 0 20px 40px -15px rgba(99, 102, 241, 0.3);
-            
-            /* 字體 */
-            --font-sans: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            
-            /* 間距與版面 */
-            --container-max: 1200px;
-            --section-padding: 100px;
-            --card-padding: 32px;
-            --border-radius: 16px;
-            --border-radius-lg: 24px;
+            --font-brand: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         }
 
         * {
@@ -68,512 +38,403 @@
         }
 
         body {
-            font-family: var(--font-sans);
-            font-size: 16px;
+            font-family: var(--font-brand);
             line-height: 1.6;
             color: var(--text-primary);
             background-color: var(--bg-white);
             -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            overflow-x: hidden;
-        }
-
-        ::selection {
-            background-color: var(--primary-light);
-            color: white;
         }
 
         .container {
-            max-width: var(--container-max);
+            max-width: 1200px;
             margin: 0 auto;
             padding: 0 24px;
         }
 
-        /* 動態Hero區域 */
-        .hero {
-            padding: 100px 0 80px;
-            text-align: center;
+        /* Header */
+        .header {
             background: var(--gradient-primary);
             color: white;
-            position: relative;
-            overflow: hidden;
+            padding: 60px 0;
+            text-align: center;
         }
 
-        /* 浮動形狀動畫 */
-        .hero::before,
-        .hero::after {
-            content: '';
-            position: absolute;
-            border-radius: 50%;
-            animation: float 20s ease-in-out infinite;
-        }
-
-        .hero::before {
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-            top: -200px;
-            left: -200px;
-        }
-
-        .hero::after {
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
-            bottom: -300px;
-            right: -300px;
-            animation-delay: -10s;
-        }
-
-        @keyframes float {
-            0%, 100% {
-                transform: translate(0, 0) rotate(0deg);
-            }
-            25% {
-                transform: translate(50px, -50px) rotate(90deg);
-            }
-            50% {
-                transform: translate(-30px, 30px) rotate(180deg);
-            }
-            75% {
-                transform: translate(40px, 20px) rotate(270deg);
-            }
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero .status-badge {
-            display: inline-block;
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            padding: 8px 24px;
-            border-radius: 50px;
-            font-size: 0.875rem;
-            font-weight: 600;
-            margin-bottom: 24px;
-            animation: bounceIn 0.8s ease-out;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-
-        @keyframes bounceIn {
-            0% {
-                opacity: 0;
-                transform: scale(0.3);
-            }
-            50% {
-                transform: scale(1.05);
-            }
-            70% {
-                transform: scale(0.9);
-            }
-            100% {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-
-        .hero h1 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
+        .header h1 {
+            font-size: 2.5rem;
             font-weight: 800;
-            margin-bottom: 24px;
-            letter-spacing: -0.02em;
-            animation: fadeInUp 0.8s ease-out 0.2s both;
-        }
-
-        .hero .tagline {
-            font-size: 1.375rem;
-            max-width: 700px;
-            margin: 0 auto 24px;
-            opacity: 0.95;
-            font-weight: 300;
-            animation: fadeInUp 0.8s ease-out 0.4s both;
-        }
-
-        .hero .passion-statement {
-            font-size: 1.125rem;
-            font-weight: 600;
-            margin-bottom: 40px;
-            padding: 16px 32px;
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            border-radius: 50px;
-            display: inline-block;
-            animation: fadeInUp 0.8s ease-out 0.6s both;
-        }
-
-        .hero .cta {
-            display: inline-block;
-            padding: 16px 40px;
-            background: white;
-            color: var(--primary-color);
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 1.125rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            animation: fadeInUp 0.8s ease-out 0.8s both;
-        }
-
-        .hero .cta:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-        }
-
-        /* 個人特質區域 */
-        .about-me {
-            padding: var(--section-padding) 0;
-            background: var(--bg-light);
-            position: relative;
-        }
-
-        .about-me h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 60px;
-            color: var(--text-primary);
-            position: relative;
-            display: inline-block;
-            width: 100%;
-        }
-
-        .about-me h2::after {
-            content: '';
-            position: absolute;
-            bottom: -16px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 4px;
-            background: var(--gradient-primary);
-            border-radius: 2px;
-        }
-
-        .about-content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .about-content .intro {
-            font-size: 1.25rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            margin-bottom: 48px;
-        }
-
-        .personality-traits {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 24px;
-            margin-top: 48px;
-        }
-
-        .trait-card {
-            background: white;
-            padding: 32px 24px;
-            border-radius: var(--border-radius-lg);
-            box-shadow: var(--shadow-md);
-            text-align: center;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .trait-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: var(--gradient-primary);
-            transform: scaleX(0);
-            transition: transform 0.3s ease;
-        }
-
-        .trait-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-colored);
-        }
-
-        .trait-card:hover::before {
-            transform: scaleX(1);
-        }
-
-        .trait-card .icon {
-            font-size: 3rem;
             margin-bottom: 16px;
-            display: inline-block;
-            animation: bounce 2s ease-in-out infinite;
-            animation-delay: calc(var(--i) * 0.2s);
         }
 
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-
-        .trait-card h3 {
-            color: var(--primary-color);
+        .header p {
             font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 12px;
+            opacity: 0.9;
         }
 
-        .trait-card p {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-
-        /* 技能區域 */
-        .skills {
-            padding: var(--section-padding) 0;
-            background: white;
-        }
-
-        .skills h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 60px;
-            color: var(--text-primary);
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: 32px;
-        }
-
-        .skill-category {
+        /* Toggle Section */
+        .toggle-section {
+            padding: 40px 0;
             background: var(--bg-light);
-            border-radius: var(--border-radius-lg);
-            padding: 32px;
-            position: relative;
-            overflow: hidden;
-            transition: all 0.3s ease;
+            text-align: center;
         }
 
-        .skill-category:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .skill-category::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: var(--gradient-primary);
-        }
-
-        .skill-category:nth-child(2)::before {
-            background: var(--gradient-secondary);
-        }
-
-        .skill-category:nth-child(3)::before {
-            background: var(--gradient-warm);
-        }
-
-        .skill-category h3 {
-            color: var(--text-primary);
+        .toggle-title {
+            font-size: 1.5rem;
+            font-weight: 700;
             margin-bottom: 24px;
-            font-size: 1.375rem;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .skill-list {
-            list-style: none;
-        }
-
-        .skill-list li {
-            padding: 16px 0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .skill-list li:last-child {
-            border-bottom: none;
-        }
-
-        .skill-name {
-            font-weight: 500;
             color: var(--text-primary);
         }
 
-        .skill-level {
+        .toggle-buttons {
             display: flex;
-            gap: 6px;
-            align-items: center;
-        }
-
-        .skill-dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: var(--border-color);
-            transition: all 0.3s ease;
-        }
-
-        .skill-dot.filled {
-            background: var(--primary-color);
-            transform: scale(1.2);
-        }
-
-        .skill-category:nth-child(2) .skill-dot.filled {
-            background: var(--accent-color);
-        }
-
-        .skill-category:nth-child(3) .skill-dot.filled {
-            background: var(--warning-color);
-        }
-
-        /* 經歷區域 */
-        .experience {
-            padding: var(--section-padding) 0;
-            background: var(--bg-light);
-        }
-
-        .experience h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 60px;
-            color: var(--text-primary);
-        }
-
-        .experience-tabs {
-            display: flex;
-            justify-content: center;
             gap: 16px;
-            margin-bottom: 48px;
+            justify-content: center;
+            margin-bottom: 40px;
             flex-wrap: wrap;
         }
 
-        .tab-button {
-            padding: 14px 32px;
+        .toggle-btn {
+            padding: 12px 32px;
+            border: 2px solid var(--primary-color);
             background: white;
-            border: 2px solid transparent;
+            color: var(--primary-color);
             border-radius: 50px;
             cursor: pointer;
-            transition: all 0.3s ease;
             font-weight: 600;
-            font-size: 1rem;
-            color: var(--text-secondary);
-            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+            text-decoration: none;
         }
 
-        .tab-button:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-md);
-        }
-
-        .tab-button.active {
-            background: var(--gradient-primary);
+        .toggle-btn.active {
+            background: var(--primary-color);
             color: white;
-            border-color: transparent;
-            box-shadow: var(--shadow-colored);
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
         }
 
-        .experience-content {
+        .toggle-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.2);
+        }
+
+        /* Content Sections */
+        .content-section {
             display: none;
-            animation: fadeIn 0.5s ease-out;
+            padding: 60px 0;
         }
 
-        .experience-content.active {
+        .content-section.active {
             display: block;
         }
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        /* Original Resume */
+        .original-resume {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: var(--shadow-xl);
+            overflow: hidden;
         }
 
-        .experience-card {
-            background: white;
-            border-radius: var(--border-radius-lg);
-            padding: 40px;
-            margin-bottom: 32px;
-            box-shadow: var(--shadow-md);
+        .resume-header {
+            background: var(--bg-gray);
+            padding: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .resume-header h3 {
+            color: var(--text-primary);
+            font-size: 1.125rem;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .resume-content {
+            padding: 24px;
+            font-size: 14px;
+            line-height: 1.4;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+
+        .resume-content h4 {
+            color: var(--text-primary);
+            margin: 16px 0 8px 0;
+            font-size: 16px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 4px;
+        }
+
+        .resume-content .basic-info {
+            background: var(--bg-light);
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+
+        .resume-content .job-item {
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .resume-content .job-title {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .resume-content .company {
+            color: var(--text-secondary);
+            font-size: 13px;
+            margin-bottom: 6px;
+        }
+
+        .resume-content .job-desc {
+            color: var(--text-secondary);
+            font-size: 13px;
+            line-height: 1.4;
+        }
+
+        /* Professional CV */
+        .professional-cv {
+            background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
             position: relative;
             overflow: hidden;
-            transition: all 0.3s ease;
         }
 
-        .experience-card:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-xl);
-        }
-
-        .experience-card::before {
+        .professional-cv::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
-            width: 4px;
-            height: 100%;
-            background: var(--gradient-primary);
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 20% 20%, rgba(37, 99, 235, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(16, 185, 129, 0.05) 0%, transparent 50%);
+            z-index: 0;
         }
 
-        .experience-card .period {
-            position: absolute;
-            top: 40px;
-            right: 40px;
-            background: var(--gradient-fresh);
-            color: white;
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-size: 0.875rem;
-            font-weight: 600;
+        .cv-content {
+            position: relative;
+            z-index: 1;
+            padding: 60px;
         }
 
-        .experience-card h3 {
-            color: var(--text-primary);
+        .cv-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .cv-header h1 {
+            font-size: 3rem;
+            font-weight: 800;
             margin-bottom: 12px;
-            font-size: 1.5rem;
-            font-weight: 600;
+            color: var(--text-primary);
         }
 
-        .experience-card .organization {
+        .cv-header .title {
+            font-size: 1.5rem;
             color: var(--primary-color);
             font-weight: 600;
             margin-bottom: 20px;
+        }
+
+        .cv-header .tagline {
             font-size: 1.125rem;
-        }
-
-        .experience-highlights {
-            margin-top: 20px;
-            padding-left: 24px;
-        }
-
-        .experience-highlights li {
-            margin-bottom: 12px;
             color: var(--text-secondary);
-            position: relative;
-            padding-left: 24px;
+            margin-bottom: 32px;
         }
 
-        .experience-highlights li::before {
+        .cv-header .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .cv-section {
+            margin-bottom: 60px;
+        }
+
+        .cv-section h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: var(--text-primary);
+            text-align: center;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        .summary-card {
+            background: white;
+            padding: 24px;
+            border-radius: 16px;
+            box-shadow: var(--shadow-md);
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .summary-card h3 {
+            color: var(--text-primary);
+            margin-bottom: 12px;
+            font-size: 1.125rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .summary-card p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .recommendations {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .recommendation-item {
+            background: white;
+            padding: 24px;
+            border-radius: 16px;
+            box-shadow: var(--shadow-md);
+            position: relative;
+            border-left: 4px solid var(--success-color);
+        }
+
+        .recommendation-quote {
+            font-size: 1.125rem;
+            font-style: italic;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+            line-height: 1.6;
+        }
+
+        .recommendation-quote::before {
+            content: '"';
+            font-size: 2rem;
+            color: var(--success-color);
+            opacity: 0.3;
+            font-weight: 700;
+            position: absolute;
+            top: 10px;
+            left: 16px;
+        }
+
+        .recommendation-author {
+            color: var(--text-secondary);
+            font-weight: 500;
+            font-size: 0.95rem;
+            text-align: right;
+        }
+
+        .experience-timeline {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .experience-timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--gradient-primary);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 60px;
+            margin-bottom: 40px;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 10px;
+            top: 8px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: white;
+            border: 4px solid var(--primary-color);
+            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.2);
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .timeline-date {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 0.875rem;
+            margin-bottom: 8px;
+        }
+
+        .timeline-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .timeline-company {
+            color: var(--text-secondary);
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+
+        .timeline-achievements {
+            background: var(--bg-light);
+            padding: 16px;
+            border-radius: 8px;
+            margin-top: 12px;
+        }
+
+        .timeline-achievements h4 {
+            color: var(--success-color);
+            font-size: 0.875rem;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .timeline-achievements ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .timeline-achievements li {
+            padding: 4px 0;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            position: relative;
+            padding-left: 16px;
+        }
+
+        .timeline-achievements li::before {
             content: '→';
             position: absolute;
             left: 0;
@@ -581,478 +442,384 @@
             font-weight: bold;
         }
 
-        .achievement-badge {
-            display: inline-block;
-            background: var(--gradient-warm);
-            color: white;
-            padding: 8px 20px;
-            border-radius: 50px;
-            font-size: 0.875rem;
-            font-weight: 600;
-            margin-top: 20px;
-            box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
-        }
-
-        /* 專案區域 */
-        .projects {
-            padding: var(--section-padding) 0;
-            background: white;
-        }
-
-        .projects h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 60px;
-            color: var(--text-primary);
-        }
-
-        .project-grid {
+        /* Projects Section */
+        .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 32px;
         }
 
         .project-card {
             background: white;
-            border-radius: var(--border-radius-lg);
+            border-radius: 16px;
             overflow: hidden;
             box-shadow: var(--shadow-lg);
-            transition: all 0.4s ease;
-            cursor: pointer;
-            position: relative;
+            transition: all 0.3s ease;
         }
 
         .project-card:hover {
-            transform: translateY(-8px) scale(1.02);
-            box-shadow: var(--shadow-2xl);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
         }
 
-        .project-image {
-            height: 240px;
+        .project-header {
             background: var(--gradient-primary);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
             color: white;
-            position: relative;
-            overflow: hidden;
+            padding: 24px;
         }
 
-        .project-card:nth-child(2) .project-image {
-            background: var(--gradient-secondary);
+        .project-header h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 8px;
         }
 
-        .project-card:nth-child(3) .project-image {
-            background: var(--gradient-warm);
-        }
-
-        .project-image::after {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.2) 50%, transparent 70%);
-            animation: shimmer 3s infinite;
-        }
-
-        @keyframes shimmer {
-            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
-            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        .project-role {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            display: inline-block;
         }
 
         .project-content {
-            padding: 32px;
+            padding: 24px;
         }
 
-        .project-content h3 {
-            color: var(--text-primary);
-            margin-bottom: 12px;
-            font-size: 1.375rem;
+        .project-section {
+            margin-bottom: 20px;
+        }
+
+        .project-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-section h4 {
+            font-size: 0.875rem;
             font-weight: 600;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
         }
 
-        .project-content p {
+        .challenge h4 { color: var(--warning-color); }
+        .solution h4 { color: var(--primary-color); }
+        .impact h4 { color: var(--success-color); }
+
+        .project-section p {
             color: var(--text-secondary);
             line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+        }
+
+        .skill-category {
+            background: white;
+            padding: 24px;
+            border-radius: 16px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .skill-category h3 {
+            color: var(--text-primary);
             margin-bottom: 20px;
-        }
-
-        .project-tags {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-            margin-bottom: 20px;
-        }
-
-        .tag {
-            background: var(--bg-light);
-            color: var(--text-secondary);
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-size: 0.875rem;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-
-        .tag:hover {
-            background: var(--primary-color);
-            color: white;
-            transform: scale(1.05);
-        }
-
-        .project-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            color: var(--primary-color);
-            text-decoration: none;
+            font-size: 1.125rem;
             font-weight: 600;
-            transition: gap 0.3s ease;
         }
 
-        .project-link:hover {
+        .skill-list {
+            display: flex;
+            flex-direction: column;
             gap: 16px;
         }
 
-        /* 學習歷程 */
-        .learning {
-            padding: var(--section-padding) 0;
-            background: var(--bg-light);
-        }
-
-        .learning h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 60px;
-            color: var(--text-primary);
-        }
-
-        .learning-timeline {
-            max-width: 900px;
-            margin: 0 auto;
-            position: relative;
-        }
-
-        .learning-timeline::before {
-            content: '';
-            position: absolute;
-            left: 40px;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background: linear-gradient(180deg, var(--primary-color) 0%, var(--accent-color) 50%, var(--warning-color) 100%);
-        }
-
-        .learning-item {
-            display: flex;
-            gap: 32px;
-            margin-bottom: 48px;
-            align-items: flex-start;
-            position: relative;
-            padding-left: 100px;
-        }
-
-        .learning-icon {
-            position: absolute;
-            left: 10px;
-            width: 60px;
-            height: 60px;
-            background: white;
-            color: var(--primary-color);
-            border-radius: 50%;
+        .skill-item {
             display: flex;
             align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            font-weight: bold;
-            box-shadow: var(--shadow-lg);
-            z-index: 1;
-            transition: all 0.3s ease;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border-color);
         }
 
-        .learning-item:hover .learning-icon {
-            transform: scale(1.1);
-            box-shadow: var(--shadow-colored);
+        .skill-item:last-child {
+            border-bottom: none;
         }
 
-        .learning-content {
-            background: white;
-            padding: 28px;
-            border-radius: var(--border-radius-lg);
-            box-shadow: var(--shadow-md);
+        .skill-name {
             flex: 1;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        .skill-level {
+            display: flex;
+            gap: 4px;
+        }
+
+        .skill-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--border-color);
+        }
+
+        .skill-dot.filled {
+            background: var(--primary-color);
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            margin-bottom: 16px;
+            overflow: hidden;
             transition: all 0.3s ease;
         }
 
-        .learning-content:hover {
-            transform: translateX(8px);
-            box-shadow: var(--shadow-lg);
+        .faq-item:hover {
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow-md);
         }
 
-        .learning-content h3 {
+        .faq-question {
+            padding: 20px 24px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
             color: var(--text-primary);
-            margin-bottom: 8px;
-            font-size: 1.25rem;
-            font-weight: 600;
+            transition: all 0.3s ease;
         }
 
-        .learning-content .period {
+        .faq-question:hover {
             color: var(--primary-color);
-            font-size: 0.875rem;
-            margin-bottom: 12px;
-            font-weight: 600;
         }
 
-        .learning-content p {
+        .faq-toggle {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-answer {
+            padding: 0 24px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+
+        .faq-answer p {
             color: var(--text-secondary);
             line-height: 1.6;
+            padding-bottom: 20px;
         }
 
-        /* 為什麼選我 */
-        .why-me {
-            padding: var(--section-padding) 0;
-            background: white;
+        .faq-item.active .faq-answer {
+            max-height: 300px;
         }
 
-        .why-me h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 60px;
-            color: var(--text-primary);
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
         }
 
-        .reasons-grid {
+        .faq-item.active {
+            border-color: var(--primary-color);
+        }
+
+        /* Motivation Section */
+        .motivation-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 32px;
-            max-width: 1000px;
-            margin: 0 auto;
+            gap: 24px;
         }
 
-        .reason-card {
-            text-align: center;
-            padding: 40px 28px;
-            background: var(--bg-light);
-            border-radius: var(--border-radius-lg);
-            transition: all 0.4s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .reason-card::before {
-            content: '';
-            position: absolute;
-            top: -2px;
-            left: -2px;
-            right: -2px;
-            bottom: -2px;
-            background: var(--gradient-primary);
-            border-radius: var(--border-radius-lg);
-            opacity: 0;
-            transition: opacity 0.4s ease;
-            z-index: -1;
-        }
-
-        .reason-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-colored);
-        }
-
-        .reason-card:hover::before {
-            opacity: 1;
-        }
-
-        .reason-card:hover .reason-number {
+        .motivation-card {
             background: white;
-            color: var(--primary-color);
+            padding: 24px;
+            border-radius: 16px;
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--primary-color);
         }
 
-        .reason-number {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 48px;
-            height: 48px;
-            background: var(--gradient-primary);
-            color: white;
-            border-radius: 50%;
-            font-weight: 700;
-            font-size: 1.25rem;
-            margin-bottom: 20px;
-            transition: all 0.4s ease;
+        .motivation-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
         }
 
-        .reason-card h3 {
+        .motivation-icon {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .motivation-card h3 {
             color: var(--text-primary);
             margin-bottom: 12px;
-            font-size: 1.25rem;
+            font-size: 1.125rem;
             font-weight: 600;
         }
 
-        .reason-card p {
+        .motivation-card p {
             color: var(--text-secondary);
             line-height: 1.6;
+            font-size: 0.95rem;
         }
 
-        /* CTA區域 */
+        /* CTA Section */
         .cta-section {
-            padding: var(--section-padding) 0;
-            background: var(--gradient-cool);
+            padding: 60px 0;
+            background: var(--gradient-primary);
             color: white;
             text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cta-section::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 50%);
-            animation: pulse 4s ease-in-out infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { transform: scale(0.8); }
-            50% { transform: scale(1.2); }
-        }
-
-        .cta-content {
-            position: relative;
-            z-index: 1;
         }
 
         .cta-section h2 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 700;
-            margin-bottom: 24px;
+            margin-bottom: 16px;
         }
 
         .cta-section p {
-            font-size: 1.25rem;
+            font-size: 1.125rem;
             margin-bottom: 32px;
-            opacity: 0.95;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+            opacity: 0.9;
         }
 
-        .availability-info {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-            padding: 28px 40px;
-            border-radius: var(--border-radius-lg);
-            margin: 0 auto 40px;
-            max-width: 700px;
-            font-size: 1.0625rem;
-            line-height: 2;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .contact-buttons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .contact-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 16px 32px;
+        .cta-button {
             background: white;
             color: var(--primary-color);
-            text-decoration: none;
+            padding: 16px 32px;
             border-radius: 50px;
-            font-weight: 600;
-            transition: all 0.3s ease;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.125rem;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
         }
 
-        .contact-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-            background: var(--bg-light);
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
         }
 
         /* Footer */
         footer {
-            padding: 60px 0 40px;
-            text-align: center;
-            color: var(--text-secondary);
-            background: var(--bg-light);
-            border-top: 1px solid var(--border-color);
+            padding: 80px 0 40px;
+            background: var(--text-primary);
+            color: white;
         }
 
-        .footer-note {
-            max-width: 600px;
-            margin: 0 auto 32px;
-            line-height: 1.8;
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 60px;
+            margin-bottom: 60px;
         }
 
         .footer-brand {
-            background: var(--gradient-primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: 700;
+            max-width: 400px;
         }
 
-        /* 動畫 */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .footer-brand .logo {
+            font-size: 2rem;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 24px;
+            display: block;
         }
 
-        /* 響應式設計 */
-        @media (max-width: 1024px) {
-            .personality-traits {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .reasons-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
+        .footer-brand .tagline {
+            font-size: 1.125rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 24px;
         }
 
+        .footer-brand .description {
+            color: rgba(255, 255, 255, 0.6);
+            line-height: 1.7;
+        }
+
+        .footer-links h4 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Responsive Design */
         @media (max-width: 768px) {
-            :root {
-                --section-padding: 60px;
-                --card-padding: 24px;
+            .cv-content {
+                padding: 40px 24px;
             }
 
-            .container {
-                padding: 0 16px;
-            }
-
-            .hero {
-                padding: 80px 0 60px;
-            }
-
-            .hero h1 {
+            .cv-header h1 {
                 font-size: 2rem;
             }
 
-            .hero .tagline {
-                font-size: 1.125rem;
+            .cv-header .contact-info {
+                flex-direction: column;
+                gap: 12px;
             }
 
-            .personality-traits {
+            .summary-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline-item {
+                padding-left: 40px;
+            }
+
+            .timeline-dot {
+                left: 0;
+                width: 16px;
+                height: 16px;
+            }
+
+            .timeline-content {
+                padding: 16px;
+            }
+
+            .projects-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -1060,604 +827,722 @@
                 grid-template-columns: 1fr;
             }
 
-            .experience-tabs {
-                gap: 12px;
-            }
-
-            .tab-button {
-                padding: 10px 20px;
-                font-size: 0.875rem;
-            }
-
-            .experience-card .period {
-                position: static;
-                display: inline-block;
-                margin-bottom: 16px;
-            }
-
-            .project-grid {
+            .recommendations {
                 grid-template-columns: 1fr;
             }
 
-            .learning-timeline::before {
-                left: 20px;
+            .motivation-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
 
-            .learning-item {
-                padding-left: 80px;
+            .faq-question {
+                padding: 16px 20px;
+                font-size: 0.95rem;
             }
 
-            .learning-icon {
-                left: -10px;
-                width: 50px;
-                height: 50px;
-                font-size: 1.25rem;
-            }
-
-            .reasons-grid {
-                grid-template-columns: 1fr;
-                gap: 24px;
-            }
-
-            .contact-buttons {
+            .toggle-buttons {
                 flex-direction: column;
                 align-items: center;
             }
 
-            .contact-btn {
+            .toggle-btn {
                 width: 100%;
                 max-width: 300px;
-                justify-content: center;
             }
 
-            h2 {
-                font-size: 2rem !important;
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
             }
         }
 
         @media (max-width: 480px) {
-            .hero h1 {
+            .cv-content {
+                padding: 24px 16px;
+            }
+
+            .cv-header h1 {
                 font-size: 1.75rem;
             }
 
-            .hero .passion-statement {
-                font-size: 1rem;
-                padding: 12px 24px;
+            .projects-grid {
+                grid-template-columns: 1fr;
             }
 
-            .experience-card {
-                padding: 28px 20px;
+            .skills-grid {
+                grid-template-columns: 1fr;
             }
 
-            .availability-info {
+            .recommendations {
+                grid-template-columns: 1fr;
+            }
+
+            .motivation-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-header {
                 padding: 20px;
-                font-size: 0.95rem;
+            }
+
+            .project-content {
+                padding: 16px;
+            }
+
+            .skill-category {
+                padding: 16px;
+            }
+
+            .motivation-card {
+                padding: 16px;
+            }
+
+            .faq-question {
+                padding: 16px;
+                font-size: 0.9rem;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Header -->
+    <header class="header">
         <div class="container">
-            <div class="hero-content">
-                <span class="status-badge">🎓 2024應屆畢業生</span>
-                <h1>Hi! 我是陳雅婷</h1>
-                <p class="tagline">政治大學資訊管理系畢業<br>對數位產品與使用者體驗充滿熱情的新鮮人</p>
-                <div class="passion-statement">
-                    💡 我想成為能夠用數據說故事的產品經理
-                </div>
-                <a href="#contact" class="cta">了解我的潛力</a>
-            </div>
+            <h1>好說</h1>
+            <p>從原始履歷到專業簡報頁的華麗轉身</p>
         </div>
-    </section>
+    </header>
 
-    <!-- About Me Section -->
-    <section class="about-me">
+    <!-- Toggle Section -->
+    <section class="toggle-section">
         <div class="container">
-            <h2>關於我</h2>
-            <div class="about-content">
-                <p class="intro">
-                    我是一個充滿好奇心的人，大學期間除了資管專業課程，更積極參與數位行銷工作坊和產品設計競賽，
-                    培養了數據分析與使用者思維。我相信科技應該讓生活更美好，期待能在產品團隊中發揮我的熱忱與創意。
-                </p>
-                
-                <div class="personality-traits">
-                    <div class="trait-card" style="--i: 0;">
-                        <div class="icon">🚀</div>
-                        <h3>積極主動</h3>
-                        <p>主動爭取實習機會，不怕接受新挑戰</p>
-                    </div>
-                    <div class="trait-card" style="--i: 1;">
-                        <div class="icon">💡</div>
-                        <h3>快速學習</h3>
-                        <p>3個月內自學Python並完成數據專案</p>
-                    </div>
-                    <div class="trait-card" style="--i: 2;">
-                        <div class="icon">🤝</div>
-                        <h3>團隊合作</h3>
-                        <p>擔任專題組長，協調5人團隊順利完成</p>
-                    </div>
-                    <div class="trait-card" style="--i: 3;">
-                        <div class="icon">📊</div>
-                        <h3>邏輯思考</h3>
-                        <p>善於分析問題，用數據支撐決策</p>
-                    </div>
-                </div>
+            <h2 class="toggle-title">客戶案例：應屆畢業生轉職成功</h2>
+            <div class="toggle-buttons">
+                <button class="toggle-btn active" onclick="showContent('original')">📄 求職者訪談前履歷原檔</button>
+                <button class="toggle-btn" onclick="showContent('final')">✨ 好說完整成品展示</button>
             </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="skills">
-        <div class="container">
-            <h2>我的技能</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>💻 技術能力</h3>
-                    <ul class="skill-list">
-                        <li>
-                            <span class="skill-name">Python程式設計</span>
-                            <div class="skill-level">
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot"></span>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="skill-name">資料分析 (Excel/SQL)</span>
-                            <div class="skill-level">
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot"></span>
-                                <span class="skill-dot"></span>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="skill-name">網頁開發 (HTML/CSS/JS)</span>
-                            <div class="skill-level">
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot"></span>
-                                <span class="skill-dot"></span>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="skill-name">UI/UX設計基礎</span>
-                            <div class="skill-level">
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot"></span>
-                                <span class="skill-dot"></span>
-                                <span class="skill-dot"></span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3>🗣 軟實力</h3>
-                    <ul class="skill-list">
-                        <li>
-                            <span class="skill-name">簡報與表達</span>
-                            <div class="skill-level">
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot"></span>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="skill-name">團隊溝通協作</span>
-                            <div class="skill-level">
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot filled"></span>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="skill-name">時間管理</span>
-                            <div class="skill-level">
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot"></span>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="skill-name">問題解決能力</span>
-                            <div class="skill-level">
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot"></span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3>🌐 語言能力</h3>
-                    <ul class="skill-list">
-                        <li>
-                            <span class="skill-name">中文 (母語)</span>
-                            <div class="skill-level">
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot filled"></span>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="skill-name">英文 (TOEIC 850)</span>
-                            <div class="skill-level">
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot"></span>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="skill-name">日文 (N3)</span>
-                            <div class="skill-level">
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot filled"></span>
-                                <span class="skill-dot"></span>
-                                <span class="skill-dot"></span>
-                                <span class="skill-dot"></span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section class="experience">
-        <div class="container">
-            <h2>經歷與成就</h2>
             
-            <div class="experience-tabs">
-                <button class="tab-button active" onclick="showTab('internship')">💼 實習經驗</button>
-                <button class="tab-button" onclick="showTab('activities')">🎯 社團活動</button>
-                <button class="tab-button" onclick="showTab('competitions')">🏆 競賽成果</button>
-            </div>
-
-            <div id="internship" class="experience-content active">
-                <div class="experience-card">
-                    <span class="period">2023.07 - 2023.09</span>
-                    <h3>數位行銷實習生</h3>
-                    <p class="organization">TechStart 新創公司</p>
-                    <p>負責社群媒體經營與數據分析，學習數位行銷實務操作，並協助產品推廣活動</p>
-                    <ul class="experience-highlights">
-                        <li>管理公司Instagram與Facebook帳號，粉絲成長35%，互動率提升至8%</li>
-                        <li>撰寫15篇產品介紹文案，平均觸及率達到5,000人次</li>
-                        <li>協助策劃線上發表會，成功吸引300+參與者，獲得50個潛在客戶</li>
-                    </ul>
-                    <span class="achievement-badge">🎖 優秀實習生獎</span>
-                </div>
-
-                <div class="experience-card">
-                    <span class="period">2023.01 - 2023.06</span>
-                    <h3>產品分析實習生</h3>
-                    <p class="organization">DataFlow 數據公司</p>
-                    <p>支援產品數據分析，學習用戶行為研究方法，協助產品優化決策</p>
-                    <ul class="experience-highlights">
-                        <li>使用Google Analytics分析用戶行為，製作週報告給產品團隊</li>
-                        <li>參與3次用戶訪談，整理需求並提出產品改善建議</li>
-                        <li>建立產品使用數據儀表板，幫助團隊快速掌握關鍵指標</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="activities" class="experience-content">
-                <div class="experience-card">
-                    <span class="period">2021 - 2024</span>
-                    <h3>學生會資訊部部長</h3>
-                    <p class="organization">政治大學學生會</p>
-                    <p>領導8人技術團隊，負責學生會官網維護與活動系統開發</p>
-                    <ul class="experience-highlights">
-                        <li>重新設計學生會官網，提升使用者體驗，網站流量成長50%</li>
-                        <li>開發線上投票系統，成功支援學生會選舉，參與率創新高</li>
-                        <li>建立活動報名系統，簡化報名流程，獲得同學好評</li>
-                    </ul>
-                    <span class="achievement-badge">🏆 最佳部門獎</span>
-                </div>
-
-                <div class="experience-card">
-                    <span class="period">2022 - 2023</span>
-                    <h3>程式設計社副社長</h3>
-                    <p class="organization">政大程式設計社</p>
-                    <p>協助社團營運，規劃技術分享活動，推廣程式教育</p>
-                    <ul class="experience-highlights">
-                        <li>策劃「新手程式馬拉松」活動，吸引80+位同學參與</li>
-                        <li>邀請業界講師分享經驗，舉辦10場技術講座</li>
-                        <li>建立社團學習資源庫，幫助新手快速入門</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="competitions" class="experience-content">
-                <div class="experience-card">
-                    <span class="period">2023.11</span>
-                    <h3>全國大專創新創業競賽</h3>
-                    <p class="organization">教育部主辦</p>
-                    <p>提出「智慧校園生活平台」創業構想，獲得評審肯定</p>
-                    <ul class="experience-highlights">
-                        <li>擔任團隊產品經理，負責需求分析與產品規劃</li>
-                        <li>深度訪談50+位學生，驗證產品需求與使用情境</li>
-                        <li>製作產品原型與商業計畫，獲得投資人青睞</li>
-                    </ul>
-                    <span class="achievement-badge">🥈 創新創意銀獎</span>
-                </div>
-
-                <div class="experience-card">
-                    <span class="period">2023.05</span>
-                    <h3>黑客松48小時挑戰</h3>
-                    <p class="organization">Google Developer群組主辦</p>
-                    <p>開發「環保生活追蹤器」APP，獲得最佳UI/UX設計獎</p>
-                    <ul class="experience-highlights">
-                        <li>負責產品設計與用戶體驗規劃，48小時內完成MVP</li>
-                        <li>運用設計思考方法，快速驗證產品概念</li>
-                        <li>學習敏捷開發，體驗跨領域團隊協作</li>
-                    </ul>
-                    <span class="achievement-badge">🎨 最佳設計獎</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects">
-        <div class="container">
-            <h2>專題作品</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <div class="project-image">📱</div>
-                    <div class="project-content">
-                        <h3>校園二手交易平台</h3>
-                        <p>畢業專題作品，運用React開發的校園專屬二手交易網站，解決學生買賣需求</p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">MySQL</span>
+            <!-- Original Resume -->
+            <div id="original" class="content-section active">
+                <div class="original-resume">
+                    <div class="resume-header">
+                        <h3>陳** - 履歷原檔</h3>
+                    </div>
+                    <div class="resume-content">
+                        <div class="basic-info">
+                            <strong>陳** Amy Chen</strong><br>
+                            女 | 23歲 | 台北市**區<br>
+                            聯絡電話：09**-***-***<br>
+                            E-mail：amy.chen@gmail.com<br>
+                            聯絡方式：早上9點至晚上10點
                         </div>
-                        <a href="#" class="project-link">查看專案 →</a>
-                    </div>
-                </div>
 
-                <div class="project-card">
-                    <div class="project-image">📊</div>
-                    <div class="project-content">
-                        <h3>社群媒體情感分析</h3>
-                        <p>使用Python進行Instagram貼文情感分析，協助品牌了解消費者反應</p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">機器學習</span>
-                            <span class="tag">數據視覺化</span>
+                        <h4>學歷</h4>
+                        <div class="job-item">
+                            <div class="job-title">國立政治大學</div>
+                            <div class="company">資訊管理學系 學士學位 | 2020/9~2024/6</div>
+                            <div class="job-desc">主修課程：程式設計、資料庫管理、系統分析、資料探勘、商業智慧</div>
                         </div>
-                        <a href="#" class="project-link">查看專案 →</a>
-                    </div>
-                </div>
 
-                <div class="project-card">
-                    <div class="project-image">🎮</div>
-                    <div class="project-content">
-                        <h3>財務管理遊戲APP</h3>
-                        <p>結合遊戲化設計的個人理財工具，讓使用者在遊戲中學習金錢管理</p>
-                        <div class="project-tags">
-                            <span class="tag">Flutter</span>
-                            <span class="tag">UI/UX設計</span>
-                            <span class="tag">遊戲化</span>
+                        <h4>實習經歷</h4>
+                        <div class="job-item">
+                            <div class="job-title">數位行銷實習生</div>
+                            <div class="company">●●新創公司 | 2023/7~2023/9</div>
+                            <div class="job-desc">
+                                負責社群媒體經營與數據分析<br>
+                                撰寫產品介紹文案<br>
+                                協助線上發表會策劃
+                            </div>
                         </div>
-                        <a href="#" class="project-link">查看專案 →</a>
+                        
+                        <div class="job-item">
+                            <div class="job-title">產品分析實習生</div>
+                            <div class="company">■■數據公司 | 2023/1~2023/6</div>
+                            <div class="job-desc">
+                                使用Google Analytics分析用戶行為<br>
+                                參與用戶訪談<br>
+                                建立產品使用數據儀表板
+                            </div>
+                        </div>
+
+                        <h4>社團經歷</h4>
+                        <div class="job-item">
+                            <div class="job-title">學生會資訊部部長</div>
+                            <div class="company">政治大學學生會 | 2021~2024</div>
+                            <div class="job-desc">
+                                負責學生會官網維護<br>
+                                開發線上投票系統<br>
+                                建立活動報名系統
+                            </div>
+                        </div>
+
+                        <h4>競賽成果</h4>
+                        <div class="job-item">
+                            <div class="job-title">全國大專創新創業競賽</div>
+                            <div class="company">教育部主辦 | 2023/11</div>
+                            <div class="job-desc">銀獎</div>
+                        </div>
+
+                        <h4>專業技能</h4>
+                        <div class="job-desc">
+                            程式語言：Python, JavaScript, HTML/CSS<br>
+                            資料分析：Excel, SQL, Google Analytics<br>
+                            設計工具：Figma, Photoshop<br>
+                            語言能力：英文(TOEIC 850), 日文(N3)
+                        </div>
+
+                        <h4>自傳</h4>
+                        <div class="job-desc">
+                            我是**，就讀政治大學資訊管理學系。大學期間積極參與實習和社團活動，培養了程式設計和數據分析的能力。希望能在科技業發揮所學，為公司創造價值...
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Learning Journey -->
-    <section class="learning">
-        <div class="container">
-            <h2>學習成長歷程</h2>
-            <div class="learning-timeline">
-                <div class="learning-item">
-                    <div class="learning-icon">📚</div>
-                    <div class="learning-content">
-                        <h3>大學專業學習</h3>
-                        <p class="period">2020 - 2024</p>
-                        <p>主修資訊管理，GPA 3.9/4.0，專注於資料庫、系統分析、資料探勘等核心課程，培養紮實的技術基礎</p>
+            <!-- Final Product -->
+            <div id="final" class="content-section">
+                <div class="professional-cv">
+                    <div class="cv-content">
+                        <!-- Header -->
+                        <div class="cv-header">
+                            <h1>陳**</h1>
+                            <p class="title">資管系應屆畢業生</p>
+                            <p class="tagline">積極學習數位行銷與產品管理，期待在科技業開啟職涯<br>具備程式設計與數據分析能力，熱衷學習與團隊合作</p>
+                            
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                    📧 amy.chen@gmail.com
+                                </div>
+                                <div class="contact-item">
+                                    📱 09**-***-***
+                                </div>
+                                <div class="contact-item">
+                                    📍 台北市**區
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Summary Section -->
+                        <div class="cv-section">
+                            <h2>核心優勢</h2>
+                            <div class="summary-grid">
+                                <div class="summary-card">
+                                    <h3>🚀 積極主動</h3>
+                                    <p>主動爭取實習機會，3個月內從零基礎到完成完整專案，不怕接受新挑戰</p>
+                                </div>
+                                
+                                <div class="summary-card">
+                                    <h3>💡 快速學習</h3>
+                                    <p>具備程式設計與數據分析雙重能力，能快速掌握新技術並應用於實務</p>
+                                </div>
+                                
+                                <div class="summary-card">
+                                    <h3>🤝 團隊合作</h3>
+                                    <p>擔任學生會部長，協調多人團隊成功完成專案，善於溝通與領導</p>
+                                </div>
+                            </div>
+                            
+                            <div class="recommendations">
+                                <div class="recommendation-item">
+                                    <div class="recommendation-quote">
+                                        學習能力很強，對工作充滿熱忱，是團隊中的積極推動者。
+                                    </div>
+                                    <div class="recommendation-author">
+                                        李** 主管 | ●●新創公司
+                                    </div>
+                                </div>
+                                <div class="recommendation-item">
+                                    <div class="recommendation-quote">
+                                        具備良好的邏輯思維和問題解決能力，是很有潛力的新鮮人。
+                                    </div>
+                                    <div class="recommendation-author">
+                                        張** 經理 | ■■數據公司
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Experience Timeline -->
+                        <div class="cv-section">
+                            <h2>學習成長歷程</h2>
+                            
+                            <div class="experience-timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <div class="timeline-date">2020 - 2024</div>
+                                        <div class="timeline-title">大學專業學習</div>
+                                        <div class="timeline-company">國立政治大學 資訊管理學系</div>
+                                        <p>主修資訊管理，GPA 3.9/4.0，專注於資料庫、系統分析、資料探勘等核心課程</p>
+                                        <div class="timeline-achievements">
+                                            <h4>重要成就：</h4>
+                                            <ul>
+                                                <li>學業成績優異，連續3年獲得書卷獎</li>
+                                                <li>完成8個個人專案，累積實戰經驗</li>
+                                                <li>培養紮實的技術基礎與邏輯思維</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <div class="timeline-date">2023/1 - 2023/9</div>
+                                        <div class="timeline-title">實習經驗累積</div>
+                                        <div class="timeline-company">●●新創公司 & ■■數據公司</div>
+                                        <p>透過兩段實習深入了解產品開發與數位行銷實務</p>
+                                        <div class="timeline-achievements">
+                                            <h4>卓越表現：</h4>
+                                            <ul>
+                                                <li>社群粉絲成長35%，互動率提升至8%</li>
+                                                <li>建立產品數據儀表板，協助團隊決策</li>
+                                                <li>獲得優秀實習生獎項肯定</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <div class="timeline-date">2021 - 2024</div>
+                                        <div class="timeline-title">領導力培養</div>
+                                        <div class="timeline-company">政治大學學生會 & 程式設計社</div>
+                                        <p>擔任學生會資訊部部長，領導8人技術團隊</p>
+                                        <div class="timeline-achievements">
+                                            <h4>領導成果：</h4>
+                                            <ul>
+                                                <li>重新設計學生會官網，流量成長50%</li>
+                                                <li>開發線上投票系統，支援學生會選舉</li>
+                                                <li>獲得最佳部門獎肯定</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Projects Section -->
+                        <div class="cv-section">
+                            <h2>精選專案作品</h2>
+                            <div class="projects-grid">
+                                <div class="project-card">
+                                    <div class="project-header">
+                                        <h3>校園二手交易平台</h3>
+                                        <div class="project-role">畢業專題負責人</div>
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-section challenge">
+                                            <h4>問題</h4>
+                                            <p>學生缺乏安全便利的二手商品交易管道，校內買賣需求無法有效媒合</p>
+                                        </div>
+                                        <div class="project-section solution">
+                                            <h4>解決方案</h4>
+                                            <p>運用React開發校園專屬二手交易網站，整合身分驗證與評價系統</p>
+                                        </div>
+                                        <div class="project-section impact">
+                                            <h4>成果</h4>
+                                            <p>成功上線並獲得300+學生使用，畢業專題獲得A+評分</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="project-card">
+                                    <div class="project-header">
+                                        <h3>社群媒體情感分析</h3>
+                                        <div class="project-role">數據分析專案</div>
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-section challenge">
+                                            <h4>挑戰</h4>
+                                            <p>品牌需要了解社群媒體上消費者的真實反應與情感傾向</p>
+                                        </div>
+                                        <div class="project-section solution">
+                                            <h4>方法</h4>
+                                            <p>使用Python進行Instagram貼文爬取與自然語言處理分析</p>
+                                        </div>
+                                        <div class="project-section impact">
+                                            <h4>價值</h4>
+                                            <p>協助品牌識別情感趨勢，提供行銷策略調整建議</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="project-card">
+                                    <div class="project-header">
+                                        <h3>智慧校園生活平台</h3>
+                                        <div class="project-role">創業競賽團隊PM</div>
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-section challenge">
+                                            <h4>機會</h4>
+                                            <p>校園生活服務分散，學生需要整合性的數位生活平台</p>
+                                        </div>
+                                        <div class="project-section solution">
+                                            <h4>策略</h4>
+                                            <p>擔任產品經理，深度訪談50+學生，驗證需求並規劃產品</p>
+                                        </div>
+                                        <div class="project-section impact">
+                                            <h4>榮譽</h4>
+                                            <p>獲得全國大專創新創業競賽銀獎肯定</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Skills Section -->
+                        <div class="cv-section">
+                            <h2>專業技能</h2>
+                            <div class="skills-grid">
+                                <div class="skill-category">
+                                    <h3>💻 技術能力</h3>
+                                    <div class="skill-list">
+                                        <div class="skill-item">
+                                            <span class="skill-name">Python程式設計</span>
+                                            <div class="skill-level">
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot"></span>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span class="skill-name">資料分析 (Excel/SQL)</span>
+                                            <div class="skill-level">
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot"></span>
+                                                <span class="skill-dot"></span>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span class="skill-name">網頁開發 (HTML/CSS/JS)</span>
+                                            <div class="skill-level">
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot"></span>
+                                                <span class="skill-dot"></span>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span class="skill-name">UI/UX設計基礎</span>
+                                            <div class="skill-level">
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot"></span>
+                                                <span class="skill-dot"></span>
+                                                <span class="skill-dot"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-category">
+                                    <h3>🗣 軟實力</h3>
+                                    <div class="skill-list">
+                                        <div class="skill-item">
+                                            <span class="skill-name">簡報與表達</span>
+                                            <div class="skill-level">
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot"></span>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span class="skill-name">團隊溝通協作</span>
+                                            <div class="skill-level">
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span class="skill-name">時間管理</span>
+                                            <div class="skill-level">
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot"></span>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span class="skill-name">問題解決能力</span>
+                                            <div class="skill-level">
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-category">
+                                    <h3>🌐 語言能力</h3>
+                                    <div class="skill-list">
+                                        <div class="skill-item">
+                                            <span class="skill-name">中文 (母語)</span>
+                                            <div class="skill-level">
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span class="skill-name">英文 (TOEIC 850)</span>
+                                            <div class="skill-level">
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot"></span>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span class="skill-name">日文 (N3)</span>
+                                            <div class="skill-level">
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot"></span>
+                                                <span class="skill-dot"></span>
+                                                <span class="skill-dot"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Section -->
+                        <div class="cv-section">
+                            <h2>常見問題</h2>
+                            <div class="faq-container">
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <span>作為新鮮人，你的優勢是什麼？</span>
+                                        <span class="faq-toggle">+</span>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>我的優勢在於學習力強和適應性高。透過實習和專案經驗，我已經具備了基礎的技術能力和商業思維。更重要的是，我對新技術保持高度好奇心，能夠快速學習並應用到實務中。我相信年輕就是最大的資本，有無限的成長可能。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <span>你如何在學校和實習中平衡學習與工作？</span>
+                                        <span class="faq-toggle">+</span>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>我會事先規劃時間，把重要的事情排在優先順序。在實習期間，我會利用課餘時間完成學校作業，週末則專注於實習專案。我發現實習經驗其實能幫助我更好地理解課堂理論，兩者是相輔相成的。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <span>畢業後的職涯規劃是什麼？</span>
+                                        <span class="faq-toggle">+</span>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>短期內我希望能在科技公司擔任產品經理或數據分析師，累積更多實務經驗。中長期目標是成為能夠用數據說故事的產品領導者，幫助公司做出更好的商業決策。我也希望能持續學習新技術，跟上科技業的快速變化。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <span>為什麼想要加入我們公司？</span>
+                                        <span class="faq-toggle">+</span>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>我很認同貴公司的產品理念和企業文化。從我的研究中發現，貴公司很重視員工的學習成長，也鼓勵創新思維，這正是我希望的工作環境。我相信在這樣的環境中，我能夠快速成長，同時為公司創造價值。</p>
+                                    </div>
+                                </div>
+
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <span>這個網頁內容是你自己寫的嗎？</span>
+                                        <span class="faq-toggle">+</span>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>內容由我與 <strong>好說</strong> 顧問共同訪談整理而成，所有內容皆為真實經歷。好說幫我把原本平淡的履歷重新包裝，突出了我的學習能力和成長潛力，讓面試官能看到我雖然是新鮮人，但已經具備了紮實的基礎和清晰的職涯方向。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Why This Role -->
+                        <div class="cv-section">
+                            <h2>為什麼選擇我？</h2>
+                            <div class="motivation-grid">
+                                <div class="motivation-card">
+                                    <div class="motivation-icon">💪</div>
+                                    <h3>學習力強</h3>
+                                    <p>快速掌握新技術，3個月內從零基礎到完成完整專案，不斷自我挑戰與成長</p>
+                                </div>
+                                <div class="motivation-card">
+                                    <div class="motivation-icon">🎯</div>
+                                    <h3>態度積極</h3>
+                                    <p>主動爭取實習機會，不怕挑戰與失敗，勇於嘗試新事物</p>
+                                </div>
+                                <div class="motivation-card">
+                                    <div class="motivation-icon">🤝</div>
+                                    <h3>團隊精神</h3>
+                                    <p>多次擔任團隊領導角色，善於溝通協調與激勵團隊</p>
+                                </div>
+                                <div class="motivation-card">
+                                    <div class="motivation-icon">👤</div>
+                                    <h3>使用者思維</h3>
+                                    <p>重視用戶體驗，會站在使用者角度思考產品設計</p>
+                                </div>
+                                <div class="motivation-card">
+                                    <div class="motivation-icon">📊</div>
+                                    <h3>數據敏感度</h3>
+                                    <p>具備資料分析能力，能用數據支撐決策判斷</p>
+                                </div>
+                                <div class="motivation-card">
+                                    <div class="motivation-icon">🚀</div>
+                                    <h3>成長潛力</h3>
+                                    <p>年輕有活力，適應力強，期待與團隊一起成長</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-
-                <div class="learning-item">
-                    <div class="learning-icon">💻</div>
-                    <div class="learning-content">
-                        <h3>自主學習程式開發</h3>
-                        <p class="period">2022 - 持續中</p>
-                        <p>透過線上課程自學前端與後端開發，完成8個個人專案，並在GitHub維護開源專案，累積實戰經驗</p>
-                    </div>
-                </div>
-
-                <div class="learning-item">
-                    <div class="learning-icon">🌍</div>
-                    <div class="learning-content">
-                        <h3>產品思維培養</h3>
-                        <p class="period">2023 - 持續中</p>
-                        <p>參加產品經理工作坊，學習用戶研究方法與產品設計思維，並將所學應用於實習與專案中</p>
-                    </div>
-                </div>
-
-                <div class="learning-item">
-                    <div class="learning-icon">📈</div>
-                    <div class="learning-content">
-                        <h3>業界實務接觸</h3>
-                        <p class="period">2023 - 2024</p>
-                        <p>積極參與企業參訪、實習計畫，深入了解科技產業運作模式，建立職場人脈網絡</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Me Section -->
-    <section class="why-me">
-        <div class="container">
-            <h2>為什麼選擇我？</h2>
-            <div class="reasons-grid">
-                <div class="reason-card">
-                    <div class="reason-number">1</div>
-                    <h3>學習力強</h3>
-                    <p>快速掌握新技術，3個月內從零基礎到完成完整專案</p>
-                </div>
-                <div class="reason-card">
-                    <div class="reason-number">2</div>
-                    <h3>態度積極</h3>
-                    <p>主動爭取實習機會，不怕挑戰與失敗，勇於嘗試</p>
-                </div>
-                <div class="reason-card">
-                    <div class="reason-number">3</div>
-                    <h3>團隊精神</h3>
-                    <p>多次擔任團隊領導角色，善於溝通協調與激勵團隊</p>
-                </div>
-                <div class="reason-card">
-                    <div class="reason-number">4</div>
-                    <h3>使用者思維</h3>
-                    <p>重視用戶體驗，會站在使用者角度思考產品設計</p>
-                </div>
-                <div class="reason-card">
-                    <div class="reason-number">5</div>
-                    <h3>數據敏感度</h3>
-                    <p>具備資料分析能力，能用數據支撐決策判斷</p>
-                </div>
-                <div class="reason-card">
-                    <div class="reason-number">6</div>
-                    <h3>成長潛力</h3>
-                    <p>年輕有活力，適應力強，期待與團隊一起成長</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section" id="contact">
+    <section class="cta-section">
         <div class="container">
-            <div class="cta-content">
-                <h2>期待與您相遇！</h2>
-                <p>我準備好踏入職場，為團隊帶來新鮮的想法與滿滿的熱情</p>
-                
-                <div class="availability-info">
-                    📅 可上班日期：2024年7月（畢業後立即可上班）<br>
-                    📍 期望地點：台北市 / 新北市<br>
-                    💼 期望職位：產品管理 / 數位行銷 / 資料分析<br>
-                    🎯 期望產業：科技業 / 新創公司
-                </div>
-                
-                <div class="contact-buttons">
-                    <a href="mailto:yaoting.chen@example.com" class="contact-btn">📧 Email聯繫</a>
-                    <a href="https://linkedin.com/in/yaoting-chen" class="contact-btn">💼 LinkedIn</a>
-                    <a href="tel:+886912345678" class="contact-btn">📱 電話聯繫</a>
-                    <a href="#" class="contact-btn">📄 下載履歷</a>
-                </div>
-            </div>
+            <h2>你的經歷也值得這樣的呈現</h2>
+            <p>30分鐘訪談，讓我們幫你打造專屬的職涯簡報頁</p>
+            <a href="#" class="cta-button">🚀 立即開始製作</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p class="footer-note">
-                本頁面展示了我的學習歷程與成長軌跡<br>
-                內容由我與 <span class="footer-brand">好說</span> 品牌顧問共同訪談整理，真實呈現我的經歷與想法
-            </p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">好說</div>
+                    <div class="tagline">幫你說清楚專業，談出更好薪水與錄取率</div>
+                    <div class="description">
+                        我們相信，只要你說得好，職涯的機會就會多很多。
+                        「好說」不是幫你說假話，而是幫你把原本就有的價值，
+                        用更有邏輯、更能打動人的方式，說出來。
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>服務項目</h4>
+                    <ul>
+                        <li><a href="#pricing">好說・輕版</a></li>
+                        <li><a href="#pricing">好說・標準版</a></li>
+                        <li><a href="#pricing">好說・急件版</a></li>
+                        <li><a href="#pricing">加購服務</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>聯絡我們</h4>
+                    <ul>
+                        <li><a href="https://line.me/R/ti/p/@25mincv">LINE@ 官方帳號</a></li>
+                        <li><a href="mailto:bless@25min.co">Email 聯繫</a></li>
+                        <li><a href="#faq">常見問題</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>關於好說</h4>
+                    <ul>
+                        <li><a href="#templates">模板展示</a></li>
+                        <li><a href="#process">服務流程</a></li>
+                        <li><a href="#benefits">服務效果</a></li>
+                    </ul>
+                </div>
+            </div>
             
-            <p style="font-size: 0.875rem; color: var(--text-light); margin-top: 20px;">
-                © 2024 陳雅婷 | 由好說製作
-            </p>
+            <div class="footer-bottom">
+                <p>&copy; 2024 好說 - 讓你說清楚，也讓對方想錄用你</p>
+            </div>
         </div>
     </footer>
 
     <script>
-        // Tab切換功能
-        function showTab(tabName) {
-            // 隱藏所有內容
-            const contents = document.querySelectorAll('.experience-content');
-            contents.forEach(content => {
-                content.classList.remove('active');
+        // Toggle between original and final content
+        function showContent(type) {
+            // Hide all content sections
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.remove('active');
             });
             
-            // 移除所有按鈕的active狀態
-            const buttons = document.querySelectorAll('.tab-button');
-            buttons.forEach(button => {
-                button.classList.remove('active');
+            // Remove active class from all buttons
+            document.querySelectorAll('.toggle-btn').forEach(btn => {
+                btn.classList.remove('active');
             });
             
-            // 顯示選中的內容
-            document.getElementById(tabName).classList.add('active');
+            // Show selected content
+            document.getElementById(type).classList.add('active');
             
-            // 設置按鈕的active狀態
+            // Add active class to clicked button
             event.target.classList.add('active');
         }
 
-        // Smooth Scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    const offset = 80;
-                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
-                    
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                }
+        // FAQ functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all other FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (item !== faqItem) {
+                        item.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current item
+                faqItem.classList.toggle('active');
             });
         });
 
-        // 結構化資料
-        const schemaData = {
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "陳雅婷",
-            "jobTitle": "應屆畢業生",
-            "description": "政治大學資訊管理系畢業，對數位產品與使用者體驗充滿熱情",
-            "url": window.location.href,
-            "sameAs": [
-                "https://linkedin.com/in/yaoting-chen",
-                "https://github.com/yaoting-chen"
-            ],
-            "alumniOf": {
-                "@type": "EducationalOrganization",
-                "name": "政治大學"
-            },
-            "knowsAbout": ["程式設計", "資料分析", "產品管理", "數位行銷"],
-            "hasOccupation": {
-                "@type": "Occupation",
-                "name": "應屆畢業生",
-                "skills": ["Python", "資料分析", "團隊合作", "學習能力"]
-            },
-            "award": ["創新創業競賽銀獎", "優秀實習生獎", "最佳設計獎"]
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
         };
 
-        const script = document.createElement('script');
-        script.type = 'application/ld+json';
-        script.text = JSON.stringify(schemaData);
-        document.head.appendChild(script);
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Add animation effects
+        document.querySelectorAll('.project-card, .motivation-card, .skill-category, .summary-card, .recommendation-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(el);
+        });
     </script>
 </body>
 </html>
