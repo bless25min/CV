@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="[姓名] - [職稱]專業工作者，專長於[核心專長]，致力於解決[主要解決的問題]">
-    <meta property="og:title" content="[姓名] - [職稱] | 個人品牌頁">
-    <meta property="og:description" content="擁有[X]年經驗的[職稱]，專注於[專業領域]">
-    <meta property="og:type" content="website">
-    <title>[姓名] - [職稱] | 個人品牌頁</title>
+    <meta name="description" content="李建宏 - 資深產品經理，5年SaaS產品經驗，專精用戶體驗設計與數據分析">
+    <meta property="og:title" content="李建宏 - 資深產品經理 | 好說個人品牌頁">
+    <meta property="og:description" content="5年SaaS產品經驗，帶領團隊成功推出3個產品，用戶成長超過50萬">
+    <meta property="og:type" content="profile">
+    <title>李建宏 - 資深產品經理 | 好說個人品牌頁</title>
     
     <style>
         /* Import Google Fonts */
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
         :root {
-            /* Professional Color Palette */
+            /* 好說品牌色彩 */
             --primary-color: #2563EB;
             --primary-dark: #1E40AF;
             --primary-light: #3B82F6;
@@ -23,7 +23,7 @@
             --warning-color: #F59E0B;
             --danger-color: #EF4444;
             
-            /* Neutral Colors */
+            /* 中性色彩 */
             --text-primary: #0F172A;
             --text-secondary: #475569;
             --text-light: #94A3B8;
@@ -32,25 +32,23 @@
             --bg-gray: #F1F5F9;
             --border-color: #E2E8F0;
             
-            /* Gradients */
+            /* 漸變色 */
             --gradient-primary: linear-gradient(135deg, #2563EB 0%, #1E40AF 100%);
             --gradient-accent: linear-gradient(135deg, #10B981 0%, #059669 100%);
-            --gradient-warm: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
             --gradient-surface: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
             
-            /* Shadows */
+            /* 陰影 */
             --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
             --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
             --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
             --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
             
-            /* Typography */
+            /* 字體 */
             --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             
-            /* Spacing */
+            /* 間距 */
             --container-max: 1100px;
             --section-padding: 80px;
-            --card-padding: 32px;
             --border-radius: 12px;
             --border-radius-lg: 20px;
         }
@@ -71,21 +69,16 @@
             -moz-osx-font-smoothing: grayscale;
         }
 
-        ::selection {
-            background-color: var(--primary-light);
-            color: white;
-        }
-
         .container {
             max-width: var(--container-max);
             margin: 0 auto;
             padding: 0 24px;
         }
 
-        /* Hero Section */
+        /* Header區域 */
         .hero {
             background: var(--gradient-surface);
-            padding: 100px 0 60px;
+            padding: 100px 0 80px;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -99,7 +92,7 @@
             right: 0;
             bottom: 0;
             background-image: 
-                radial-gradient(circle at 10% 20%, rgba(37, 99, 235, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 20% 50%, rgba(37, 99, 235, 0.05) 0%, transparent 50%),
                 radial-gradient(circle at 80% 80%, rgba(16, 185, 129, 0.05) 0%, transparent 50%);
             z-index: 0;
         }
@@ -117,7 +110,7 @@
             letter-spacing: -0.02em;
         }
 
-        .hero .job-title {
+        .hero .title {
             font-size: 1.5rem;
             color: var(--primary-color);
             font-weight: 600;
@@ -128,23 +121,11 @@
             font-size: 1.25rem;
             color: var(--text-secondary);
             max-width: 700px;
-            margin: 0 auto 24px;
+            margin: 0 auto 40px;
             font-weight: 400;
         }
 
-        .hero .value-proposition {
-            font-size: 1.125rem;
-            color: var(--accent-color);
-            font-weight: 600;
-            margin-bottom: 40px;
-            padding: 16px 32px;
-            background: rgba(16, 185, 129, 0.1);
-            border: 2px solid rgba(16, 185, 129, 0.2);
-            border-radius: 50px;
-            display: inline-block;
-        }
-
-        .hero .contact-info {
+        .contact-info {
             display: flex;
             justify-content: center;
             gap: 32px;
@@ -158,7 +139,6 @@
             gap: 8px;
             color: var(--text-secondary);
             text-decoration: none;
-            font-weight: 500;
             transition: color 0.3s ease;
         }
 
@@ -166,23 +146,10 @@
             color: var(--primary-color);
         }
 
-        /* Summary Section */
+        /* Summary區域 */
         .summary {
             padding: var(--section-padding) 0;
             background: var(--bg-light);
-            position: relative;
-        }
-
-        .summary::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 4px;
-            background: var(--gradient-primary);
-            border-radius: 2px;
         }
 
         .summary h2 {
@@ -210,7 +177,7 @@
 
         .summary-point {
             background: white;
-            padding: var(--card-padding);
+            padding: 32px;
             border-radius: var(--border-radius-lg);
             box-shadow: var(--shadow-md);
             position: relative;
@@ -237,19 +204,6 @@
 
         .summary-point:hover::before {
             transform: scaleY(1);
-        }
-
-        .summary-point .relevance-tag {
-            position: absolute;
-            top: 16px;
-            right: 16px;
-            background: var(--gradient-accent);
-            color: white;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-transform: uppercase;
         }
 
         .summary-point h3 {
@@ -300,7 +254,7 @@
             right: 20px;
         }
 
-        /* Timeline */
+        /* Timeline區域 */
         .timeline {
             padding: var(--section-padding) 0;
             background: var(--bg-white);
@@ -380,7 +334,7 @@
         .timeline-title {
             font-size: 1.375rem;
             font-weight: 700;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
             color: var(--text-primary);
         }
 
@@ -409,7 +363,7 @@
             font-weight: 600;
         }
 
-        /* Projects Section */
+        /* Projects區域 */
         .projects {
             padding: var(--section-padding) 0;
             background: var(--bg-light);
@@ -449,6 +403,22 @@
             color: white;
             position: relative;
             overflow: hidden;
+        }
+
+        .project-header::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 4s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(0.8); opacity: 0.5; }
+            50% { transform: scale(1.2); opacity: 0.8; }
         }
 
         .project-header h3 {
@@ -505,7 +475,6 @@
         .challenge h4 { color: var(--danger-color); }
         .solution h4 { color: var(--primary-color); }
         .impact h4 { color: var(--accent-color); }
-        .learning h4 { color: var(--warning-color); }
 
         .project-section p {
             color: var(--text-secondary);
@@ -524,21 +493,7 @@
             box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
         }
 
-        .learning-box {
-            background: var(--bg-light);
-            padding: 20px;
-            border-radius: var(--border-radius);
-            margin-top: 20px;
-            border-left: 3px solid var(--warning-color);
-        }
-
-        .learning-box p {
-            font-style: italic;
-            color: var(--text-secondary);
-            margin: 0;
-        }
-
-        /* FAQ Section */
+        /* FAQ區域 */
         .faq {
             padding: var(--section-padding) 0;
             background: var(--bg-white);
@@ -557,28 +512,8 @@
             margin: 0 auto;
         }
 
-        .faq-category {
-            font-size: 0.875rem;
-            color: var(--primary-color);
-            font-weight: 600;
-            margin: 40px 0 20px;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            display: flex;
-            align-items: center;
-            gap: 16px;
-        }
-
-        .faq-category::before,
-        .faq-category::after {
-            content: '';
-            flex: 1;
-            height: 1px;
-            background: var(--border-color);
-        }
-
         .faq-item {
-            background: white;
+            background: var(--bg-white);
             border: 2px solid var(--border-color);
             border-radius: var(--border-radius-lg);
             margin-bottom: 20px;
@@ -612,6 +547,7 @@
             font-size: 1.5rem;
             color: var(--primary-color);
             transition: transform 0.3s ease;
+            font-weight: 300;
         }
 
         .faq-answer {
@@ -641,7 +577,7 @@
         }
 
         /* Footer */
-        footer {
+        .footer {
             padding: 60px 0 40px;
             text-align: center;
             color: var(--text-secondary);
@@ -655,36 +591,18 @@
             line-height: 1.8;
         }
 
-        .footer-actions {
-            display: flex;
-            gap: 24px;
-            justify-content: center;
-            flex-wrap: wrap;
+        .footer-brand {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+            font-size: 1.125rem;
         }
 
-        .footer-actions a {
-            color: var(--primary-color);
-            text-decoration: none;
-            padding: 8px 20px;
-            border: 2px solid var(--primary-color);
-            border-radius: 50px;
-            transition: all 0.3s ease;
-            font-weight: 500;
-            font-size: 0.875rem;
-        }
-
-        .footer-actions a:hover {
-            background-color: var(--primary-color);
-            color: white;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
-        }
-
-        /* Responsive Design */
+        /* 響應式設計 */
         @media (max-width: 768px) {
             :root {
                 --section-padding: 60px;
-                --card-padding: 24px;
             }
 
             .container {
@@ -699,8 +617,10 @@
                 font-size: 2rem;
             }
 
-            .hero .tagline {
-                font-size: 1.125rem;
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 16px;
             }
 
             .summary-points,
@@ -725,34 +645,13 @@
                 left: 6px;
             }
 
-            .hero .contact-info {
-                flex-direction: column;
-                gap: 16px;
-            }
-
-            .footer-actions {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .footer-actions a {
-                width: 200px;
-                text-align: center;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 1.75rem;
-            }
-
-            .project-card {
-                max-width: 100%;
-            }
-
             .faq-question {
                 padding: 20px;
                 font-size: 1rem;
+            }
+
+            h2 {
+                font-size: 2rem !important;
             }
         }
     </style>
@@ -762,21 +661,19 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>👋 我是[姓名]</h1>
-                <div class="job-title">[職稱]</div>
-                <p class="tagline">擁有[X]年經驗的[領域]專家，專注於[核心專長]，致力於幫助企業[解決什麼問題]</p>
-                <div class="value-proposition">
-                    💡 我能解決的關鍵問題：[具體問題描述，例如：將產品開發週期縮短50%]
-                </div>
+                <h1>李建宏</h1>
+                <p class="title">資深產品經理</p>
+                <p class="tagline">5年SaaS產品經驗，專精用戶體驗設計與數據分析<br>帶領團隊成功推出3個產品，累積用戶超過50萬</p>
+                
                 <div class="contact-info">
-                    <a href="mailto:your.email@example.com" class="contact-item">
-                        📧 your.email@example.com
+                    <a href="mailto:leejianhong@example.com" class="contact-item">
+                        📧 leejianhong@example.com
                     </a>
-                    <a href="https://linkedin.com/in/yourprofile" class="contact-item">
+                    <a href="https://linkedin.com/in/leejianhong" class="contact-item">
                         💼 LinkedIn
                     </a>
                     <a href="tel:+886912345678" class="contact-item">
-                        📱 +886 912 345 678
+                        📱 0912-345-678
                     </a>
                 </div>
             </div>
@@ -787,26 +684,27 @@
     <section class="summary">
         <div class="container">
             <h2>我的核心價值</h2>
-            <p class="summary-subtitle">為什麼這份經歷剛好符合您的需求</p>
+            <p class="summary-subtitle">為什麼我是您團隊需要的產品經理</p>
+            
             <div class="summary-points">
                 <div class="summary-point">
-                    <span class="relevance-tag">核心能力</span>
-                    <h3>✅ 成果導向</h3>
-                    <p>曾帶領3個產品從0到1，上線後半年內用戶超過20萬，具備完整的產品開發與市場驗證經驗</p>
+                    <h3>✅ 數據驅動決策</h3>
+                    <p>善用 GA4、Mixpanel 分析用戶行為，將數據洞察轉化為產品策略，平均提升產品 KPI 30% 以上</p>
                 </div>
+                
                 <div class="summary-point">
-                    <span class="relevance-tag">跨域整合</span>
-                    <h3>✅ 技術橋接</h3>
-                    <p>熟悉Figma / JIRA / GA4等工具，能在技術與使用者間精準橋接，降低溝通成本</p>
+                    <h3>✅ 跨團隊協作</h3>
+                    <p>具備技術背景，能與工程、設計、行銷團隊順暢溝通，確保產品按時高品質交付</p>
                 </div>
+                
                 <div class="summary-point">
-                    <span class="relevance-tag">問題解決</span>
-                    <h3>✅ 複雜專案管理</h3>
-                    <p>最擅長解決「需求模糊 + 時程緊湊」的中型專案，從混亂中建立秩序</p>
+                    <h3>✅ 用戶體驗專精</h3>
+                    <p>深度理解 UX 設計原則，主導的產品改版將用戶留存率從 65% 提升至 85%</p>
                 </div>
             </div>
+            
             <p class="core-value">
-                我的核心價值是：用最小資源解決最痛的問題
+                我相信好的產品不只解決問題，更要創造價值。透過深度用戶研究和精準數據分析，我打造讓用戶愛不釋手的產品體驗。
             </p>
         </div>
     </section>
@@ -814,42 +712,46 @@
     <!-- Timeline Section -->
     <section class="timeline">
         <div class="container">
-            <h2>職涯歷程與成長</h2>
+            <h2>職涯發展歷程</h2>
+            
             <div class="timeline-container">
                 <div class="timeline-line"></div>
+                
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <div class="timeline-date">2022 - 現在</div>
-                        <div class="timeline-title">產品負責人</div>
-                        <div class="timeline-company">XYZ 新創</div>
-                        <p class="timeline-description">帶領4人團隊，負責SaaS產品線的規劃與執行，成功提升用戶留存率35%，並建立完整的產品開發流程</p>
+                        <div class="timeline-title">資深產品經理</div>
+                        <div class="timeline-company">TechFlow 科技</div>
+                        <p class="timeline-description">負責 B2B SaaS 平台產品線，管理 3 個產品模組，服務超過 1,000 家企業客戶。成功推動產品國際化，進軍東南亞市場。</p>
                         <div class="timeline-learning">
-                            <strong>關鍵學習：</strong>學會如何在資源有限下做優先級決策，這段經歷讓我更能理解商業價值與技術投入的平衡
+                            <strong>關鍵成就：</strong>主導產品架構重設，將系統效能提升 200%，客戶滿意度從 3.2 提升至 4.6 分
                         </div>
                     </div>
                 </div>
+                
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <div class="timeline-date">2020 - 2022</div>
-                        <div class="timeline-title">轉職產品經理</div>
-                        <div class="timeline-company">職涯轉型期</div>
-                        <p class="timeline-description">從工程師轉型，開始接觸SaaS產品設計，完成2個MVP產品的開發與上線，學習用戶研究與市場分析</p>
+                        <div class="timeline-title">產品經理</div>
+                        <div class="timeline-company">DataInsight 新創</div>
+                        <p class="timeline-description">從 0 到 1 打造數據分析平台，與創辦人密切合作定義產品方向。在資源有限下，成功建立 MVP 並獲得首批付費客戶。</p>
                         <div class="timeline-learning">
-                            <strong>轉職動機：</strong>發現自己更享受「定義問題」而非「解決問題」，決定往產品規劃發展
+                            <strong>創業學習：</strong>學會在不確定性中做決策，培養敏捷思維和快速驗證能力
                         </div>
                     </div>
                 </div>
+                
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <div class="timeline-date">2018 - 2020</div>
-                        <div class="timeline-title">後端工程師</div>
-                        <div class="timeline-company">ABC 科技</div>
-                        <p class="timeline-description">負責核心API開發，優化系統效能，將回應時間降低60%，奠定了扎實的技術基礎</p>
+                        <div class="timeline-date">2019 - 2020</div>
+                        <div class="timeline-title">前端工程師轉產品經理</div>
+                        <div class="timeline-company">職涯轉換期</div>
+                        <p class="timeline-description">從技術角色轉向產品角色，開始學習用戶研究、市場分析和商業思維。技術背景讓我能更好地與工程團隊協作。</p>
                         <div class="timeline-learning">
-                            <strong>技術基礎：</strong>這段工程師經歷讓我能更好地與技術團隊溝通，理解技術可行性與限制
+                            <strong>轉職動機：</strong>發現自己更享受「定義問題」而非「解決問題」，決定往產品規劃發展
                         </div>
                     </div>
                 </div>
@@ -860,82 +762,71 @@
     <!-- Projects Section -->
     <section class="projects">
         <div class="container">
-            <h2>精選專案與成就</h2>
+            <h2>精選專案成果</h2>
+            
             <div class="project-grid">
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>會員系統重構專案</h3>
-                        <div class="project-role">我的角色：專案負責人</div>
+                        <h3>企業級 SaaS 平台重構</h3>
+                        <div class="project-role">產品負責人</div>
                     </div>
                     <div class="project-content">
                         <div class="project-section challenge">
                             <h4>挑戰</h4>
-                            <p>原有系統無法支撐快速成長的用戶量，每月當機次數超過5次，且缺乏彈性擴充能力</p>
+                            <p>舊系統架構無法支撐快速成長的用戶量，客戶抱怨載入速度慢，流失率持續上升至 25%</p>
                         </div>
                         <div class="project-section solution">
                             <h4>解決方案</h4>
-                            <p>導入微服務架構，建立模組化的會員管理系統，並整合第三方登入，分階段遷移降低風險</p>
+                            <p>主導產品技術架構討論，規劃分階段重構計畫，同時維持服務不中斷。建立新的用戶體驗流程</p>
                         </div>
                         <div class="project-section impact">
                             <h4>成果</h4>
-                            <p>系統承載能力提升10倍，當機次數降為0，新功能開發時間縮短50%</p>
-                            <span class="impact-metric">用戶成長 +300%</span>
-                        </div>
-                        <div class="learning-box">
-                            <h4>關鍵學習</h4>
-                            <p>技術決策必須考慮未來2-3年的業務發展，而非只解決當下問題。分階段遷移是降低風險的關鍵</p>
+                            <p>系統效能提升 200%，用戶流失率降至 8%，客戶滿意度大幅提升</p>
+                            <span class="impact-metric">年營收成長 +40%</span>
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>數據驅動決策系統</h3>
-                        <div class="project-role">我的角色：產品策略制定</div>
+                        <h3>AI 驅動的用戶推薦系統</h3>
+                        <div class="project-role">產品策略制定</div>
                     </div>
                     <div class="project-content">
                         <div class="project-section challenge">
                             <h4>挑戰</h4>
-                            <p>團隊決策缺乏數據支撐，產品迭代方向不明確，經常憑感覺做決定</p>
+                            <p>用戶在平台上的參與度不高，平均停留時間僅 3 分鐘，轉換率低於業界標準</p>
                         </div>
                         <div class="project-section solution">
                             <h4>解決方案</h4>
-                            <p>建立完整的數據追蹤體系，整合GA4與內部數據，建立即時Dashboard與自動化報告</p>
+                            <p>引入機器學習算法，建立個人化推薦系統，同時優化用戶介面的資訊架構</p>
                         </div>
                         <div class="project-section impact">
                             <h4>成果</h4>
-                            <p>決策效率提升，產品迭代週期從2個月縮短至3週，功能成功率提升40%</p>
-                            <span class="impact-metric">ROI +45%</span>
-                        </div>
-                        <div class="learning-box">
-                            <h4>關鍵學習</h4>
-                            <p>數據不是答案，而是幫助我們問對問題的工具。重要的是建立數據文化，不是技術</p>
+                            <p>用戶停留時間延長至 12 分鐘，轉換率提升 65%</p>
+                            <span class="impact-metric">月活躍用戶 +80%</span>
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>用戶體驗優化計畫</h3>
-                        <div class="project-role">我的角色：跨部門協調者</div>
+                        <h3>B2B 客戶成功平台</h3>
+                        <div class="project-role">跨團隊協調者</div>
                     </div>
                     <div class="project-content">
                         <div class="project-section challenge">
                             <h4>挑戰</h4>
-                            <p>新用戶流失率高達60%，onboarding體驗不佳，客服詢問量暴增</p>
+                            <p>客服團隊工作負荷過重，無法即時回應客戶需求，客戶滿意度持續下滑</p>
                         </div>
                         <div class="project-section solution">
                             <h4>解決方案</h4>
-                            <p>重新設計用戶旅程，簡化註冊流程，加入互動式導覽與即時幫助系統</p>
+                            <p>設計自助服務平台，整合知識庫、工單系統和即時客服功能</p>
                         </div>
                         <div class="project-section impact">
                             <h4>成果</h4>
-                            <p>新用戶7日留存率從40%提升至75%，客服詢問量減少30%</p>
-                            <span class="impact-metric">轉換率 +85%</span>
-                        </div>
-                        <div class="learning-box">
-                            <h4>關鍵學習</h4>
-                            <p>最好的設計往往是「看不見」的設計，讓用戶自然地完成任務而不感到困惑</p>
+                            <p>客服工作量減少 50%，客戶問題解決時間從 24 小時縮短至 2 小時</p>
+                            <span class="impact-metric">客戶滿意度 4.6/5.0</span>
                         </div>
                     </div>
                 </div>
@@ -947,46 +838,45 @@
     <section class="faq">
         <div class="container">
             <h2>常見問題</h2>
+            
             <div class="faq-container">
-                <div class="faq-category">關於我的職涯選擇</div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>為什麼選擇轉職？</span>
+                        <span>為什麼從工程師轉為產品經理？</span>
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>我在前一份工作中累積了豐富的產品經驗，現在希望能在更大的舞台上發揮影響力。我特別想要加入一個重視用戶體驗且有國際視野的團隊，將我的經驗應用在更具挑戰性的產品上。</p>
+                        <p>在擔任前端工程師期間，我發現自己更著迷於「為什麼要做這個功能」而非「如何實現」。我喜歡站在用戶角度思考問題，也對商業邏輯充滿好奇。技術背景讓我能更好地與工程團隊協作，成為技術與商業之間的橋樑。</p>
                     </div>
                 </div>
-
+                
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>如何處理團隊衝突？</span>
+                        <span>如何處理技術團隊與業務團隊的衝突？</span>
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>我相信衝突來自於目標不一致或溝通不足。我會先釐清各方的需求和顧慮，找出共同目標，然後提出能平衡各方利益的解決方案。例如在會員系統專案中，開發團隊和設計團隊對功能優先級有分歧，我透過數據分析和用戶訪談，幫助團隊達成共識。</p>
+                        <p>我會先深入了解雙方的核心訴求，找出共同目標。通常衝突源於溝通不足或目標不一致。我會主持跨部門會議，用數據說話，讓大家回到「對用戶最有價值」的判斷基準上。我的技術背景讓工程師信任我，商業sense 讓業務團隊認同我。</p>
                     </div>
                 </div>
-
-                <div class="faq-category">關於未來發展</div>
+                
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>期待的團隊文化是什麼？</span>
+                        <span>對於產品決策，你如何平衡數據與直覺？</span>
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>我希望加入一個「敢於實驗、快速學習」的團隊。我相信最好的產品來自於不斷的嘗試與調整，而非一開始就追求完美。我也重視透明溝通和互相支持的氛圍，讓每個人都能發揮所長。</p>
+                        <p>我相信數據是決策的基礎，但不是唯一依據。數據告訴我們「什麼發生了」，但需要結合用戶訪談和市場洞察才能理解「為什麼」。我會建立假設，用小規模測試驗證，再根據結果調整策略。直覺幫助我提出假設，數據幫助我驗證或推翻它。</p>
                     </div>
                 </div>
-
+                
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>對未來職涯的規劃？</span>
+                        <span>未來 3-5 年的職涯規劃？</span>
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>短期內，我希望深化在數據驅動產品開發的能力，並學習更多關於AI在產品中的應用。中長期來看，我想成為能夠從0到1打造成功產品的產品領導者，並培育更多優秀的產品人才。</p>
+                        <p>短期內，我希望在更大規模的產品上發揮影響力，挑戰更複雜的商業問題。中長期來看，我想成為能夠從 0 到 1 打造成功產品的產品領導者，並培育更多優秀的產品人才。我也對 AI 在產品中的應用很有興趣，希望能在這個領域深耕。</p>
                     </div>
                 </div>
             </div>
@@ -994,48 +884,45 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
             <p class="footer-content">
-                本頁內容由我與品牌顧問共同訪談、整理與製作完成<br>
-                內容均來自我真實的專案經歷與實務操作分享
+                此頁面內容由我與 <span class="footer-brand">好說</span> 品牌顧問共同訪談整理完成<br>
+                所有專案經歷與成果數據均為真實，歡迎進一步了解與驗證
             </p>
             
-            <div class="footer-actions">
-                <a href="#" onclick="window.print(); return false;">🖨 列印版本</a>
-                <a href="#">🌐 English Version</a>
-                <a href="#">📄 下載PDF履歷</a>
-            </div>
+            <p style="font-size: 0.875rem; color: var(--text-light);">
+                © 2024 李建宏 | 由好說製作
+            </p>
         </div>
     </footer>
 
     <script>
-        // FAQ Toggle
+        // FAQ 功能
         document.querySelectorAll('.faq-question').forEach(question => {
             question.addEventListener('click', () => {
                 const faqItem = question.parentElement;
                 const isActive = faqItem.classList.contains('active');
                 
-                // Close all other FAQ items
+                // 關閉其他項目
                 document.querySelectorAll('.faq-item').forEach(item => {
                     if (item !== faqItem) {
                         item.classList.remove('active');
                     }
                 });
                 
-                // Toggle current item
+                // 切換當前項目
                 faqItem.classList.toggle('active');
             });
         });
 
-        // Smooth Scroll
+        // 平滑滾動
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    const offset = 80;
-                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - 80;
                     
                     window.scrollTo({
                         top: targetPosition,
@@ -1045,53 +932,29 @@
             });
         });
 
-        // Add animation effects
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe cards for animation
-        document.querySelectorAll('.summary-point, .timeline-item, .project-card').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
-            observer.observe(el);
-        });
-
-        // Schema.org structured data
+        // 結構化資料
         const schemaData = {
             "@context": "https://schema.org",
             "@type": "Person",
-            "name": "[姓名]",
-            "jobTitle": "[職稱]",
-            "description": "[個人簡介]",
+            "name": "李建宏",
+            "jobTitle": "資深產品經理",
+            "description": "5年SaaS產品經驗的資深產品經理，專精用戶體驗設計與數據分析",
             "url": window.location.href,
             "sameAs": [
-                "https://linkedin.com/in/[profile]",
-                "https://github.com/[username]"
+                "https://linkedin.com/in/leejianhong"
             ],
-            "knowsAbout": ["產品管理", "使用者體驗", "數據分析"],
+            "knowsAbout": ["產品管理", "用戶體驗設計", "數據分析", "敏捷開發"],
             "hasOccupation": {
                 "@type": "Occupation",
-                "name": "[職稱]",
+                "name": "產品經理",
                 "occupationalCategory": "15-1199.00",
-                "skills": ["敏捷開發", "數據分析", "團隊領導"]
+                "skills": ["產品策略", "用戶研究", "數據分析", "跨團隊協作"]
             },
             "workExample": [
                 {
                     "@type": "CreativeWork",
-                    "name": "會員系統重構專案",
-                    "description": "將系統承載能力提升10倍"
+                    "name": "企業級 SaaS 平台重構",
+                    "description": "主導產品架構重設，系統效能提升200%"
                 }
             ]
         };
