@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="好說 - 幫你說清楚專業，談出更好薪水與錄取率。30分鐘訪談，打造讓HR秒懂的一頁職涯簡報。">
-    <meta property="og:title" content="好說 - 讓你說清楚，也讓對方想錄用你">
-    <meta property="og:description" content="幫你把職涯說得有邏輯、有說服力的一頁簡報">
+    <meta name="description" content="好說｜一頁職涯簡報，幫你說清楚專業、談出薪水與錄取率。30分鐘訪談，打造讓HR秒懂的職涯故事。">
+    <meta property="og:title" content="好說｜一頁職涯簡報，幫你說清楚專業、談出薪水與錄取率">
+    <meta property="og:description" content="幫你整理職涯成果與專案故事，轉化成一頁說服HR與主管的簡報頁，提升面試與加薪機會">
     <meta property="og:type" content="website">
-    <title>好說 - 讓你說清楚，也讓對方想錄用你</title>
+    <meta property="og:url" content="https://github.com/bless25min/CV">
+    <title>好說｜一頁職涯簡報，幫你說清楚專業、談出薪水與錄取率</title>
     
     <style>
         /* Import Google Fonts */
@@ -36,7 +37,6 @@
             --gradient-primary: linear-gradient(135deg, #2563EB 0%, #10B981 100%);
             --gradient-warm: linear-gradient(135deg, #F59E0B 0%, #DC2626 100%);
             --gradient-success: linear-gradient(135deg, #10B981 0%, #059669 100%);
-            --gradient-hero: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             
             /* Shadows */
             --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -51,8 +51,6 @@
             /* Spacing */
             --container-max: 1200px;
             --section-padding: 100px;
-            --border-radius: 16px;
-            --border-radius-lg: 24px;
         }
 
         * {
@@ -69,7 +67,6 @@
             background-color: var(--bg-white);
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
-            overflow-x: hidden;
         }
 
         ::selection {
@@ -170,10 +167,9 @@
         /* Hero Section */
         .hero {
             padding: calc(80px + 120px) 0 120px;
-            background: var(--gradient-hero);
+            background: linear-gradient(135deg, #F8FAFC 0%, #E2E8F0 100%);
             position: relative;
             overflow: hidden;
-            color: white;
         }
 
         .hero::before {
@@ -183,92 +179,28 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: 
-                radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+            background-image: 
+                radial-gradient(circle at 20% 20%, rgba(37, 99, 235, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
             z-index: 0;
-        }
-
-        /* 浮動動畫元素 */
-        .floating-elements {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            z-index: 1;
-        }
-
-        .floating-element {
-            position: absolute;
-            opacity: 0.1;
-            animation: float 20s ease-in-out infinite;
-        }
-
-        .floating-element:nth-child(1) {
-            top: 10%;
-            left: 10%;
-            width: 80px;
-            height: 80px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 50%;
-            animation-delay: 0s;
-        }
-
-        .floating-element:nth-child(2) {
-            top: 60%;
-            right: 15%;
-            width: 120px;
-            height: 120px;
-            background: rgba(255, 255, 255, 0.15);
-            border-radius: 30% 70% 70% 30%;
-            animation-delay: -7s;
-        }
-
-        .floating-element:nth-child(3) {
-            bottom: 20%;
-            left: 20%;
-            width: 100px;
-            height: 100px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            animation-delay: -14s;
-        }
-
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0) rotate(0deg);
-            }
-            25% {
-                transform: translateY(-20px) rotate(90deg);
-            }
-            50% {
-                transform: translateY(20px) rotate(180deg);
-            }
-            75% {
-                transform: translateY(-10px) rotate(270deg);
-            }
         }
 
         .hero-content {
             position: relative;
-            z-index: 2;
+            z-index: 1;
             text-align: center;
         }
 
         .hero-badge {
             display: inline-block;
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            color: white;
+            background: rgba(37, 99, 235, 0.1);
+            color: var(--primary-color);
             padding: 8px 24px;
             border-radius: 50px;
             font-size: 0.875rem;
             font-weight: 600;
             margin-bottom: 32px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            animation: fadeInUp 0.8s ease-out;
+            border: 1px solid rgba(37, 99, 235, 0.2);
         }
 
         .hero h1 {
@@ -277,18 +209,22 @@
             margin-bottom: 24px;
             letter-spacing: -0.03em;
             line-height: 1.1;
-            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        .hero .highlight {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .hero .subtitle {
             font-size: clamp(1.25rem, 3vw, 1.75rem);
+            color: var(--text-secondary);
             margin-bottom: 48px;
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
-            font-weight: 300;
-            opacity: 0.95;
-            animation: fadeInUp 0.8s ease-out 0.4s both;
+            font-weight: 400;
         }
 
         .hero-ctas {
@@ -297,19 +233,18 @@
             justify-content: center;
             flex-wrap: wrap;
             margin-bottom: 80px;
-            animation: fadeInUp 0.8s ease-out 0.6s both;
         }
 
         .cta-primary {
-            background: white;
-            color: var(--primary-color);
+            background: var(--gradient-primary);
+            color: white;
             padding: 20px 48px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 700;
             font-size: 1.125rem;
             transition: all 0.3s ease;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: var(--shadow-brand);
             display: inline-flex;
             align-items: center;
             gap: 8px;
@@ -317,14 +252,14 @@
 
         .cta-primary:hover {
             transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 25px 50px -15px rgba(37, 99, 235, 0.4);
         }
 
         .cta-secondary {
             background: transparent;
-            color: white;
+            color: var(--text-primary);
             padding: 20px 48px;
-            border: 2px solid rgba(255, 255, 255, 0.5);
+            border: 2px solid var(--border-color);
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
@@ -333,26 +268,23 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            backdrop-filter: blur(10px);
         }
 
         .cta-secondary:hover {
-            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--primary-color);
+            color: var(--primary-color);
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            box-shadow: var(--shadow-md);
         }
 
         .hero-preview {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(20px);
-            border-radius: var(--border-radius-lg);
+            background: white;
+            border-radius: 20px;
             padding: 40px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            box-shadow: var(--shadow-xl);
             margin: 0 auto;
             max-width: 600px;
             text-align: left;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            animation: fadeInUp 0.8s ease-out 0.8s both;
         }
 
         .preview-tag {
@@ -370,29 +302,18 @@
             font-size: 1.5rem;
             font-weight: 700;
             margin-bottom: 16px;
-            color: white;
+            color: var(--text-primary);
         }
 
         .preview-content {
-            color: rgba(255, 255, 255, 0.9);
+            color: var(--text-secondary);
             line-height: 1.7;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
         }
 
         /* Benefits Section */
         .benefits {
             padding: var(--section-padding) 0;
-            background: var(--bg-light);
+            background: var(--bg-white);
         }
 
         .section-header {
@@ -405,7 +326,6 @@
             font-weight: 800;
             margin-bottom: 24px;
             letter-spacing: -0.02em;
-            color: var(--text-primary);
         }
 
         .section-header .subtitle {
@@ -422,15 +342,13 @@
         }
 
         .benefit-card {
-            background: white;
+            background: var(--bg-light);
             padding: 48px 40px;
-            border-radius: var(--border-radius-lg);
+            border-radius: 24px;
             text-align: center;
             transition: all 0.4s ease;
             position: relative;
             overflow: hidden;
-            border: 1px solid var(--border-color);
-            box-shadow: var(--shadow-sm);
         }
 
         .benefit-card::before {
@@ -448,6 +366,7 @@
         .benefit-card:hover {
             transform: translateY(-8px);
             box-shadow: var(--shadow-xl);
+            background: white;
         }
 
         .benefit-card:hover::before {
@@ -458,12 +377,6 @@
             font-size: 4rem;
             margin-bottom: 24px;
             display: inline-block;
-            animation: bounce 2s ease-in-out infinite;
-        }
-
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
         }
 
         .benefit-card h3 {
@@ -482,7 +395,7 @@
         /* Process Section */
         .process {
             padding: var(--section-padding) 0;
-            background: var(--bg-white);
+            background: var(--bg-light);
         }
 
         .process-timeline {
@@ -527,22 +440,15 @@
             position: relative;
             z-index: 2;
             box-shadow: 0 0 0 8px rgba(37, 99, 235, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .process-step:hover .step-number {
-            transform: scale(1.1);
-            box-shadow: 0 0 0 12px rgba(37, 99, 235, 0.15);
         }
 
         .step-content {
             flex: 1;
             background: white;
             padding: 32px;
-            border-radius: var(--border-radius-lg);
+            border-radius: 20px;
             box-shadow: var(--shadow-md);
             transition: all 0.3s ease;
-            border: 1px solid var(--border-color);
         }
 
         .step-content:hover {
@@ -565,7 +471,7 @@
         /* Showcase Section */
         .showcase {
             padding: var(--section-padding) 0;
-            background: var(--bg-light);
+            background: var(--bg-white);
         }
 
         .showcase-grid {
@@ -577,11 +483,10 @@
 
         .showcase-card {
             background: white;
-            border-radius: var(--border-radius-lg);
+            border-radius: 20px;
             overflow: hidden;
             box-shadow: var(--shadow-lg);
             transition: all 0.4s ease;
-            border: 1px solid var(--border-color);
         }
 
         .showcase-card:hover {
@@ -648,7 +553,7 @@
         /* Pricing Section */
         .pricing {
             padding: var(--section-padding) 0;
-            background: var(--bg-white);
+            background: var(--bg-light);
         }
 
         .pricing-grid {
@@ -661,13 +566,12 @@
 
         .pricing-card {
             background: white;
-            border-radius: var(--border-radius-lg);
+            border-radius: 24px;
             padding: 48px 32px;
             text-align: center;
             position: relative;
             transition: all 0.4s ease;
-            border: 2px solid var(--border-color);
-            box-shadow: var(--shadow-sm);
+            border: 2px solid transparent;
         }
 
         .pricing-card.featured {
@@ -778,7 +682,7 @@
         /* FAQ Section */
         .faq {
             padding: var(--section-padding) 0;
-            background: var(--bg-light);
+            background: var(--bg-white);
         }
 
         .faq-container {
@@ -789,7 +693,7 @@
         .faq-item {
             background: white;
             border: 2px solid var(--border-color);
-            border-radius: var(--border-radius);
+            border-radius: 16px;
             margin-bottom: 20px;
             overflow: hidden;
             transition: all 0.3s ease;
@@ -1127,8 +1031,8 @@
         <nav class="container">
             <a href="#" class="logo">好說</a>
             <div class="nav-links">
-                <a href="#benefits">服務效果</a>
-                <a href="#process">製作流程</a>
+                <a href="#benefits">為什麼要用好說</a>
+                <a href="#process">使用流程</a>
                 <a href="#showcase">成果展示</a>
                 <a href="#pricing">方案價格</a>
                 <a href="#faq">常見問題</a>
@@ -1144,39 +1048,35 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="floating-elements">
-            <div class="floating-element"></div>
-            <div class="floating-element"></div>
-            <div class="floating-element"></div>
-        </div>
         <div class="container">
             <div class="hero-content">
                 <div class="hero-badge">✨ 幫你說清楚專業，談出更好薪水與錄取率</div>
                 
                 <h1>
-                    讓你說清楚<br>
-                    也讓對方想錄用你
+                    用一頁職涯簡報<br>
+                    <span class="highlight">幫你讓HR快速推薦、主管記住你</span>
                 </h1>
                 
                 <p class="subtitle">
-                    幫你把職涯說得有邏輯、有說服力的一頁簡報
+                    用AI + 訪談，整理你的職涯故事和專案成果<br>
+                    幫你從混亂經歷中整理出價值邏輯，變成說服HR與主管的簡報格式
                 </p>
                 
                 <div class="hero-ctas">
                     <a href="#pricing" class="cta-primary">
-                        🚀 立即製作我的好說簡報
+                        🚀 開始製作我的好說簡報頁
                     </a>
-                    <a href="#showcase" class="cta-secondary">
-                        👀 看看別人怎麼說
+                    <a href="#contact" class="cta-secondary">
+                        💬 免費諮詢我適不適合
                     </a>
                 </div>
                 
                 <div class="hero-preview">
-                    <div class="preview-tag">⚡ 5天交付</div>
+                    <div class="preview-tag">⚡ 從履歷到簡報頁</div>
                     <div class="preview-title">這就是你的專業簡報頁面</div>
                     <div class="preview-content">
                         30分鐘訪談後，我們把你的職涯經驗整理成一頁讓HR秒懂的專業簡報。
-                        <strong>說清楚你做過什麼，HR就知道該不該錄用你。</strong>
+                        <strong>履歷列一堆，說不出來就等於沒說；我們幫你說得清楚、好、讓人願意回應</strong>
                     </div>
                 </div>
             </div>
@@ -1188,26 +1088,26 @@
         <div class="container">
             <div class="section-header">
                 <h2>為什麼要用好說？</h2>
-                <p class="subtitle">因為說得好，機會就會多很多</p>
+                <p class="subtitle">履歷列一堆，說不出來就等於沒說</p>
             </div>
             
             <div class="benefits-grid">
                 <div class="benefit-card">
-                    <div class="benefit-icon">💪</div>
-                    <h3>面試更有信心</h3>
-                    <p>把你的專業整理得有條理，面試時不再手足無措，知道該強調什麼重點</p>
+                    <div class="benefit-icon">🎯</div>
+                    <h3>提升面試成功率</h3>
+                    <p>把你的專業整理得有條理，面試時不再手足無措，知道該強調什麼重點，讓面試官快速理解你的價值</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>幫你談薪有底氣</h3>
+                    <p>清楚展示你的專案成果和價值貢獻，讓你在薪資談判時有具體的論述基礎，不再心虛</p>
                 </div>
                 
                 <div class="benefit-card">
                     <div class="benefit-icon">👥</div>
-                    <h3>HR更願意內推</h3>
-                    <p>一頁就看懂你的價值，HR推薦給主管時有憑有據，不怕被問倒</p>
-                </div>
-                
-                <div class="benefit-card">
-                    <div class="benefit-icon">👨‍💼</div>
-                    <h3>老闆看得懂你能幹嘛</h3>
-                    <p>主管時間寶貴，只看得懂整理過的東西。讓決策者快速理解你的價值</p>
+                    <h3>HR願意推，主管容易記得你</h3>
+                    <p>一頁就看懂你的價值，HR推薦給主管時有憑有據，主管看得懂你能幹嘛，不怕被問倒</p>
                 </div>
             </div>
         </div>
@@ -1217,7 +1117,7 @@
     <section class="process" id="process">
         <div class="container">
             <div class="section-header">
-                <h2>超簡單，只要做3件事</h2>
+                <h2>這一頁怎麼幫你</h2>
                 <p class="subtitle">我們把複雜的事情簡單化，你只需要配合就好</p>
             </div>
             
@@ -1234,15 +1134,39 @@
                     <div class="step-number">2</div>
                     <div class="step-content">
                         <h3>選方案 + 付款</h3>
-                        <p>支援信用卡或 LINE Pay，付款後立即開始製作流程。透明定價，沒有隱藏費用</p>
+                        <p>支援信用卡付款，付款後立即開始製作流程。透明定價，沒有隱藏費用</p>
                     </div>
                 </div>
                 
                 <div class="process-step">
                     <div class="step-number">3</div>
                     <div class="step-content">
-                        <h3>接受訪談／收件交付簡報頁</h3>
-                        <p>30分鐘電話訪談挖掘你的亮點，5天內交付專業簡報頁。保證讓你滿意</p>
+                        <h3>預約時間 or 收錄訪談問題</h3>
+                        <p>我們會根據你的需求安排訪談時間，或提供線上問卷讓你填寫</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>AI與顧問整理內容</h3>
+                        <p>使用AI初步整理，再由專業顧問精修，確保內容邏輯清晰、表達有力</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>交付頁面＋PDF版</h3>
+                        <p>提供網頁版和PDF版本，方便你在不同場合使用</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>多種使用方式</h3>
+                        <p>可貼在履歷、LinkedIn、面試時出示、甚至在談薪時展示你的專業價值</p>
                     </div>
                 </div>
             </div>
@@ -1253,20 +1177,20 @@
     <section class="showcase" id="showcase">
         <div class="container">
             <div class="section-header">
-                <h2>客戶怎麼說？</h2>
-                <p class="subtitle">真實的成果，看得見的改變</p>
+                <h2>成果展示</h2>
+                <p class="subtitle">看看我們如何幫助不同領域的專業者</p>
             </div>
             
             <div class="showcase-grid">
                 <div class="showcase-card">
                     <div class="showcase-image">📊</div>
                     <div class="showcase-content">
-                        <div class="client-name">數據分析師 王先生</div>
+                        <div class="client-name">數據分析師</div>
                         <div class="testimonial">
-                            "我花30分鐘做了這一頁，HR秒懂我在幹嘛，面試邀約也多了。"
+                            "終於能清楚說出我的專業價值，不再只是列出用過的工具"
                         </div>
                         <div class="result">
-                            📈 結果：3週內獲得5個面試機會，成功轉職到理想公司
+                            💡 重點：將技術經驗轉化為商業價值陳述
                         </div>
                     </div>
                 </div>
@@ -1274,12 +1198,12 @@
                 <div class="showcase-card">
                     <div class="showcase-image">🎨</div>
                     <div class="showcase-content">
-                        <div class="client-name">產品設計師 李小姐</div>
+                        <div class="client-name">UI/UX設計師</div>
                         <div class="testimonial">
-                            "用了好說，終於知道我自己原來有那麼多亮點。結果第二次面試就上了！"
+                            "用了好說，終於知道怎麼表達設計思維和解決問題的過程"
                         </div>
                         <div class="result">
-                            🎯 結果：薪資談判成功，比原本期望高出25%
+                            🎯 重點：展示設計思考過程和用戶體驗改善成果
                         </div>
                     </div>
                 </div>
@@ -1287,12 +1211,12 @@
                 <div class="showcase-card">
                     <div class="showcase-image">💻</div>
                     <div class="showcase-content">
-                        <div class="client-name">軟體工程師 陳先生</div>
+                        <div class="client-name">軟體工程師</div>
                         <div class="testimonial">
-                            "說不清楚自己做過什麼？用好說幫你整理成一頁，讓主管記住你。"
+                            "不再只是列技術清單，而是展示我如何用技術解決實際問題"
                         </div>
                         <div class="result">
-                            🚀 結果：被獵頭主動聯繫，成功轉職到頂尖科技公司
+                            🚀 重點：從技術實作轉為問題解決導向的表達
                         </div>
                     </div>
                 </div>
@@ -1304,28 +1228,29 @@
     <section class="pricing" id="pricing">
         <div class="container">
             <div class="section-header">
-                <h2>選擇適合你的方案</h2>
-                <p class="subtitle">不同需求，不同深度，都能讓你說得更好</p>
+                <h2>方案與價格比較</h2>
+                <p class="subtitle">選擇適合你的需求，不同深度，都能讓你說得更好</p>
             </div>
             
             <div class="pricing-grid">
                 <div class="pricing-card">
-                    <div class="plan-name">✍️ 好說·輕版</div>
+                    <div class="plan-name">🧠 好說・輕版</div>
                     <div class="price">
                         <span class="currency">NT$</span>
                         <span class="amount">980</span>
                     </div>
                     <ul class="pricing-features">
-                        <li>提供履歷 → AI生成草稿版簡報頁</li>
+                        <li>AI自動生成草稿版簡報頁</li>
                         <li>基本版面設計</li>
                         <li>24小時內交付</li>
                         <li>適合緊急面試需求</li>
+                        <li>HTML頁面格式</li>
                     </ul>
                     <a href="#contact" class="pricing-button">選擇輕版</a>
                 </div>
                 
                 <div class="pricing-card featured">
-                    <div class="plan-name">🧠 好說·標準版</div>
+                    <div class="plan-name">✍️ 好說・標準版</div>
                     <div class="price">
                         <span class="currency">NT$</span>
                         <span class="amount">5,000</span>
@@ -1336,13 +1261,14 @@
                         <li>專業頁面設計</li>
                         <li>5天內完整交付</li>
                         <li>一次免費修改</li>
+                        <li>HTML + PDF 雙格式</li>
                         <li>適合多數轉職者</li>
                     </ul>
                     <a href="#contact" class="pricing-button">選擇標準版</a>
                 </div>
                 
                 <div class="pricing-card">
-                    <div class="plan-name">🚀 好說·急件版</div>
+                    <div class="plan-name">⚡ 好說・急件版</div>
                     <div class="price">
                         <span class="currency">NT$</span>
                         <span class="amount">7,500</span>
@@ -1350,17 +1276,18 @@
                     <ul class="pricing-features">
                         <li>45分鐘深度訪談</li>
                         <li>48小時內急件交付</li>
+                        <li>專業顧問一對一精修</li>
                         <li>加送模擬問答建議</li>
                         <li>優先客服支援</li>
-                        <li>適合快速轉職、外商面試</li>
+                        <li>HTML + PDF 雙格式</li>
+                        <li>適合急轉職、外商面試</li>
                     </ul>
                     <a href="#contact" class="pricing-button">選擇急件版</a>
                 </div>
             </div>
             
             <div style="text-align: center; margin-top: 60px; color: var(--text-secondary);">
-                <p>💡 可加購：PDF導出、英文版、FAQ客製化、額外修改</p>
-                <p><strong>推薦朋友成功下單，你我都享 NT$500 折扣</strong></p>
+                <p>💡 可加購：英文版、FAQ客製化、額外修改、年度更新</p>
             </div>
         </div>
     </section>
@@ -1369,38 +1296,68 @@
     <section class="faq" id="faq">
         <div class="container">
             <div class="section-header">
-                <h2>還有疑問嗎？</h2>
+                <h2>常見問題</h2>
                 <p class="subtitle">最常被問的問題，一次解答</p>
             </div>
             
             <div class="faq-container">
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>這頁真的有效嗎？HR會怎麼看？</span>
+                        <span>為什麼不是履歷而是一頁簡報？</span>
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>非常有效！HR每天看上百份履歷，最喜歡一目了然的整理。我們的客戶面試成功率提升超過60%，因為HR終於看得懂他們的價值了。</p>
+                        <p>履歷是列點，我們是說故事。履歷告訴HR你做過什麼，我們告訴HR你能幫公司解決什麼問題。一個是過去的經歷，一個是未來的價值。簡報格式讓人更容易理解你的邏輯和思維。</p>
                     </div>
                 </div>
                 
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>我沒什麼特別經驗，也能做嗎？</span>
+                        <span>HR會怎麼看這頁？會覺得浮誇嗎？</span>
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>當然可以！每個人都有亮點，只是你可能沒發現。我們最擅長挖掘你自己都不知道的價值點，把平凡的經歷包裝成有說服力的故事。</p>
+                        <p>完全不會！HR每天看上百份履歷，最喜歡一目了然的整理。我們的內容都是基於你的真實經歷，只是用更有邏輯的方式呈現。HR反而會覺得你很用心，也更容易向主管推薦。</p>
                     </div>
                 </div>
                 
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>跟一般履歷有什麼不同？</span>
+                        <span>我講不出來內容怎麼辦？</span>
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>履歷是列點，我們是說故事。履歷告訴HR你做過什麼，我們告訴HR你能幫公司解決什麼問題。一個是過去，一個是未來價值。</p>
+                        <p>這正是我們的專業！我們會透過引導式訪談，幫你挖掘出連自己都不知道的價值點。每個人都有亮點，只是你可能沒發現。我們最擅長把平凡的經歷包裝成有說服力的故事。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>沒履歷可不可以直接說？</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>當然可以！我們用結構化的訪談幫你整理職涯經歷。即使你沒有正式履歷，我們也能透過對談了解你的工作經驗、專案成果、學習歷程等，幫你建構完整的職涯故事。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>頁面怎麼交付？我要怎麼用？</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>我們提供HTML網頁版和PDF版本。HTML版可以分享連結，PDF版可以附在履歷中或面試時出示。你可以把連結放在LinkedIn、履歷上，或直接在面試時展示給面試官看。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>哪些職缺適合用好說？</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>特別適合需要展示思考邏輯和解決問題能力的職位：產品經理、設計師、工程師、數據分析師、業務開發、行銷人員、顧問、自由接案者等。基本上任何需要向他人解釋「你能為公司帶來什麼價值」的職位都適合。</p>
                     </div>
                 </div>
                 
@@ -1410,17 +1367,7 @@
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>我們提供滿意保證。如果初稿完全不符合期待，可申請全額退費。但99%的客戶都說比想像中更好，所以請放心下單。</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>製作完成後還能修改嗎？</span>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>標準版以上包含一次免費修改。如需額外修改，每次收費 NT$500-1,200 依複雜度而定。我們也提供年度更新服務。</p>
+                        <p>我們提供滿意保證。如果初稿完全不符合期待，在交付後48小時內可申請退費。但我們會在製作過程中持續與你確認方向，確保最終成果符合你的期望。</p>
                     </div>
                 </div>
             </div>
@@ -1431,9 +1378,9 @@
     <section class="final-cta" id="contact">
         <div class="container">
             <div class="final-cta-content">
-                <h2>說得好，就能拿得好</h2>
-                <p>別再讓機會從指縫中溜走，現在就開始說出你的價值</p>
-                <a href="https://page.line.me/haoshuo" class="cta-button">立即開始製作我的好說簡報</a>
+                <h2>準備好讓主管記住你了嗎？</h2>
+                <p>說得好，你就拿得好<br>別再讓機會從指縫中溜走，現在就開始說出你的價值</p>
+                <a href="https://github.com/bless25min/CV" class="cta-button">立即開始製作我的好說簡報</a>
             </div>
         </div>
     </section>
@@ -1455,36 +1402,25 @@
                 <div class="footer-links">
                     <h4>服務項目</h4>
                     <ul>
-                        <li><a href="#pricing">好說·輕版</a></li>
-                        <li><a href="#pricing">好說·標準版</a></li>
-                        <li><a href="#pricing">好說·急件版</a></li>
-                        <li><a href="#">加購服務</a></li>
+                        <li><a href="#pricing">好說・輕版</a></li>
+                        <li><a href="#pricing">好說・標準版</a></li>
+                        <li><a href="#pricing">好說・急件版</a></li>
+                        <li><a href="#pricing">加購服務</a></li>
                     </ul>
                 </div>
-                
-                <div class="footer-links">
-                    <h4>聯絡我們</h4>
-                    <ul>
-                        <li><a href="https://page.line.me/haoshuo">LINE 官方帳號</a></li>
-                        <li><a href="mailto:hello@haoshuo.co">Email 聯繫</a></li>
-                        <li><a href="#faq">常見問題</a></li>
-                        <li><a href="#">客戶推薦</a></li>
-                    </ul>
-                </div>
-                
+                              
                 <div class="footer-links">
                     <h4>關於好說</h4>
                     <ul>
                         <li><a href="#showcase">成功案例</a></li>
                         <li><a href="#process">服務流程</a></li>
-                        <li><a href="#">推薦計畫</a></li>
-                        <li><a href="#">隱私政策</a></li>
+                        <li><a href="#benefits">服務效果</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2024 好說 haoshuo.co - 讓你說清楚，也讓對方想錄用你</p>
+                <p>&copy; 2024 好說 - 讓你說清楚，也讓對方想錄用你</p>
             </div>
         </div>
     </footer>
@@ -1568,21 +1504,42 @@
             observer.observe(el);
         });
 
-        // Track button clicks for analytics
-        document.querySelectorAll('.cta-primary, .cta-secondary, .pricing-button').forEach(button => {
-            button.addEventListener('click', function() {
-                // Add analytics tracking here
-                console.log('Button clicked:', this.textContent);
-            });
-        });
+        // Add schema.org structured data for FAQ
+        const faqSchema = {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "為什麼不是履歷而是一頁簡報？",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "履歷是列點，我們是說故事。履歷告訴HR你做過什麼，我們告訴HR你能幫公司解決什麼問題。一個是過去的經歷，一個是未來的價值。簡報格式讓人更容易理解你的邏輯和思維。"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "HR會怎麼看這頁？會覺得浮誇嗎？",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "完全不會！HR每天看上百份履歷，最喜歡一目了然的整理。我們的內容都是基於你的真實經歷，只是用更有邏輯的方式呈現。HR反而會覺得你很用心，也更容易向主管推薦。"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "哪些職缺適合用好說？",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "特別適合需要展示思考邏輯和解決問題能力的職位：產品經理、設計師、工程師、數據分析師、業務開發、行銷人員、顧問、自由接案者等。基本上任何需要向他人解釋「你能為公司帶來什麼價值」的職位都適合。"
+                    }
+                }
+            ]
+        };
 
-        // Add floating animation to elements
-        document.addEventListener('DOMContentLoaded', function() {
-            const floatingElements = document.querySelectorAll('.floating-element');
-            floatingElements.forEach((element, index) => {
-                element.style.animationDelay = `${index * 7}s`;
-            });
-        });
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.text = JSON.stringify(faqSchema);
+        document.head.appendChild(script);
     </script>
 </body>
 </html>
