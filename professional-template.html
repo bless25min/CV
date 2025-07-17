@@ -3,54 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="李建宏 - 資深產品經理，5年SaaS產品經驗，專精用戶體驗設計與數據分析">
-    <meta property="og:title" content="李建宏 - 資深產品經理 | 好說個人品牌頁">
-    <meta property="og:description" content="5年SaaS產品經驗，帶領團隊成功推出3個產品，用戶成長超過50萬">
-    <meta property="og:type" content="profile">
-    <title>李建宏 - 資深產品經理 | 好說個人品牌頁</title>
+    <meta name="description" content="好說客戶案例展示 - 15年資深風控專家的職涯簡報頁完整成品">
+    <title>好說客戶案例展示 - 從傳統履歷到專業簡報頁</title>
     
     <style>
-        /* Import Google Fonts */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700;800;900&display=swap');
 
         :root {
-            /* 好說品牌色彩 */
             --primary-color: #2563EB;
             --primary-dark: #1E40AF;
-            --primary-light: #3B82F6;
-            --accent-color: #10B981;
-            --accent-light: #34D399;
-            --warning-color: #F59E0B;
-            --danger-color: #EF4444;
-            
-            /* 中性色彩 */
-            --text-primary: #0F172A;
-            --text-secondary: #475569;
-            --text-light: #94A3B8;
+            --success-color: #059669;
+            --warning-color: #DC2626;
+            --text-primary: #111827;
+            --text-secondary: #4B5563;
+            --text-light: #6B7280;
             --bg-white: #FFFFFF;
-            --bg-light: #F8FAFC;
-            --bg-gray: #F1F5F9;
-            --border-color: #E2E8F0;
-            
-            /* 漸變色 */
-            --gradient-primary: linear-gradient(135deg, #2563EB 0%, #1E40AF 100%);
-            --gradient-accent: linear-gradient(135deg, #10B981 0%, #059669 100%);
-            --gradient-surface: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
-            
-            /* 陰影 */
+            --bg-light: #F9FAFB;
+            --bg-gray: #F3F4F6;
+            --border-color: #E5E7EB;
+            --gradient-primary: linear-gradient(135deg, #2563EB 0%, #10B981 100%);
             --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
             --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
             --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
             --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-            
-            /* 字體 */
-            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            
-            /* 間距 */
-            --container-max: 1100px;
-            --section-padding: 80px;
-            --border-radius: 12px;
-            --border-radius-lg: 20px;
+            --font-brand: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         }
 
         * {
@@ -60,31 +36,223 @@
         }
 
         body {
-            font-family: var(--font-sans);
-            font-size: 16px;
+            font-family: var(--font-brand);
             line-height: 1.6;
             color: var(--text-primary);
             background-color: var(--bg-white);
             -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
         }
 
         .container {
-            max-width: var(--container-max);
+            max-width: 1200px;
             margin: 0 auto;
             padding: 0 24px;
         }
 
-        /* Header區域 */
-        .hero {
-            background: var(--gradient-surface);
-            padding: 100px 0 80px;
+        /* Header */
+        .header {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 40px 0;
             text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+        .header p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+        }
+
+        /* Quick Comparison */
+        .quick-comparison {
+            padding: 60px 0;
+            background: var(--bg-light);
+        }
+
+        .comparison-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: var(--text-primary);
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .comparison-item {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+        }
+
+        .comparison-label {
+            padding: 16px 24px;
+            font-weight: 700;
+            font-size: 1.125rem;
+            text-align: center;
+        }
+
+        .before-label {
+            background: #fee2e2;
+            color: var(--warning-color);
+        }
+
+        .after-label {
+            background: #dcfce7;
+            color: var(--success-color);
+        }
+
+        .comparison-content {
+            padding: 24px;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .before-content {
+            font-size: 12px;
+            line-height: 1.3;
+            color: #666;
+        }
+
+        .before-content h4 {
+            color: #333;
+            font-size: 14px;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 4px;
+        }
+
+        .before-content .item {
+            margin-bottom: 12px;
+        }
+
+        .before-content .job-title {
+            font-weight: 600;
+            color: #495057;
+        }
+
+        .before-content .company {
+            color: #6c757d;
+            font-size: 11px;
+        }
+
+        .before-content .desc {
+            color: #666;
+            font-size: 11px;
+            margin-top: 4px;
+        }
+
+        .after-content {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 24px;
+            border-radius: 12px;
+            height: 252px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .after-content h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .after-content .title {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin-bottom: 16px;
+        }
+
+        .after-content .highlight {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .after-content .highlight h4 {
+            font-size: 0.875rem;
+            margin-bottom: 4px;
+            font-weight: 600;
+        }
+
+        .after-content .highlight p {
+            font-size: 0.75rem;
+            line-height: 1.4;
+            opacity: 0.95;
+        }
+
+        .key-difference {
+            text-align: center;
+            background: white;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .key-difference h3 {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+        }
+
+        .key-difference p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        /* Full Product Showcase */
+        .product-showcase {
+            padding: 80px 0;
+            background: var(--bg-white);
+        }
+
+        .showcase-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        .showcase-subtitle {
+            text-align: center;
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 60px;
+        }
+
+        .product-frame {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: var(--shadow-xl);
+            overflow: hidden;
+        }
+
+        /* Professional CV Template */
+        .professional-cv {
+            background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
             position: relative;
             overflow: hidden;
         }
 
-        .hero::before {
+        .professional-cv::before {
             content: '';
             position: absolute;
             top: 0;
@@ -92,45 +260,47 @@
             right: 0;
             bottom: 0;
             background-image: 
-                radial-gradient(circle at 20% 50%, rgba(37, 99, 235, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 20% 20%, rgba(37, 99, 235, 0.05) 0%, transparent 50%),
                 radial-gradient(circle at 80% 80%, rgba(16, 185, 129, 0.05) 0%, transparent 50%);
             z-index: 0;
         }
 
-        .hero-content {
+        .cv-content {
             position: relative;
             z-index: 1;
+            padding: 60px;
         }
 
-        .hero h1 {
-            font-size: clamp(2.5rem, 5vw, 3.5rem);
+        .cv-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .cv-header h1 {
+            font-size: 3rem;
             font-weight: 800;
-            margin-bottom: 16px;
+            margin-bottom: 12px;
             color: var(--text-primary);
-            letter-spacing: -0.02em;
         }
 
-        .hero .title {
+        .cv-header .title {
             font-size: 1.5rem;
             color: var(--primary-color);
             font-weight: 600;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
         }
 
-        .hero .tagline {
-            font-size: 1.25rem;
+        .cv-header .tagline {
+            font-size: 1.125rem;
             color: var(--text-secondary);
-            max-width: 700px;
-            margin: 0 auto 40px;
-            font-weight: 400;
+            margin-bottom: 32px;
         }
 
-        .contact-info {
+        .cv-header .contact-info {
             display: flex;
             justify-content: center;
             gap: 32px;
             flex-wrap: wrap;
-            margin-top: 32px;
         }
 
         .contact-item {
@@ -138,160 +308,89 @@
             align-items: center;
             gap: 8px;
             color: var(--text-secondary);
-            text-decoration: none;
-            transition: color 0.3s ease;
+            font-size: 0.95rem;
         }
 
-        .contact-item:hover {
-            color: var(--primary-color);
-        }
-
-        /* Summary區域 */
-        .summary {
-            padding: var(--section-padding) 0;
-            background: var(--bg-light);
-        }
-
-        .summary h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-            color: var(--text-primary);
-        }
-
-        .summary-subtitle {
-            text-align: center;
-            color: var(--text-secondary);
-            font-size: 1.125rem;
+        .cv-section {
             margin-bottom: 60px;
-            font-style: italic;
         }
 
-        .summary-points {
+        .cv-section h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: var(--text-primary);
+            text-align: center;
+        }
+
+        .summary-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 32px;
-            margin-bottom: 48px;
+            gap: 24px;
+            margin-bottom: 40px;
         }
 
-        .summary-point {
+        .summary-card {
             background: white;
-            padding: 32px;
-            border-radius: var(--border-radius-lg);
+            padding: 24px;
+            border-radius: 16px;
             box-shadow: var(--shadow-md);
-            position: relative;
-            transition: all 0.3s ease;
-            overflow: hidden;
+            border-left: 4px solid var(--primary-color);
         }
 
-        .summary-point::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 4px;
-            height: 100%;
-            background: var(--gradient-primary);
-            transform: scaleY(0);
-            transition: transform 0.3s ease;
-        }
-
-        .summary-point:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-xl);
-        }
-
-        .summary-point:hover::before {
-            transform: scaleY(1);
-        }
-
-        .summary-point h3 {
+        .summary-card h3 {
             color: var(--text-primary);
             margin-bottom: 12px;
-            font-size: 1.25rem;
+            font-size: 1.125rem;
             font-weight: 600;
             display: flex;
             align-items: center;
             gap: 8px;
         }
 
-        .summary-point p {
+        .summary-card p {
             color: var(--text-secondary);
-            line-height: 1.7;
+            line-height: 1.6;
+            font-size: 0.95rem;
         }
 
         .core-value {
             text-align: center;
-            font-size: 1.375rem;
+            font-size: 1.25rem;
             color: var(--primary-color);
             font-weight: 600;
-            margin-top: 48px;
-            padding: 24px;
             background: white;
-            border-radius: var(--border-radius-lg);
+            padding: 24px;
+            border-radius: 16px;
             box-shadow: var(--shadow-md);
-            position: relative;
+            font-style: italic;
         }
 
-        .core-value::before,
-        .core-value::after {
-            content: '"';
-            position: absolute;
-            font-size: 4rem;
-            color: var(--primary-light);
-            opacity: 0.2;
-            font-weight: 700;
-        }
-
-        .core-value::before {
-            top: -10px;
-            left: 20px;
-        }
-
-        .core-value::after {
-            bottom: -30px;
-            right: 20px;
-        }
-
-        /* Timeline區域 */
-        .timeline {
-            padding: var(--section-padding) 0;
-            background: var(--bg-white);
-        }
-
-        .timeline h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 60px;
-            color: var(--text-primary);
-        }
-
-        .timeline-container {
-            position: relative;
-            max-width: 900px;
+        .experience-timeline {
+            max-width: 800px;
             margin: 0 auto;
+            position: relative;
         }
 
-        .timeline-line {
+        .experience-timeline::before {
+            content: '';
             position: absolute;
-            left: 30px;
+            left: 20px;
             top: 0;
             bottom: 0;
             width: 2px;
-            background: linear-gradient(180deg, var(--primary-color) 0%, var(--accent-color) 100%);
+            background: var(--gradient-primary);
         }
 
         .timeline-item {
             position: relative;
-            padding-left: 80px;
-            margin-bottom: 60px;
+            padding-left: 60px;
+            margin-bottom: 40px;
         }
 
         .timeline-dot {
             position: absolute;
-            left: 20px;
+            left: 10px;
             top: 8px;
             width: 20px;
             height: 20px;
@@ -299,27 +398,13 @@
             background: white;
             border: 4px solid var(--primary-color);
             box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.2);
-            transition: all 0.3s ease;
-        }
-
-        .timeline-item:hover .timeline-dot {
-            transform: scale(1.2);
-            border-color: var(--accent-color);
-            box-shadow: 0 0 0 8px rgba(16, 185, 129, 0.2);
         }
 
         .timeline-content {
             background: white;
-            padding: 28px;
-            border-radius: var(--border-radius-lg);
+            padding: 24px;
+            border-radius: 12px;
             box-shadow: var(--shadow-md);
-            border: 1px solid var(--border-color);
-            transition: all 0.3s ease;
-        }
-
-        .timeline-content:hover {
-            box-shadow: var(--shadow-lg);
-            transform: translateY(-2px);
         }
 
         .timeline-date {
@@ -327,14 +412,12 @@
             font-weight: 600;
             font-size: 0.875rem;
             margin-bottom: 8px;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
         }
 
         .timeline-title {
-            font-size: 1.375rem;
+            font-size: 1.25rem;
             font-weight: 700;
-            margin-bottom: 12px;
+            margin-bottom: 8px;
             color: var(--text-primary);
         }
 
@@ -344,109 +427,87 @@
             margin-bottom: 12px;
         }
 
-        .timeline-description {
-            color: var(--text-secondary);
-            line-height: 1.7;
-            margin-bottom: 16px;
-        }
-
-        .timeline-learning {
+        .timeline-achievements {
             background: var(--bg-light);
-            padding: 16px 20px;
-            border-radius: var(--border-radius);
-            margin-top: 16px;
-            border-left: 3px solid var(--accent-color);
+            padding: 16px;
+            border-radius: 8px;
+            margin-top: 12px;
         }
 
-        .timeline-learning strong {
-            color: var(--accent-color);
+        .timeline-achievements h4 {
+            color: var(--success-color);
+            font-size: 0.875rem;
+            margin-bottom: 8px;
             font-weight: 600;
         }
 
-        /* Projects區域 */
-        .projects {
-            padding: var(--section-padding) 0;
-            background: var(--bg-light);
+        .timeline-achievements ul {
+            list-style: none;
+            padding: 0;
         }
 
-        .projects h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 60px;
-            color: var(--text-primary);
+        .timeline-achievements li {
+            padding: 4px 0;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            position: relative;
+            padding-left: 16px;
         }
 
-        .project-grid {
+        .timeline-achievements li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        /* Projects Section */
+        .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 40px;
+            gap: 32px;
         }
 
         .project-card {
             background: white;
-            border-radius: var(--border-radius-lg);
+            border-radius: 16px;
             overflow: hidden;
             box-shadow: var(--shadow-lg);
-            transition: all 0.4s ease;
-            position: relative;
+            transition: all 0.3s ease;
         }
 
         .project-card:hover {
-            transform: translateY(-8px) scale(1.02);
+            transform: translateY(-4px);
             box-shadow: var(--shadow-xl);
         }
 
         .project-header {
-            padding: 32px;
             background: var(--gradient-primary);
             color: white;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .project-header::after {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-            animation: pulse 4s ease-in-out infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { transform: scale(0.8); opacity: 0.5; }
-            50% { transform: scale(1.2); opacity: 0.8; }
+            padding: 24px;
         }
 
         .project-header h3 {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             font-weight: 700;
             margin-bottom: 8px;
-            position: relative;
-            z-index: 1;
         }
 
         .project-role {
             background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-size: 0.875rem;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.8rem;
             display: inline-block;
-            margin-top: 12px;
-            position: relative;
-            z-index: 1;
         }
 
         .project-content {
-            padding: 32px;
+            padding: 24px;
         }
 
         .project-section {
-            margin-bottom: 28px;
+            margin-bottom: 20px;
         }
 
         .project-section:last-child {
@@ -454,69 +515,112 @@
         }
 
         .project-section h4 {
-            color: var(--text-secondary);
             font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 8px;
             text-transform: uppercase;
             letter-spacing: 0.05em;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-weight: 600;
         }
 
-        .project-section h4::before {
-            content: '';
-            width: 20px;
-            height: 2px;
-            background: currentColor;
-        }
-
-        .challenge h4 { color: var(--danger-color); }
+        .challenge h4 { color: var(--warning-color); }
         .solution h4 { color: var(--primary-color); }
-        .impact h4 { color: var(--accent-color); }
+        .impact h4 { color: var(--success-color); }
 
         .project-section p {
             color: var(--text-secondary);
-            line-height: 1.7;
-        }
-
-        .impact-metric {
-            background: var(--gradient-accent);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 50px;
-            display: inline-block;
-            margin-top: 12px;
-            font-weight: 600;
+            line-height: 1.6;
             font-size: 0.95rem;
-            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
         }
 
-        /* FAQ區域 */
-        .faq {
-            padding: var(--section-padding) 0;
-            background: var(--bg-white);
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
         }
 
-        .faq h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 60px;
+        .skill-category {
+            background: white;
+            padding: 24px;
+            border-radius: 16px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .skill-category h3 {
+            color: var(--text-primary);
+            margin-bottom: 20px;
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .skill-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .skill-item:last-child {
+            border-bottom: none;
+        }
+
+        .skill-name {
+            font-weight: 500;
             color: var(--text-primary);
         }
 
+        .skill-level {
+            display: flex;
+            gap: 4px;
+        }
+
+        .skill-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .skill-dot.filled {
+            background: var(--primary-color);
+        }
+
+        .certification-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .cert-item {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .cert-item:last-child {
+            border-bottom: none;
+        }
+
+        /* FAQ Section */
         .faq-container {
             max-width: 800px;
             margin: 0 auto;
         }
 
         .faq-item {
-            background: var(--bg-white);
+            background: white;
             border: 2px solid var(--border-color);
-            border-radius: var(--border-radius-lg);
-            margin-bottom: 20px;
+            border-radius: 12px;
+            margin-bottom: 16px;
             overflow: hidden;
             transition: all 0.3s ease;
         }
@@ -527,19 +631,17 @@
         }
 
         .faq-question {
-            padding: 24px 28px;
-            font-weight: 600;
+            padding: 20px 24px;
             cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            transition: all 0.3s ease;
-            font-size: 1.0625rem;
+            font-weight: 600;
             color: var(--text-primary);
+            transition: all 0.3s ease;
         }
 
         .faq-question:hover {
-            background-color: var(--bg-light);
             color: var(--primary-color);
         }
 
@@ -547,11 +649,10 @@
             font-size: 1.5rem;
             color: var(--primary-color);
             transition: transform 0.3s ease;
-            font-weight: 300;
         }
 
         .faq-answer {
-            padding: 0 28px;
+            padding: 0 24px;
             max-height: 0;
             overflow: hidden;
             transition: all 0.4s ease;
@@ -559,12 +660,12 @@
 
         .faq-answer p {
             color: var(--text-secondary);
-            line-height: 1.8;
-            padding-bottom: 24px;
+            line-height: 1.6;
+            padding-bottom: 20px;
         }
 
         .faq-item.active .faq-answer {
-            max-height: 500px;
+            max-height: 200px;
         }
 
         .faq-item.active .faq-toggle {
@@ -573,338 +674,664 @@
 
         .faq-item.active {
             border-color: var(--primary-color);
-            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
         }
 
-        /* Footer */
-        .footer {
-            padding: 60px 0 40px;
+        /* Why Choose Me */
+        .reasons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .reason-card {
+            background: white;
+            padding: 24px;
+            border-radius: 16px;
+            box-shadow: var(--shadow-md);
             text-align: center;
-            color: var(--text-secondary);
-            background: var(--bg-light);
-            border-top: 1px solid var(--border-color);
+            transition: all 0.3s ease;
         }
 
-        .footer-content {
-            max-width: 600px;
-            margin: 0 auto 32px;
-            line-height: 1.8;
+        .reason-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
         }
 
-        .footer-brand {
+        .reason-number {
+            width: 40px;
+            height: 40px;
             background: var(--gradient-primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-weight: 700;
             font-size: 1.125rem;
+            margin: 0 auto 16px;
         }
 
-        /* 響應式設計 */
+        .reason-card h3 {
+            color: var(--text-primary);
+            margin-bottom: 12px;
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+
+        .reason-card p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 60px 0;
+            background: var(--gradient-primary);
+            color: white;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .cta-section p {
+            font-size: 1.125rem;
+            margin-bottom: 32px;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            background: white;
+            color: var(--primary-color);
+            padding: 16px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.125rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Responsive Design */
         @media (max-width: 768px) {
-            :root {
-                --section-padding: 60px;
-            }
-
-            .container {
-                padding: 0 16px;
-            }
-
-            .hero {
-                padding: 80px 0 60px;
-            }
-
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .contact-info {
-                flex-direction: column;
-                align-items: center;
-                gap: 16px;
-            }
-
-            .summary-points,
-            .project-grid {
+            .comparison-grid {
                 grid-template-columns: 1fr;
                 gap: 24px;
             }
 
-            .timeline-container {
-                padding-left: 0;
+            .cv-content {
+                padding: 40px 24px;
             }
 
-            .timeline-line {
-                left: 16px;
+            .cv-header h1 {
+                font-size: 2rem;
+            }
+
+            .cv-header .contact-info {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .summary-grid {
+                grid-template-columns: 1fr;
             }
 
             .timeline-item {
-                padding-left: 60px;
+                padding-left: 40px;
             }
 
             .timeline-dot {
-                left: 6px;
+                left: 0;
+                width: 16px;
+                height: 16px;
+            }
+
+            .timeline-content {
+                padding: 16px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .reasons-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
             }
 
             .faq-question {
-                padding: 20px;
-                font-size: 1rem;
+                padding: 16px 20px;
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cv-content {
+                padding: 24px 16px;
             }
 
-            h2 {
-                font-size: 2rem !important;
+            .cv-header h1 {
+                font-size: 1.75rem;
+            }
+
+            .summary-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .reasons-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-header {
+                padding: 20px;
+            }
+
+            .project-content {
+                padding: 16px;
+            }
+
+            .skill-category {
+                padding: 16px;
+            }
+
+            .reason-card {
+                padding: 16px;
+            }
+
+            .faq-question {
+                padding: 16px;
+                font-size: 0.9rem;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Header -->
+    <header class="header">
         <div class="container">
-            <div class="hero-content">
-                <h1>李建宏</h1>
-                <p class="title">資深產品經理</p>
-                <p class="tagline">5年SaaS產品經驗，專精用戶體驗設計與數據分析<br>帶領團隊成功推出3個產品，累積用戶超過50萬</p>
+            <h1>好說</h1>
+            <p>從平凡履歷到專業簡報頁的華麗轉身</p>
+        </div>
+    </header>
+
+    <!-- Quick Comparison -->
+    <section class="quick-comparison">
+        <div class="container">
+            <h2 class="comparison-title">Before vs After：一眼看清差異</h2>
+            
+            <div class="comparison-grid">
+                <div class="comparison-item">
+                    <div class="comparison-label before-label">❌ 傳統104履歷</div>
+                    <div class="comparison-content before-content">
+                        <div class="item">
+                            <strong>張○○</strong> | 女 | 42歲 | 台北市<br>
+                            電話：09XX-XXX-XXX | Email：xxx@gmail.com
+                        </div>
+                        
+                        <h4>工作經歷</h4>
+                        <div class="item">
+                            <div class="job-title">Assistant Manager, Operations</div>
+                            <div class="company">○○科技公司 | 2021/7~現在</div>
+                            <div class="desc">
+                                建置催收團隊SOP<br>
+                                建置委外催收SOP<br>
+                                管理國際作業品質及達成團隊目標<br>
+                                協助風控部門優化評分機制
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="job-title">經理</div>
+                            <div class="company">○○融資公司 | 2018/6~2021/6</div>
+                            <div class="desc">
+                                負責管理一個9至12人的金融與財務業務團隊<br>
+                                協助培訓新成員，確保他們瞭解公司流程和政策<br>
+                                撰寫月度績效檢討報告
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="job-title">電話催收課主管</div>
+                            <div class="company">○○數位資融公司 | 2016/5~2018/5</div>
+                            <div class="desc">
+                                負責管理電話催收課，處理逾期貸款並追收款項<br>
+                                負責製作各類績效、產能和庫存案量分析報表
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
-                <div class="contact-info">
-                    <a href="mailto:leejianhong@example.com" class="contact-item">
-                        📧 leejianhong@example.com
-                    </a>
-                    <a href="https://linkedin.com/in/leejianhong" class="contact-item">
-                        💼 LinkedIn
-                    </a>
-                    <a href="tel:+886912345678" class="contact-item">
-                        📱 0912-345-678
-                    </a>
+                <div class="comparison-item">
+                    <div class="comparison-label after-label">✅ 好說簡報頁</div>
+                    <div class="comparison-content">
+                        <div class="after-content">
+                            <div>
+                                <h3>張○○</h3>
+                                <div class="title">資深風控專家</div>
+                                
+                                <div class="highlight">
+                                    <h4>🎯 核心專長</h4>
+                                    <p>15年金融風控經驗，專精防制洗錢與打擊資恐</p>
+                                </div>
+                                
+                                <div class="highlight">
+                                    <h4>🏆 代表成就</h4>
+                                    <p>識別新型洗錢手法，獲新聞媒體廣泛報導</p>
+                                </div>
+                                
+                                <div class="highlight">
+                                    <h4>💼 管理經驗</h4>
+                                    <p>管理12人團隊，建立完整風控SOP流程</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="key-difference">
+                <h3>關鍵差異</h3>
+                <p>從「工作內容清單」變成「價值主張故事」，讓HR在30秒內理解你的核心競爭力</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Product Showcase -->
+    <section class="product-showcase">
+        <div class="container">
+            <h2 class="showcase-title">完整成品展示</h2>
+            <p class="showcase-subtitle">這就是客戶最終收到的專業簡報頁</p>
+            
+            <div class="product-frame">
+                <div class="professional-cv">
+                    <div class="cv-content">
+                        <!-- Header -->
+                        <div class="cv-header">
+                            <h1>張○○</h1>
+                            <p class="title">資深風控專家</p>
+                            <p class="tagline">15年金融風控經驗，專精防制洗錢與打擊資恐<br>成功識別新型洗錢手法，獲新聞媒體廣泛報導</p>
+                            
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                    📧 xxx@gmail.com
+                                </div>
+                                <div class="contact-item">
+                                    📱 09XX-XXX-XXX
+                                </div>
+                                <div class="contact-item">
+                                    📍 台北市
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Summary Section -->
+                        <div class="cv-section">
+                            <h2>核心價值</h2>
+                            <div class="summary-grid">
+                                <div class="summary-card">
+                                    <h3>✅ 風險識別專家</h3>
+                                    <p>成功識別新型錢包負數洗錢手法，主導跨部門優化，獲新加坡總部認可</p>
+                                </div>
+                                
+                                <div class="summary-card">
+                                    <h3>✅ 團隊管理經驗</h3>
+                                    <p>管理9-12人金融團隊，建立完整SOP流程，提升整體工作績效</p>
+                                </div>
+                                
+                                <div class="summary-card">
+                                    <h3>✅ 法規遵循能力</h3>
+                                    <p>具備防制洗錢與打擊資恐專業認證，深諳銀行法規與內控制度</p>
+                                </div>
+                            </div>
+                            
+                            <div class="core-value">
+                                "憑藉15年金融風控經驗，我能夠精準識別風險並建立有效防控機制，為企業創造安全可靠的金融環境"
+                            </div>
+                        </div>
+
+                        <!-- Experience Timeline -->
+                        <div class="cv-section">
+                            <h2>職涯發展歷程</h2>
+                            
+                            <div class="experience-timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <div class="timeline-date">2021 - 2023</div>
+                                        <div class="timeline-title">營運管理主管</div>
+                                        <div class="timeline-company">○○科技公司</div>
+                                        <p>負責風控團隊管理與新型風險識別，成功建立多項防控機制</p>
+                                        <div class="timeline-achievements">
+                                            <h4>重要成就：</h4>
+                                            <ul>
+                                                <li>發現新型錢包負數洗錢手法，主導跨部門優化</li>
+                                                <li>識別地下匯兌詐欺洗錢手法，獲媒體廣泛報導</li>
+                                                <li>建立異常登入偵測機制，提升系統安全性</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <div class="timeline-date">2018 - 2021</div>
+                                        <div class="timeline-title">風控經理</div>
+                                        <div class="timeline-company">○○融資公司</div>
+                                        <p>管理金融與財務業務團隊，建立內部教育訓練與風險控制體系</p>
+                                        <div class="timeline-achievements">
+                                            <h4>關鍵成果：</h4>
+                                            <ul>
+                                                <li>管理9-12人專業團隊，建立完整培訓體系</li>
+                                                <li>建立風控評分機制，有效降低詐欺風險</li>
+                                                <li>定期與同業交流，建立防詐騙最佳實務</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <div class="timeline-date">2016 - 2018</div>
+                                        <div class="timeline-title">催收課主管</div>
+                                        <div class="timeline-company">○○數位資融公司</div>
+                                        <p>負責電話催收管理，透過數據分析提升催收效率</p>
+                                        <div class="timeline-achievements">
+                                            <h4>卓越表現：</h4>
+                                            <ul>
+                                                <li>建立績效分析報表系統，提升團隊效率</li>
+                                                <li>優化催收流程，降低呆帳風險</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Projects Section -->
+                        <div class="cv-section">
+                            <h2>精選專案成果</h2>
+                            <div class="projects-grid">
+                                <div class="project-card">
+                                    <div class="project-header">
+                                        <h3>新型洗錢手法識別與防範</h3>
+                                        <div class="project-role">風控專案負責人</div>
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-section challenge">
+                                            <h4>挑戰</h4>
+                                            <p>發現一種新型利用錢包負數進行洗錢的手法，威脅平台資金安全</p>
+                                        </div>
+                                        <div class="project-section solution">
+                                            <h4>解決方案</h4>
+                                            <p>主導跨部門會議，與財務和客服部門共同討論並提出優化建議</p>
+                                        </div>
+                                        <div class="project-section impact">
+                                            <h4>成果</h4>
+                                            <p>成功實施流程優化，獲新加坡總部批准，有效防範此類風險</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="project-card">
+                                    <div class="project-header">
+                                        <h3>地下匯兌詐欺洗錢手法揭露</h3>
+                                        <div class="project-role">案件調查主導者</div>
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-section challenge">
+                                            <h4>挑戰</h4>
+                                            <p>識別出偽裝成代購諮詢的地下匯兌詐欺洗錢手法，手法隱蔽</p>
+                                        </div>
+                                        <div class="project-section solution">
+                                            <h4>解決方案</h4>
+                                            <p>深入調查案件，整理詳細資料，向營運長提出完整報告</p>
+                                        </div>
+                                        <div class="project-section impact">
+                                            <h4>成果</h4>
+                                            <p>此案件於2023年6月獲新聞媒體廣泛報導，成為業界標竿案例</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="project-card">
+                                    <div class="project-header">
+                                        <h3>異常登入偵測與安全強化</h3>
+                                        <div class="project-role">系統安全優化負責人</div>
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-section challenge">
+                                            <h4>挑戰</h4>
+                                            <p>發現多起疑似詐騙團體冒用商家帳號的異常登入事件</p>
+                                        </div>
+                                        <div class="project-section solution">
+                                            <h4>解決方案</h4>
+                                            <p>優化出款銀行帳號變更流程，改進日常監控機制</p>
+                                        </div>
+                                        <div class="project-section impact">
+                                            <h4>成果</h4>
+                                            <p>加強系統安全，提高處理緊急案件的效率，降低安全風險</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Skills Section -->
+                        <div class="cv-section">
+                            <h2>專業技能</h2>
+                            <div class="skills-grid">
+                                <div class="skill-category">
+                                    <h3>💻 專業技能</h3>
+                                    <div class="skill-list">
+                                        <div class="skill-item">
+                                            <span class="skill-name">風控系統操作</span>
+                                            <div class="skill-level">
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span class="skill-name">數據分析 (Excel)</span>
+                                            <div class="skill-level">
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot"></span>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span class="skill-name">法規遵循</span>
+                                            <div class="skill-level">
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-category">
+                                    <h3>🗣 管理能力</h3>
+                                    <div class="skill-list">
+                                        <div class="skill-item">
+                                            <span class="skill-name">團隊領導</span>
+                                            <div class="skill-level">
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span class="skill-name">跨部門協作</span>
+                                            <div class="skill-level">
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot"></span>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span class="skill-name">問題解決</span>
+                                            <div class="skill-level">
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                                <span class="skill-dot filled"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-category">
+                                    <h3>🎯 專業認證</h3>
+                                    <div class="certification-list">
+                                        <div class="cert-item">✅ 防制洗錢與打擊資恐專業人員</div>
+                                        <div class="cert-item">✅ PMP專案管理師認證</div>
+                                        <div class="cert-item">✅ 風險管理基本能力測試</div>
+                                        <div class="cert-item">✅ 銀行內部控制與內部稽核</div>
+                                        <div class="cert-item">✅ 初階授信人員</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Section -->
+                        <div class="cv-section">
+                            <h2>常見問題</h2>
+                            <div class="faq-container">
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <span>為什麼從不同公司轉職？每次轉職的動機是什麼？</span>
+                                        <span class="faq-toggle">+</span>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>每次轉職都是為了尋求更大的成長空間和挑戰。從傳統銀行到新興科技公司，讓我累積了完整的金融風控經驗，並學會在不同環境下適應和創新。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <span>如何處理複雜的風控案件？你的方法論是什麼？</span>
+                                        <span class="faq-toggle">+</span>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>我採用數據分析結合實地調查的方式，先建立假設，再透過跨部門協作驗證。重要的是保持客觀態度，並建立標準化流程確保案件處理的一致性。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <span>管理團隊的經驗如何？如何激勵團隊達成目標？</span>
+                                        <span class="faq-toggle">+</span>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>我管理過9-12人的專業團隊，重視人才培養和制度建立。透過定期訓練、績效回饋和職涯規劃，幫助團隊成員成長，同時建立清楚的SOP確保工作品質。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <span>對新環境的適應能力如何？學習新技術的速度？</span>
+                                        <span class="faq-toggle">+</span>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>我具備很強的學習能力，曾在台灣大學法律系進修24學分，並持續考取專業認證。面對新環境，我會快速了解業務流程，並主動提出改善建議。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Why Choose Me -->
+                        <div class="cv-section">
+                            <h2>為什麼選擇我？</h2>
+                            <div class="reasons-grid">
+                                <div class="reason-card">
+                                    <div class="reason-number">1</div>
+                                    <h3>實戰經驗豐富</h3>
+                                    <p>15年金融風控經驗，處理過各種複雜案件，具備完整的實戰能力</p>
+                                </div>
+                                <div class="reason-card">
+                                    <div class="reason-number">2</div>
+                                    <h3>學習能力強</h3>
+                                    <p>持續進修和考取認證，能快速適應新環境和新技術</p>
+                                </div>
+                                <div class="reason-card">
+                                    <div class="reason-number">3</div>
+                                    <h3>團隊協作佳</h3>
+                                    <p>擅長跨部門溝通協調，能有效整合資源達成目標</p>
+                                </div>
+                                <div class="reason-card">
+                                    <div class="reason-number">4</div>
+                                    <h3>創新思維</h3>
+                                    <p>能識別新型風險並提出創新解決方案，為公司創造價值</p>
+                                </div>
+                                <div class="reason-card">
+                                    <div class="reason-number">5</div>
+                                    <h3>責任感強</h3>
+                                    <p>對工作負責任，重視風險控制的重要性和社會責任</p>
+                                </div>
+                                <div class="reason-card">
+                                    <div class="reason-number">6</div>
+                                    <h3>成長潛力大</h3>
+                                    <p>具備管理經驗和專業能力，可承擔更大的責任和挑戰</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Summary Section -->
-    <section class="summary">
+    <!-- CTA Section -->
+    <section class="cta-section">
         <div class="container">
-            <h2>我的核心價值</h2>
-            <p class="summary-subtitle">為什麼我是您團隊需要的產品經理</p>
-            
-            <div class="summary-points">
-                <div class="summary-point">
-                    <h3>✅ 數據驅動決策</h3>
-                    <p>善用 GA4、Mixpanel 分析用戶行為，將數據洞察轉化為產品策略，平均提升產品 KPI 30% 以上</p>
-                </div>
-                
-                <div class="summary-point">
-                    <h3>✅ 跨團隊協作</h3>
-                    <p>具備技術背景，能與工程、設計、行銷團隊順暢溝通，確保產品按時高品質交付</p>
-                </div>
-                
-                <div class="summary-point">
-                    <h3>✅ 用戶體驗專精</h3>
-                    <p>深度理解 UX 設計原則，主導的產品改版將用戶留存率從 65% 提升至 85%</p>
-                </div>
-            </div>
-            
-            <p class="core-value">
-                我相信好的產品不只解決問題，更要創造價值。透過深度用戶研究和精準數據分析，我打造讓用戶愛不釋手的產品體驗。
-            </p>
+            <h2>你的經歷也值得這樣的呈現</h2>
+            <p>30分鐘訪談，讓我們幫你打造專屬的職涯簡報頁</p>
+            <a href="#" class="cta-button">🚀 立即開始製作</a>
         </div>
     </section>
-
-    <!-- Timeline Section -->
-    <section class="timeline">
-        <div class="container">
-            <h2>職涯發展歷程</h2>
-            
-            <div class="timeline-container">
-                <div class="timeline-line"></div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2022 - 現在</div>
-                        <div class="timeline-title">資深產品經理</div>
-                        <div class="timeline-company">TechFlow 科技</div>
-                        <p class="timeline-description">負責 B2B SaaS 平台產品線，管理 3 個產品模組，服務超過 1,000 家企業客戶。成功推動產品國際化，進軍東南亞市場。</p>
-                        <div class="timeline-learning">
-                            <strong>關鍵成就：</strong>主導產品架構重設，將系統效能提升 200%，客戶滿意度從 3.2 提升至 4.6 分
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2020 - 2022</div>
-                        <div class="timeline-title">產品經理</div>
-                        <div class="timeline-company">DataInsight 新創</div>
-                        <p class="timeline-description">從 0 到 1 打造數據分析平台，與創辦人密切合作定義產品方向。在資源有限下，成功建立 MVP 並獲得首批付費客戶。</p>
-                        <div class="timeline-learning">
-                            <strong>創業學習：</strong>學會在不確定性中做決策，培養敏捷思維和快速驗證能力
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2019 - 2020</div>
-                        <div class="timeline-title">前端工程師轉產品經理</div>
-                        <div class="timeline-company">職涯轉換期</div>
-                        <p class="timeline-description">從技術角色轉向產品角色，開始學習用戶研究、市場分析和商業思維。技術背景讓我能更好地與工程團隊協作。</p>
-                        <div class="timeline-learning">
-                            <strong>轉職動機：</strong>發現自己更享受「定義問題」而非「解決問題」，決定往產品規劃發展
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects">
-        <div class="container">
-            <h2>精選專案成果</h2>
-            
-            <div class="project-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>企業級 SaaS 平台重構</h3>
-                        <div class="project-role">產品負責人</div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-section challenge">
-                            <h4>挑戰</h4>
-                            <p>舊系統架構無法支撐快速成長的用戶量，客戶抱怨載入速度慢，流失率持續上升至 25%</p>
-                        </div>
-                        <div class="project-section solution">
-                            <h4>解決方案</h4>
-                            <p>主導產品技術架構討論，規劃分階段重構計畫，同時維持服務不中斷。建立新的用戶體驗流程</p>
-                        </div>
-                        <div class="project-section impact">
-                            <h4>成果</h4>
-                            <p>系統效能提升 200%，用戶流失率降至 8%，客戶滿意度大幅提升</p>
-                            <span class="impact-metric">年營收成長 +40%</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>AI 驅動的用戶推薦系統</h3>
-                        <div class="project-role">產品策略制定</div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-section challenge">
-                            <h4>挑戰</h4>
-                            <p>用戶在平台上的參與度不高，平均停留時間僅 3 分鐘，轉換率低於業界標準</p>
-                        </div>
-                        <div class="project-section solution">
-                            <h4>解決方案</h4>
-                            <p>引入機器學習算法，建立個人化推薦系統，同時優化用戶介面的資訊架構</p>
-                        </div>
-                        <div class="project-section impact">
-                            <h4>成果</h4>
-                            <p>用戶停留時間延長至 12 分鐘，轉換率提升 65%</p>
-                            <span class="impact-metric">月活躍用戶 +80%</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>B2B 客戶成功平台</h3>
-                        <div class="project-role">跨團隊協調者</div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-section challenge">
-                            <h4>挑戰</h4>
-                            <p>客服團隊工作負荷過重，無法即時回應客戶需求，客戶滿意度持續下滑</p>
-                        </div>
-                        <div class="project-section solution">
-                            <h4>解決方案</h4>
-                            <p>設計自助服務平台，整合知識庫、工單系統和即時客服功能</p>
-                        </div>
-                        <div class="project-section impact">
-                            <h4>成果</h4>
-                            <p>客服工作量減少 50%，客戶問題解決時間從 24 小時縮短至 2 小時</p>
-                            <span class="impact-metric">客戶滿意度 4.6/5.0</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq">
-        <div class="container">
-            <h2>常見問題</h2>
-            
-            <div class="faq-container">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>為什麼從工程師轉為產品經理？</span>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>在擔任前端工程師期間，我發現自己更著迷於「為什麼要做這個功能」而非「如何實現」。我喜歡站在用戶角度思考問題，也對商業邏輯充滿好奇。技術背景讓我能更好地與工程團隊協作，成為技術與商業之間的橋樑。</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>如何處理技術團隊與業務團隊的衝突？</span>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>我會先深入了解雙方的核心訴求，找出共同目標。通常衝突源於溝通不足或目標不一致。我會主持跨部門會議，用數據說話，讓大家回到「對用戶最有價值」的判斷基準上。我的技術背景讓工程師信任我，商業sense 讓業務團隊認同我。</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>對於產品決策，你如何平衡數據與直覺？</span>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>我相信數據是決策的基礎，但不是唯一依據。數據告訴我們「什麼發生了」，但需要結合用戶訪談和市場洞察才能理解「為什麼」。我會建立假設，用小規模測試驗證，再根據結果調整策略。直覺幫助我提出假設，數據幫助我驗證或推翻它。</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>未來 3-5 年的職涯規劃？</span>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>短期內，我希望在更大規模的產品上發揮影響力，挑戰更複雜的商業問題。中長期來看，我想成為能夠從 0 到 1 打造成功產品的產品領導者，並培育更多優秀的產品人才。我也對 AI 在產品中的應用很有興趣，希望能在這個領域深耕。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p class="footer-content">
-                此頁面內容由我與 <span class="footer-brand">好說</span> 品牌顧問共同訪談整理完成<br>
-                所有專案經歷與成果數據均為真實，歡迎進一步了解與驗證
-            </p>
-            
-            <p style="font-size: 0.875rem; color: var(--text-light);">
-                © 2024 李建宏 | 由好說製作
-            </p>
-        </div>
-    </footer>
 
     <script>
-        // FAQ 功能
+        // FAQ功能
         document.querySelectorAll('.faq-question').forEach(question => {
             question.addEventListener('click', () => {
                 const faqItem = question.parentElement;
                 const isActive = faqItem.classList.contains('active');
                 
-                // 關閉其他項目
+                // 關閉所有其他FAQ項目
                 document.querySelectorAll('.faq-item').forEach(item => {
                     if (item !== faqItem) {
                         item.classList.remove('active');
@@ -916,53 +1343,28 @@
             });
         });
 
-        // 平滑滾動
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - 80;
-                    
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // 結構化資料
-        const schemaData = {
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "李建宏",
-            "jobTitle": "資深產品經理",
-            "description": "5年SaaS產品經驗的資深產品經理，專精用戶體驗設計與數據分析",
-            "url": window.location.href,
-            "sameAs": [
-                "https://linkedin.com/in/leejianhong"
-            ],
-            "knowsAbout": ["產品管理", "用戶體驗設計", "數據分析", "敏捷開發"],
-            "hasOccupation": {
-                "@type": "Occupation",
-                "name": "產品經理",
-                "occupationalCategory": "15-1199.00",
-                "skills": ["產品策略", "用戶研究", "數據分析", "跨團隊協作"]
-            },
-            "workExample": [
-                {
-                    "@type": "CreativeWork",
-                    "name": "企業級 SaaS 平台重構",
-                    "description": "主導產品架構重設，系統效能提升200%"
-                }
-            ]
+        // 滾動動畫
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
         };
 
-        const script = document.createElement('script');
-        script.type = 'application/ld+json';
-        script.text = JSON.stringify(schemaData);
-        document.head.appendChild(script);
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // 添加動畫效果
+        document.querySelectorAll('.project-card, .reason-card, .skill-category, .summary-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(el);
+        });
     </script>
 </body>
 </html>
