@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="好說客戶案例展示 - 15年資深風控專家的職涯簡報頁完整成品">
-    <title>好說客戶案例展示 - 從傳統履歷到專業簡報頁</title>
+    <title>好說客戶案例展示 - 從原始履歷到專業簡報頁</title>
     
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700;800;900&display=swap');
@@ -53,14 +53,14 @@
         .header {
             background: var(--gradient-primary);
             color: white;
-            padding: 40px 0;
+            padding: 60px 0;
             text-align: center;
         }
 
         .header h1 {
             font-size: 2.5rem;
             font-weight: 800;
-            margin-bottom: 12px;
+            margin-bottom: 16px;
         }
 
         .header p {
@@ -68,176 +68,64 @@
             opacity: 0.9;
         }
 
-        /* Quick Comparison */
-        .quick-comparison {
-            padding: 60px 0;
+        /* Toggle Section */
+        .toggle-section {
+            padding: 40px 0;
             background: var(--bg-light);
-        }
-
-        .comparison-title {
-            text-align: center;
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 40px;
-            color: var(--text-primary);
-        }
-
-        .comparison-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-
-        .comparison-item {
-            background: white;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: var(--shadow-lg);
-            position: relative;
-        }
-
-        .comparison-label {
-            padding: 16px 24px;
-            font-weight: 700;
-            font-size: 1.125rem;
             text-align: center;
         }
 
-        .before-label {
-            background: #fee2e2;
-            color: var(--warning-color);
-        }
-
-        .after-label {
-            background: #dcfce7;
-            color: var(--success-color);
-        }
-
-        .comparison-content {
-            padding: 24px;
-            height: 300px;
-            overflow: hidden;
-        }
-
-        .before-content {
-            font-size: 12px;
-            line-height: 1.3;
-            color: #666;
-        }
-
-        .before-content h4 {
-            color: #333;
-            font-size: 14px;
-            margin-bottom: 8px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 4px;
-        }
-
-        .before-content .item {
-            margin-bottom: 12px;
-        }
-
-        .before-content .job-title {
-            font-weight: 600;
-            color: #495057;
-        }
-
-        .before-content .company {
-            color: #6c757d;
-            font-size: 11px;
-        }
-
-        .before-content .desc {
-            color: #666;
-            font-size: 11px;
-            margin-top: 4px;
-        }
-
-        .after-content {
-            background: var(--gradient-primary);
-            color: white;
-            padding: 24px;
-            border-radius: 12px;
-            height: 252px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .after-content h3 {
+        .toggle-title {
             font-size: 1.5rem;
             font-weight: 700;
-            margin-bottom: 8px;
-        }
-
-        .after-content .title {
-            font-size: 1rem;
-            opacity: 0.9;
-            margin-bottom: 16px;
-        }
-
-        .after-content .highlight {
-            background: rgba(255, 255, 255, 0.15);
-            padding: 12px;
-            border-radius: 8px;
-            margin-bottom: 12px;
-        }
-
-        .after-content .highlight h4 {
-            font-size: 0.875rem;
-            margin-bottom: 4px;
-            font-weight: 600;
-        }
-
-        .after-content .highlight p {
-            font-size: 0.75rem;
-            line-height: 1.4;
-            opacity: 0.95;
-        }
-
-        .key-difference {
-            text-align: center;
-            background: white;
-            padding: 24px;
-            border-radius: 12px;
-            box-shadow: var(--shadow-md);
-        }
-
-        .key-difference h3 {
-            color: var(--primary-color);
-            font-size: 1.25rem;
-            margin-bottom: 12px;
-        }
-
-        .key-difference p {
-            color: var(--text-secondary);
-            font-size: 1rem;
-        }
-
-        /* Full Product Showcase */
-        .product-showcase {
-            padding: 80px 0;
-            background: var(--bg-white);
-        }
-
-        .showcase-title {
-            text-align: center;
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 20px;
+            margin-bottom: 24px;
             color: var(--text-primary);
         }
 
-        .showcase-subtitle {
-            text-align: center;
-            font-size: 1.25rem;
-            color: var(--text-secondary);
-            margin-bottom: 60px;
+        .toggle-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
         }
 
-        .product-frame {
-            max-width: 900px;
+        .toggle-btn {
+            padding: 12px 32px;
+            border: 2px solid var(--primary-color);
+            background: white;
+            color: var(--primary-color);
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .toggle-btn.active {
+            background: var(--primary-color);
+            color: white;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+        }
+
+        .toggle-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.2);
+        }
+
+        /* Content Sections */
+        .content-section {
+            display: none;
+            padding: 60px 0;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        /* Original Resume */
+        .original-resume {
+            max-width: 800px;
             margin: 0 auto;
             background: white;
             border-radius: 20px;
@@ -245,7 +133,67 @@
             overflow: hidden;
         }
 
-        /* Professional CV Template */
+        .resume-header {
+            background: var(--bg-gray);
+            padding: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .resume-header h3 {
+            color: var(--text-primary);
+            font-size: 1.125rem;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .resume-content {
+            padding: 24px;
+            font-size: 14px;
+            line-height: 1.4;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+
+        .resume-content h4 {
+            color: var(--text-primary);
+            margin: 16px 0 8px 0;
+            font-size: 16px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 4px;
+        }
+
+        .resume-content .basic-info {
+            background: var(--bg-light);
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+
+        .resume-content .job-item {
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .resume-content .job-title {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .resume-content .company {
+            color: var(--text-secondary);
+            font-size: 13px;
+            margin-bottom: 6px;
+        }
+
+        .resume-content .job-desc {
+            color: var(--text-secondary);
+            font-size: 13px;
+            line-height: 1.4;
+        }
+
+        /* Professional CV - keeping all existing styles */
         .professional-cv {
             background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
             position: relative;
@@ -354,16 +302,46 @@
             font-size: 0.95rem;
         }
 
-        .core-value {
-            text-align: center;
-            font-size: 1.25rem;
-            color: var(--primary-color);
-            font-weight: 600;
+        .recommendations {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .recommendation-item {
             background: white;
             padding: 24px;
             border-radius: 16px;
             box-shadow: var(--shadow-md);
+            position: relative;
+            border-left: 4px solid var(--success-color);
+        }
+
+        .recommendation-quote {
+            font-size: 1.125rem;
             font-style: italic;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+            line-height: 1.6;
+        }
+
+        .recommendation-quote::before {
+            content: '"';
+            font-size: 2rem;
+            color: var(--success-color);
+            opacity: 0.3;
+            font-weight: 700;
+            position: absolute;
+            top: 10px;
+            left: 16px;
+        }
+
+        .recommendation-author {
+            color: var(--text-secondary);
+            font-weight: 500;
+            font-size: 0.95rem;
+            text-align: right;
         }
 
         .experience-timeline {
@@ -532,48 +510,6 @@
             font-size: 0.95rem;
         }
 
-        .recommendations {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 24px;
-            margin-top: 40px;
-        }
-
-        .recommendation-item {
-            background: white;
-            padding: 24px;
-            border-radius: 16px;
-            box-shadow: var(--shadow-md);
-            position: relative;
-            border-left: 4px solid var(--success-color);
-        }
-
-        .recommendation-quote {
-            font-size: 1.125rem;
-            font-style: italic;
-            color: var(--text-primary);
-            margin-bottom: 16px;
-            line-height: 1.6;
-        }
-
-        .recommendation-quote::before {
-            content: '"';
-            font-size: 2rem;
-            color: var(--success-color);
-            opacity: 0.3;
-            font-weight: 700;
-            position: absolute;
-            top: 10px;
-            left: 16px;
-        }
-
-        .recommendation-author {
-            color: var(--text-secondary);
-            font-weight: 500;
-            font-size: 0.95rem;
-            text-align: right;
-        }
-
         /* Certifications Section */
         .certifications-grid {
             display: grid;
@@ -628,47 +564,6 @@
             color: var(--text-secondary);
             font-size: 0.875rem;
             font-weight: 600;
-        }
-
-        /* Motivation Section */
-        .motivation-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 24px;
-        }
-
-        .motivation-card {
-            background: white;
-            padding: 24px;
-            border-radius: 16px;
-            box-shadow: var(--shadow-md);
-            text-align: center;
-            transition: all 0.3s ease;
-            border-top: 4px solid var(--primary-color);
-        }
-
-        .motivation-card:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .motivation-icon {
-            font-size: 2.5rem;
-            margin-bottom: 16px;
-            display: block;
-        }
-
-        .motivation-card h3 {
-            color: var(--text-primary);
-            margin-bottom: 12px;
-            font-size: 1.125rem;
-            font-weight: 600;
-        }
-
-        .motivation-card p {
-            color: var(--text-secondary);
-            line-height: 1.6;
-            font-size: 0.95rem;
         }
 
         /* FAQ Section */
@@ -726,7 +621,7 @@
         }
 
         .faq-item.active .faq-answer {
-            max-height: 200px;
+            max-height: 300px;
         }
 
         .faq-item.active .faq-toggle {
@@ -737,7 +632,46 @@
             border-color: var(--primary-color);
         }
 
+        /* Motivation Section */
+        .motivation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
 
+        .motivation-card {
+            background: white;
+            padding: 24px;
+            border-radius: 16px;
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--primary-color);
+        }
+
+        .motivation-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .motivation-icon {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .motivation-card h3 {
+            color: var(--text-primary);
+            margin-bottom: 12px;
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+
+        .motivation-card p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
 
         /* CTA Section */
         .cta-section {
@@ -776,13 +710,77 @@
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
         }
 
+        /* Footer */
+        footer {
+            padding: 80px 0 40px;
+            background: var(--text-primary);
+            color: white;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+
+        .footer-brand {
+            max-width: 400px;
+        }
+
+        .footer-brand .logo {
+            font-size: 2rem;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 24px;
+            display: block;
+        }
+
+        .footer-brand .tagline {
+            font-size: 1.125rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 24px;
+        }
+
+        .footer-brand .description {
+            color: rgba(255, 255, 255, 0.6);
+            line-height: 1.7;
+        }
+
+        .footer-links h4 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
-            .comparison-grid {
-                grid-template-columns: 1fr;
-                gap: 24px;
-            }
-
             .cv-content {
                 padding: 40px 24px;
             }
@@ -814,6 +812,10 @@
                 padding: 16px;
             }
 
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
             .certifications-grid {
                 grid-template-columns: 1fr;
             }
@@ -826,13 +828,25 @@
                 grid-template-columns: repeat(2, 1fr);
             }
 
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
-
             .faq-question {
                 padding: 16px 20px;
                 font-size: 0.95rem;
+            }
+
+            .toggle-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .toggle-btn {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
             }
         }
 
@@ -845,19 +859,19 @@
                 font-size: 1.75rem;
             }
 
-            .summary-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .reasons-grid {
-                grid-template-columns: 1fr;
-            }
-
             .projects-grid {
                 grid-template-columns: 1fr;
             }
 
-            .skills-grid {
+            .certifications-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .recommendations {
+                grid-template-columns: 1fr;
+            }
+
+            .motivation-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -889,29 +903,50 @@
     <header class="header">
         <div class="container">
             <h1>好說</h1>
-            <p>從平凡履歷到專業簡報頁的華麗轉身</p>
+            <p>從原始履歷到專業簡報頁的華麗轉身</p>
         </div>
     </header>
 
-    <!-- Quick Comparison -->
-    <section class="quick-comparison">
+    <!-- Toggle Section -->
+    <section class="toggle-section">
         <div class="container">
-            <h2 class="comparison-title">Before vs After：一眼看清差異</h2>
+            <h2 class="toggle-title">客戶案例：15年資深風控專家</h2>
+            <div class="toggle-buttons">
+                <button class="toggle-btn active" onclick="showContent('original')">📄 求職者訪談前履歷原檔</button>
+                <button class="toggle-btn" onclick="showContent('final')">✨ 好說完整成品展示</button>
+            </div>
             
-            <div class="comparison-grid">
-                <div class="comparison-item">
-                    <div class="comparison-label before-label">❌ 傳統104履歷</div>
-                    <div class="comparison-content before-content">
-                        <div class="item">
-                            <strong>張○○</strong> | 女 | 42歲 | 台北市<br>
-                            電話：09XX-XXX-XXX | Email：xxx@gmail.com
+            <!-- Original Resume -->
+            <div id="original" class="content-section active">
+                <div class="original-resume">
+                    <div class="resume-header">
+                        <h3>李** - 履歷原檔</h3>
+                    </div>
+                    <div class="resume-content">
+                        <div class="basic-info">
+                            <strong>李** Karen Li</strong><br>
+                            女 | 42歲 | 台北市**區<br>
+                            聯絡電話：09**-***-***<br>
+                            E-mail：karen.li@gmail.com<br>
+                            駕駛執照：普通重型機車駕照、普通小型車駕照<br>
+                            聯絡方式：早上8點至晚上10點
                         </div>
-                        
+
+                        <h4>學歷</h4>
+                        <div class="job-item">
+                            <div class="job-title">私立△△技術學院</div>
+                            <div class="company">企業管理系大學畢業 | 2002/9~2004/6</div>
+                        </div>
+                        <div class="job-item">
+                            <div class="job-title">國立台灣大學進修推廣部</div>
+                            <div class="company">法律系大學修業 | 2010/9~2012/2</div>
+                        </div>
+
                         <h4>工作經歷</h4>
-                        <div class="item">
+                        <div class="job-item">
                             <div class="job-title">Assistant Manager, Operations</div>
-                            <div class="company">○○科技公司 | 2021/7~現在</div>
-                            <div class="desc">
+                            <div class="company">★★科技股份有限公司 | 2021/7~現在</div>
+                            <div class="job-desc">
                                 建置催收團隊SOP<br>
                                 建置委外催收SOP<br>
                                 管理國際作業品質及達成團隊目標<br>
@@ -919,86 +954,82 @@
                             </div>
                         </div>
                         
-                        <div class="item">
+                        <div class="job-item">
                             <div class="job-title">經理</div>
-                            <div class="company">○○融資公司 | 2018/6~2021/6</div>
-                            <div class="desc">
+                            <div class="company">◇◇融資有限公司 | 2018/6~2021/6</div>
+                            <div class="job-desc">
                                 負責管理一個9至12人的金融與財務業務團隊<br>
                                 協助培訓新成員，確保他們瞭解公司流程和政策<br>
-                                撰寫月度績效檢討報告
+                                監督團隊工作，確保服務品質高效且專業<br>
+                                撰寫月度績效檢討報告，並親自處理高額案件（RMB100萬以上）
                             </div>
                         </div>
                         
-                        <div class="item">
+                        <div class="job-item">
                             <div class="job-title">電話催收課主管</div>
-                            <div class="company">○○數位資融公司 | 2016/5~2018/5</div>
-                            <div class="desc">
+                            <div class="company">◆◆數位資融股份有限公司 | 2016/5~2018/5</div>
+                            <div class="job-desc">
                                 負責管理電話催收課，處理逾期貸款並追收款項<br>
-                                負責製作各類績效、產能和庫存案量分析報表
+                                制定並實施每月績效目標，有效監督團隊績效<br>
+                                負責製作各類績效、產能和庫存案量分析報表<br>
+                                分析呆帳回收比和呆帳餘額等關鍵數據
                             </div>
                         </div>
-                    </div>
-                </div>
-                
-                <div class="comparison-item">
-                    <div class="comparison-label after-label">✅ 好說簡報頁</div>
-                    <div class="comparison-content">
-                        <div class="after-content">
-                            <div>
-                                <h3>張○○</h3>
-                                <div class="title">資深風控專家</div>
-                                
-                                <div class="highlight">
-                                    <h4>🎯 核心專長</h4>
-                                    <p>15年金融風控經驗，專精防制洗錢與打擊資恐</p>
-                                </div>
-                                
-                                <div class="highlight">
-                                    <h4>🏆 代表成就</h4>
-                                    <p>識別新型洗錢手法，獲新聞媒體廣泛報導</p>
-                                </div>
-                                
-                                <div class="highlight">
-                                    <h4>💼 管理經驗</h4>
-                                    <p>管理12人團隊，建立完整風控SOP流程</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="key-difference">
-                <h3>關鍵差異</h3>
-                <p>從「工作內容清單」變成「價值主張故事」，讓HR在30秒內理解你的核心競爭力</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- Full Product Showcase -->
-    <section class="product-showcase">
-        <div class="container">
-            <h2 class="showcase-title">完整成品展示</h2>
-            <p class="showcase-subtitle">這就是客戶最終收到的專業簡報頁</p>
-            
-            <div class="product-frame">
+                        <div class="job-item">
+                            <div class="job-title">特催課資深專員</div>
+                            <div class="company">□□企業股份有限公司 | 2014/7~現在</div>
+                            <div class="job-desc">
+                                負責處理特別高風險的債務追討案件<br>
+                                深入瞭解不同債務類型及相關法律法規<br>
+                                積累豐富的法律程序、催收技巧和執行流程知識<br>
+                                於103年12月創下單月回收600萬元的佳績
+                            </div>
+                        </div>
+
+                        <h4>專業技能</h4>
+                        <div class="job-desc">
+                            作業系統類：Windows 2003、Windows XP<br>
+                            辦公室應用類：Excel、Outlook、PowerPoint、Word<br>
+                            中文輸入：中文打字50~75字/分鐘<br>
+                            英文輸入：英文打字50~75字/分鐘
+                        </div>
+
+                        <h4>專業證照</h4>
+                        <div class="job-desc">
+                            銀行內部控制與內部稽核<br>
+                            初階授信人員<br>
+                            PMP專案管理師認證班結業<br>
+                            風險管理基本能力測試合格
+                        </div>
+
+                        <h4>自傳</h4>
+                        <div class="job-desc">
+                            我是**，我認為我的優點是樂觀開朗的個性，喜歡廣交朋友，在學期間與同儕都有良好的互動，在工作上也能獨立思考並喜歡團隊作業，喜歡從工作中學習及規劃中獲得成就感。為協助瞭解**，個人經驗如下：...
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Final Product -->
+            <div id="final" class="content-section">
                 <div class="professional-cv">
                     <div class="cv-content">
                         <!-- Header -->
                         <div class="cv-header">
-                            <h1>張○○</h1>
+                            <h1>李**</h1>
                             <p class="title">資深風控專家</p>
                             <p class="tagline">15年金融風控經驗，專精防制洗錢與打擊資恐<br>成功識別新型洗錢手法，獲新聞媒體廣泛報導</p>
                             
                             <div class="contact-info">
                                 <div class="contact-item">
-                                    📧 xxx@gmail.com
+                                    📧 karen.li@gmail.com
                                 </div>
                                 <div class="contact-item">
-                                    📱 09XX-XXX-XXX
+                                    📱 09**-***-***
                                 </div>
                                 <div class="contact-item">
-                                    📍 台北市
+                                    📍 台北市**區
                                 </div>
                             </div>
                         </div>
@@ -1009,7 +1040,7 @@
                             <div class="summary-grid">
                                 <div class="summary-card">
                                     <h3>✅ 風險識別專家</h3>
-                                    <p>成功識別新型錢包負數洗錢手法，主導跨部門優化，獲新加坡總部認可</p>
+                                    <p>成功識別新型錢包負數洗錢手法，主導跨部門優化，獲海外總部認可</p>
                                 </div>
                                 
                                 <div class="summary-card">
@@ -1029,7 +1060,7 @@
                                         "企圖心強，能於工作環節中發現問題並提出建議方針。"
                                     </div>
                                     <div class="recommendation-author">
-                                        劉邦安 協理 | 台新國際商業銀行
+                                        劉** 協理 | ▲▲國際商業銀行
                                     </div>
                                 </div>
                                 <div class="recommendation-item">
@@ -1037,7 +1068,7 @@
                                         "以卓越的主動性和積極性，經常在工作中主動提出問題並提供建議方針。"
                                     </div>
                                     <div class="recommendation-author">
-                                        陳昭源 資深經理 | 裕融企業股份有限公司
+                                        陳** 資深經理 | □□企業股份有限公司
                                     </div>
                                 </div>
                             </div>
@@ -1053,7 +1084,7 @@
                                     <div class="timeline-content">
                                         <div class="timeline-date">2021 - 2023</div>
                                         <div class="timeline-title">營運管理主管</div>
-                                        <div class="timeline-company">○○科技公司</div>
+                                        <div class="timeline-company">★★科技股份有限公司</div>
                                         <p>負責風控團隊管理與新型風險識別，成功建立多項防控機制</p>
                                         <div class="timeline-achievements">
                                             <h4>重要成就：</h4>
@@ -1071,7 +1102,7 @@
                                     <div class="timeline-content">
                                         <div class="timeline-date">2018 - 2021</div>
                                         <div class="timeline-title">風控經理</div>
-                                        <div class="timeline-company">○○融資公司</div>
+                                        <div class="timeline-company">◇◇融資有限公司</div>
                                         <p>管理金融與財務業務團隊，建立內部教育訓練與風險控制體系</p>
                                         <div class="timeline-achievements">
                                             <h4>關鍵成果：</h4>
@@ -1089,13 +1120,14 @@
                                     <div class="timeline-content">
                                         <div class="timeline-date">2016 - 2018</div>
                                         <div class="timeline-title">催收課主管</div>
-                                        <div class="timeline-company">○○數位資融公司</div>
+                                        <div class="timeline-company">◆◆數位資融股份有限公司</div>
                                         <p>負責電話催收管理，透過數據分析提升催收效率</p>
                                         <div class="timeline-achievements">
                                             <h4>卓越表現：</h4>
                                             <ul>
                                                 <li>建立績效分析報表系統，提升團隊效率</li>
                                                 <li>優化催收流程，降低呆帳風險</li>
+                                                <li>單月回收創下600萬元佳績</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1123,7 +1155,7 @@
                                         </div>
                                         <div class="project-section impact">
                                             <h4>成果</h4>
-                                            <p>成功實施流程優化，獲新加坡總部批准，有效防範此類風險</p>
+                                            <p>成功實施流程優化，獲海外總部批准，有效防範此類風險</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1172,7 +1204,7 @@
                             </div>
                         </div>
 
-                        <!-- Skills Section -->
+                        <!-- Certifications Section -->
                         <div class="cv-section">
                             <h2>專業認證</h2>
                             <div class="certifications-grid">
@@ -1223,7 +1255,7 @@
                                         </div>
                                         <div class="cert-item">
                                             <span class="cert-icon">🎓</span>
-                                            <span class="cert-name">私立○○技術學院 企業管理系</span>
+                                            <span class="cert-name">私立△△技術學院 企業管理系</span>
                                             <span class="cert-year">2004</span>
                                         </div>
                                     </div>
@@ -1241,7 +1273,7 @@
                                         <span class="faq-toggle">+</span>
                                     </div>
                                     <div class="faq-answer">
-                                        <p>每次轉職都是為了尋求更大的成長空間和挑戰。從傳統銀行到新興科技公司，讓我累積了完整的金融風控經驗，並學會在不同環境下適應和創新。</p>
+                                        <p>每次轉職都是為了接觸更大規模的平台和更複雜的挑戰。從傳統金融到新興科技，讓我見識了不同的風控思維。特別是在科技公司這段經歷，讓我接觸到跨境的風控議題，這在台灣金融圈是很難得的經驗。</p>
                                     </div>
                                 </div>
                                 
@@ -1251,7 +1283,7 @@
                                         <span class="faq-toggle">+</span>
                                     </div>
                                     <div class="faq-answer">
-                                        <p>我採用數據分析結合實地調查的方式，先建立假設，再透過跨部門協作驗證。重要的是保持客觀態度，並建立標準化流程確保案件處理的一致性。</p>
+                                        <p>這是我職涯中很有成長的一次經驗。我第一次主導跨三個部門合作，而且是個資訊密度很高、風險也高的案子。中間我設計了幾個關鍵的決策節點跟同步機制，讓大家能各就各位地推進。我可以分享其中一個我們當時遇到的難題，你可能會有興趣聽聽怎麼解的？</p>
                                     </div>
                                 </div>
                                 
@@ -1261,7 +1293,7 @@
                                         <span class="faq-toggle">+</span>
                                     </div>
                                     <div class="faq-answer">
-                                        <p>我管理過9-12人的專業團隊，重視人才培養和制度建立。透過定期訓練、績效回饋和職涯規劃，幫助團隊成員成長，同時建立清楚的SOP確保工作品質。</p>
+                                        <p>我發現每個人的驅動力不太一樣。有些同事在意學習成長，有些在意穩定，有些想要被看見。所以我會花時間一對一聊，找出每個人的點，然後在工作分配和績效設計上做調整。我們團隊後來有個很有趣的成果分享制度，效果出乎意料地好。</p>
                                     </div>
                                 </div>
                                 
@@ -1271,7 +1303,17 @@
                                         <span class="faq-toggle">+</span>
                                     </div>
                                     <div class="faq-answer">
-                                        <p>我具備很強的學習能力，曾在台灣大學法律系進修24學分，並持續考取專業認證。面對新環境，我會快速了解業務流程，並主動提出改善建議。</p>
+                                        <p>我有個小習慣，每到新環境的前兩週，我會刻意地多問問題、多觀察。不只是工作內容，也包括團隊文化、決策流程這些。之前在科技公司時，我主動去了解了海外總部的思維模式，這讓我後來在跨國協作上佔了很大優勢。</p>
+                                    </div>
+                                </div>
+
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <span>這個網頁內容是你自己寫的嗎？</span>
+                                        <span class="faq-toggle">+</span>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>內容由我與 <strong>好說</strong> 顧問共同訪談整理而成，所有內容皆為真實經歷。好說幫我把原本混亂的履歷重新整理，用更有邏輯的方式呈現我的專業價值，讓面試官能快速理解我能為公司帶來什麼貢獻。</p>
                                     </div>
                                 </div>
                             </div>
@@ -1284,12 +1326,12 @@
                                 <div class="motivation-card">
                                     <div class="motivation-icon">🎯</div>
                                     <h3>前主管的建議</h3>
-                                    <p>台新銀行劉協理建議我：「以你的風控專業和問題解決能力，應該挑戰更大規模的金融機構，發揮更大影響力。」</p>
+                                    <p>銀行劉協理建議我：「以你的風控專業和問題解決能力，應該挑戰更大規模的金融機構，發揮更大影響力。」</p>
                                 </div>
                                 <div class="motivation-card">
                                     <div class="motivation-icon">💡</div>
                                     <h3>客戶的認可</h3>
-                                    <p>裕融企業陳經理表示：「你的主動性和創新思維，很適合需要開拓新業務的環境，建議往更具挑戰性的職位發展。」</p>
+                                    <p>企業陳經理表示：「你的主動性和創新思維，很適合需要開拓新業務的環境，建議往更具挑戰性的職位發展。」</p>
                                 </div>
                                 <div class="motivation-card">
                                     <div class="motivation-icon">🚀</div>
@@ -1318,26 +1360,94 @@
         </div>
     </section>
 
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">好說</div>
+                    <div class="tagline">幫你說清楚專業，談出更好薪水與錄取率</div>
+                    <div class="description">
+                        我們相信，只要你說得好，職涯的機會就會多很多。
+                        「好說」不是幫你說假話，而是幫你把原本就有的價值，
+                        用更有邏輯、更能打動人的方式，說出來。
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>服務項目</h4>
+                    <ul>
+                        <li><a href="#pricing">好說・輕版</a></li>
+                        <li><a href="#pricing">好說・標準版</a></li>
+                        <li><a href="#pricing">好說・急件版</a></li>
+                        <li><a href="#pricing">加購服務</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>聯絡我們</h4>
+                    <ul>
+                        <li><a href="https://line.me/R/ti/p/@25mincv">LINE@ 官方帳號</a></li>
+                        <li><a href="mailto:bless@25min.co">Email 聯繫</a></li>
+                        <li><a href="#faq">常見問題</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>關於好說</h4>
+                    <ul>
+                        <li><a href="#templates">模板展示</a></li>
+                        <li><a href="#process">服務流程</a></li>
+                        <li><a href="#benefits">服務效果</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 好說 - 讓你說清楚，也讓對方想錄用你</p>
+            </div>
+        </div>
+    </footer>
+
     <script>
-        // FAQ功能
+        // Toggle between original and final content
+        function showContent(type) {
+            // Hide all content sections
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Remove active class from all buttons
+            document.querySelectorAll('.toggle-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected content
+            document.getElementById(type).classList.add('active');
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
+
+        // FAQ functionality
         document.querySelectorAll('.faq-question').forEach(question => {
             question.addEventListener('click', () => {
                 const faqItem = question.parentElement;
                 const isActive = faqItem.classList.contains('active');
                 
-                // 關閉所有其他FAQ項目
+                // Close all other FAQ items
                 document.querySelectorAll('.faq-item').forEach(item => {
                     if (item !== faqItem) {
                         item.classList.remove('active');
                     }
                 });
                 
-                // 切換當前項目
+                // Toggle current item
                 faqItem.classList.toggle('active');
             });
         });
 
-        // 滾動動畫
+        // Scroll animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -1352,7 +1462,7 @@
             });
         }, observerOptions);
 
-        // 添加動畫效果
+        // Add animation effects
         document.querySelectorAll('.project-card, .motivation-card, .cert-category, .summary-card, .recommendation-item').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(20px)';
