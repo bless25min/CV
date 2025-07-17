@@ -14,7 +14,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
         :root {
-            /* Modern Professional Color Palette */
+            /* Professional Color Palette */
             --primary-color: #2563EB;
             --primary-dark: #1E40AF;
             --primary-light: #3B82F6;
@@ -23,7 +23,7 @@
             --warning-color: #F59E0B;
             --danger-color: #EF4444;
             
-            /* Sophisticated Neutrals */
+            /* Neutral Colors */
             --text-primary: #0F172A;
             --text-secondary: #475569;
             --text-light: #94A3B8;
@@ -31,28 +31,25 @@
             --bg-light: #F8FAFC;
             --bg-gray: #F1F5F9;
             --border-color: #E2E8F0;
-            --border-light: #F1F5F9;
             
-            /* Professional Gradients */
+            /* Gradients */
             --gradient-primary: linear-gradient(135deg, #2563EB 0%, #1E40AF 100%);
             --gradient-accent: linear-gradient(135deg, #10B981 0%, #059669 100%);
             --gradient-warm: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
             --gradient-surface: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
             
-            /* Enhanced Shadows */
+            /* Shadows */
             --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
             --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
             --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
             --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-            --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-            --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
             
             /* Typography */
             --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             
-            /* Spacing & Layout */
+            /* Spacing */
             --container-max: 1100px;
-            --section-padding: 100px;
+            --section-padding: 80px;
             --card-padding: 32px;
             --border-radius: 12px;
             --border-radius-lg: 20px;
@@ -85,16 +82,15 @@
             padding: 0 24px;
         }
 
-        /* Modern Hero Section */
+        /* Hero Section */
         .hero {
             background: var(--gradient-surface);
-            padding: 120px 0 80px;
+            padding: 100px 0 60px;
             text-align: center;
             position: relative;
             overflow: hidden;
         }
 
-        /* Professional Background Pattern */
         .hero::before {
             content: '';
             position: absolute;
@@ -104,8 +100,7 @@
             bottom: 0;
             background-image: 
                 radial-gradient(circle at 10% 20%, rgba(37, 99, 235, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(16, 185, 129, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 50% 50%, rgba(245, 158, 11, 0.03) 0%, transparent 50%);
+                radial-gradient(circle at 80% 80%, rgba(16, 185, 129, 0.05) 0%, transparent 50%);
             z-index: 0;
         }
 
@@ -117,54 +112,61 @@
         .hero h1 {
             font-size: clamp(2.5rem, 5vw, 3.5rem);
             font-weight: 800;
-            margin-bottom: 24px;
+            margin-bottom: 16px;
             color: var(--text-primary);
             letter-spacing: -0.02em;
-            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .hero .job-title {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 24px;
         }
 
         .hero .tagline {
-            font-size: 1.375rem;
+            font-size: 1.25rem;
             color: var(--text-secondary);
             max-width: 700px;
             margin: 0 auto 24px;
             font-weight: 400;
-            animation: fadeInUp 0.8s ease-out 0.2s both;
         }
 
         .hero .value-proposition {
             font-size: 1.125rem;
-            color: var(--primary-color);
+            color: var(--accent-color);
             font-weight: 600;
             margin-bottom: 40px;
             padding: 16px 32px;
-            background: rgba(37, 99, 235, 0.1);
-            border: 2px solid rgba(37, 99, 235, 0.2);
+            background: rgba(16, 185, 129, 0.1);
+            border: 2px solid rgba(16, 185, 129, 0.2);
             border-radius: 50px;
             display: inline-block;
-            animation: fadeInUp 0.8s ease-out 0.4s both;
         }
 
-        .hero .cta {
-            display: inline-block;
-            padding: 16px 40px;
-            background: var(--gradient-primary);
-            color: white;
+        .hero .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            flex-wrap: wrap;
+            margin-top: 32px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-secondary);
             text-decoration: none;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 1.125rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
-            animation: fadeInUp 0.8s ease-out 0.6s both;
+            font-weight: 500;
+            transition: color 0.3s ease;
         }
 
-        .hero .cta:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+        .contact-item:hover {
+            color: var(--primary-color);
         }
 
-        /* Enhanced Summary Section */
+        /* Summary Section */
         .summary {
             padding: var(--section-padding) 0;
             background: var(--bg-light);
@@ -298,7 +300,7 @@
             right: 20px;
         }
 
-        /* Modern Timeline */
+        /* Timeline */
         .timeline {
             padding: var(--section-padding) 0;
             background: var(--bg-white);
@@ -331,20 +333,6 @@
             position: relative;
             padding-left: 80px;
             margin-bottom: 60px;
-            opacity: 0;
-            transform: translateX(-20px);
-            animation: slideInLeft 0.6s ease-out forwards;
-        }
-
-        .timeline-item:nth-child(1) { animation-delay: 0.1s; }
-        .timeline-item:nth-child(2) { animation-delay: 0.2s; }
-        .timeline-item:nth-child(3) { animation-delay: 0.3s; }
-
-        @keyframes slideInLeft {
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
         }
 
         .timeline-dot {
@@ -371,7 +359,7 @@
             padding: 28px;
             border-radius: var(--border-radius-lg);
             box-shadow: var(--shadow-md);
-            border: 1px solid var(--border-light);
+            border: 1px solid var(--border-color);
             transition: all 0.3s ease;
         }
 
@@ -392,7 +380,7 @@
         .timeline-title {
             font-size: 1.375rem;
             font-weight: 700;
-            margin-bottom: 12px;
+            margin-bottom: 8px;
             color: var(--text-primary);
         }
 
@@ -421,7 +409,7 @@
             font-weight: 600;
         }
 
-        /* Enhanced Projects Section */
+        /* Projects Section */
         .projects {
             padding: var(--section-padding) 0;
             background: var(--bg-light);
@@ -452,7 +440,7 @@
 
         .project-card:hover {
             transform: translateY(-8px) scale(1.02);
-            box-shadow: var(--shadow-2xl);
+            box-shadow: var(--shadow-xl);
         }
 
         .project-header {
@@ -461,22 +449,6 @@
             color: white;
             position: relative;
             overflow: hidden;
-        }
-
-        .project-header::after {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-            animation: pulse 4s ease-in-out infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { transform: scale(0.8); opacity: 0.5; }
-            50% { transform: scale(1.2); opacity: 0.8; }
         }
 
         .project-header h3 {
@@ -552,7 +524,7 @@
             box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
         }
 
-        .learning {
+        .learning-box {
             background: var(--bg-light);
             padding: 20px;
             border-radius: var(--border-radius);
@@ -560,13 +532,13 @@
             border-left: 3px solid var(--warning-color);
         }
 
-        .learning p {
+        .learning-box p {
             font-style: italic;
             color: var(--text-secondary);
             margin: 0;
         }
 
-        /* Modern FAQ Section */
+        /* FAQ Section */
         .faq {
             padding: var(--section-padding) 0;
             background: var(--bg-white);
@@ -607,16 +579,11 @@
 
         .faq-item {
             background: white;
-            border: 2px solid var(--border-light);
+            border: 2px solid var(--border-color);
             border-radius: var(--border-radius-lg);
             margin-bottom: 20px;
             overflow: hidden;
             transition: all 0.3s ease;
-        }
-
-        .faq-item.highlight {
-            border-color: var(--primary-light);
-            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
         }
 
         .faq-item:hover {
@@ -645,7 +612,6 @@
             font-size: 1.5rem;
             color: var(--primary-color);
             transition: transform 0.3s ease;
-            font-weight: 300;
         }
 
         .faq-answer {
@@ -674,94 +640,7 @@
             box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
         }
 
-        /* Enhanced CTA Section */
-        .cta-section {
-            padding: var(--section-padding) 0;
-            background: var(--gradient-primary);
-            color: white;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cta-section::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 50%);
-            animation: rotate 20s linear infinite;
-        }
-
-        @keyframes rotate {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        .cta-content {
-            position: relative;
-            z-index: 1;
-        }
-
-        .cta-section h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 24px;
-            letter-spacing: -0.02em;
-        }
-
-        .cta-section p {
-            font-size: 1.25rem;
-            margin-bottom: 32px;
-            opacity: 0.95;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .additional-info {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-            padding: 24px 32px;
-            border-radius: var(--border-radius-lg);
-            margin: 0 auto 40px;
-            max-width: 600px;
-            font-size: 1rem;
-            line-height: 1.8;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .contact-buttons {
-            display: flex;
-            gap: 24px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .contact-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 16px 32px;
-            background-color: white;
-            color: var(--primary-color);
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .contact-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-            background-color: var(--bg-light);
-        }
-
-        /* Professional Footer */
+        /* Footer */
         footer {
             padding: 60px 0 40px;
             text-align: center;
@@ -801,53 +680,6 @@
             box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
         }
 
-        /* Animations */
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Print Styles */
-        @media print {
-            .hero {
-                background: none;
-                padding: 40px 0;
-            }
-            
-            .cta-section {
-                background: none;
-                color: var(--text-primary);
-            }
-            
-            .contact-btn {
-                border: 2px solid var(--primary-color);
-                color: var(--primary-color);
-            }
-
-            .timeline-line,
-            .project-header::after,
-            .cta-section::before {
-                display: none;
-            }
-        }
-
         /* Responsive Design */
         @media (max-width: 768px) {
             :root {
@@ -869,11 +701,6 @@
 
             .hero .tagline {
                 font-size: 1.125rem;
-            }
-
-            .hero .value-proposition {
-                font-size: 1rem;
-                padding: 12px 24px;
             }
 
             .summary-points,
@@ -898,39 +725,9 @@
                 left: 6px;
             }
 
-            .contact-buttons {
+            .hero .contact-info {
                 flex-direction: column;
-                align-items: center;
-            }
-
-            .contact-btn {
-                width: 100%;
-                max-width: 300px;
-                justify-content: center;
-            }
-
-            .faq-question {
-                padding: 20px;
-                font-size: 1rem;
-            }
-
-            .section-header h2,
-            .summary h2,
-            .timeline h2,
-            .projects h2,
-            .faq h2,
-            .cta-section h2 {
-                font-size: 2rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 1.75rem;
-            }
-
-            .project-card {
-                max-width: 100%;
+                gap: 16px;
             }
 
             .footer-actions {
@@ -943,52 +740,78 @@
                 text-align: center;
             }
         }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+
+            .project-card {
+                max-width: 100%;
+            }
+
+            .faq-question {
+                padding: 20px;
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
-    <!-- Hero Section - 15秒內建立印象 -->
+    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>👋 我是[姓名]，[職稱]</h1>
+                <h1>👋 我是[姓名]</h1>
+                <div class="job-title">[職稱]</div>
                 <p class="tagline">擁有[X]年經驗的[領域]專家，專注於[核心專長]，致力於幫助企業[解決什麼問題]</p>
                 <div class="value-proposition">
                     💡 我能解決的關鍵問題：[具體問題描述，例如：將產品開發週期縮短50%]
                 </div>
-                <a href="#contact" class="cta">與我聯繫</a>
+                <div class="contact-info">
+                    <a href="mailto:your.email@example.com" class="contact-item">
+                        📧 your.email@example.com
+                    </a>
+                    <a href="https://linkedin.com/in/yourprofile" class="contact-item">
+                        💼 LinkedIn
+                    </a>
+                    <a href="tel:+886912345678" class="contact-item">
+                        📱 +886 912 345 678
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Summary Section - 明確對應職位需求 -->
+    <!-- Summary Section -->
     <section class="summary">
         <div class="container">
             <h2>我的核心價值</h2>
-            <p class="summary-subtitle">為什麼這份經歷剛好符合貴公司的需求</p>
+            <p class="summary-subtitle">為什麼這份經歷剛好符合您的需求</p>
             <div class="summary-points">
                 <div class="summary-point">
-                    <span class="relevance-tag">符合JD</span>
+                    <span class="relevance-tag">核心能力</span>
                     <h3>✅ 成果導向</h3>
-                    <p>曾帶領3個產品從0到1，上線後半年內用戶超過20萬</p>
+                    <p>曾帶領3個產品從0到1，上線後半年內用戶超過20萬，具備完整的產品開發與市場驗證經驗</p>
                 </div>
                 <div class="summary-point">
-                    <span class="relevance-tag">符合JD</span>
+                    <span class="relevance-tag">跨域整合</span>
                     <h3>✅ 技術橋接</h3>
-                    <p>熟悉Figma / JIRA / GA4，能在技術與使用者間精準橋接</p>
+                    <p>熟悉Figma / JIRA / GA4等工具，能在技術與使用者間精準橋接，降低溝通成本</p>
                 </div>
                 <div class="summary-point">
-                    <span class="relevance-tag">符合JD</span>
-                    <h3>✅ 問題解決</h3>
-                    <p>最擅長解決「需求模糊 + 時程緊湊」的中型專案</p>
+                    <span class="relevance-tag">問題解決</span>
+                    <h3>✅ 複雜專案管理</h3>
+                    <p>最擅長解決「需求模糊 + 時程緊湊」的中型專案，從混亂中建立秩序</p>
                 </div>
             </div>
             <p class="core-value">
-                我的核心價值是：「用最小資源解決最痛的問題」
+                我的核心價值是：用最小資源解決最痛的問題
             </p>
         </div>
     </section>
 
-    <!-- Timeline Section - 展現成長軌跡與學習 -->
+    <!-- Timeline Section -->
     <section class="timeline">
         <div class="container">
             <h2>職涯歷程與成長</h2>
@@ -1000,7 +823,7 @@
                         <div class="timeline-date">2022 - 現在</div>
                         <div class="timeline-title">產品負責人</div>
                         <div class="timeline-company">XYZ 新創</div>
-                        <p class="timeline-description">帶領4人團隊，負責SaaS產品線的規劃與執行，成功提升用戶留存率35%</p>
+                        <p class="timeline-description">帶領4人團隊，負責SaaS產品線的規劃與執行，成功提升用戶留存率35%，並建立完整的產品開發流程</p>
                         <div class="timeline-learning">
                             <strong>關鍵學習：</strong>學會如何在資源有限下做優先級決策，這段經歷讓我更能理解商業價值與技術投入的平衡
                         </div>
@@ -1012,7 +835,7 @@
                         <div class="timeline-date">2020 - 2022</div>
                         <div class="timeline-title">轉職產品經理</div>
                         <div class="timeline-company">職涯轉型期</div>
-                        <p class="timeline-description">從工程師轉型，開始接觸SaaS產品設計，完成2個MVP產品的開發與上線</p>
+                        <p class="timeline-description">從工程師轉型，開始接觸SaaS產品設計，完成2個MVP產品的開發與上線，學習用戶研究與市場分析</p>
                         <div class="timeline-learning">
                             <strong>轉職動機：</strong>發現自己更享受「定義問題」而非「解決問題」，決定往產品規劃發展
                         </div>
@@ -1024,9 +847,9 @@
                         <div class="timeline-date">2018 - 2020</div>
                         <div class="timeline-title">後端工程師</div>
                         <div class="timeline-company">ABC 科技</div>
-                        <p class="timeline-description">負責核心API開發，優化系統效能，將回應時間降低60%</p>
+                        <p class="timeline-description">負責核心API開發，優化系統效能，將回應時間降低60%，奠定了扎實的技術基礎</p>
                         <div class="timeline-learning">
-                            <strong>技術基礎：</strong>這段工程師經歷讓我能更好地與技術團隊溝通，理解技術可行性
+                            <strong>技術基礎：</strong>這段工程師經歷讓我能更好地與技術團隊溝通，理解技術可行性與限制
                         </div>
                     </div>
                 </div>
@@ -1034,7 +857,7 @@
         </div>
     </section>
 
-    <!-- Projects Section - 展現角色與學習 -->
+    <!-- Projects Section -->
     <section class="projects">
         <div class="container">
             <h2>精選專案與成就</h2>
@@ -1047,20 +870,20 @@
                     <div class="project-content">
                         <div class="project-section challenge">
                             <h4>挑戰</h4>
-                            <p>原有系統無法支撐快速成長的用戶量，且缺乏彈性擴充能力</p>
+                            <p>原有系統無法支撐快速成長的用戶量，每月當機次數超過5次，且缺乏彈性擴充能力</p>
                         </div>
                         <div class="project-section solution">
                             <h4>解決方案</h4>
-                            <p>導入微服務架構，建立模組化的會員管理系統，並整合第三方登入</p>
+                            <p>導入微服務架構，建立模組化的會員管理系統，並整合第三方登入，分階段遷移降低風險</p>
                         </div>
                         <div class="project-section impact">
                             <h4>成果</h4>
-                            <p>系統承載能力提升10倍，新功能開發時間縮短50%</p>
+                            <p>系統承載能力提升10倍，當機次數降為0，新功能開發時間縮短50%</p>
                             <span class="impact-metric">用戶成長 +300%</span>
                         </div>
-                        <div class="learning">
+                        <div class="learning-box">
                             <h4>關鍵學習</h4>
-                            <p>技術決策必須考慮未來2-3年的業務發展，而非只解決當下問題</p>
+                            <p>技術決策必須考慮未來2-3年的業務發展，而非只解決當下問題。分階段遷移是降低風險的關鍵</p>
                         </div>
                     </div>
                 </div>
@@ -1073,20 +896,20 @@
                     <div class="project-content">
                         <div class="project-section challenge">
                             <h4>挑戰</h4>
-                            <p>團隊決策缺乏數據支撐，產品迭代方向不明確</p>
+                            <p>團隊決策缺乏數據支撐，產品迭代方向不明確，經常憑感覺做決定</p>
                         </div>
                         <div class="project-section solution">
                             <h4>解決方案</h4>
-                            <p>建立完整的數據追蹤體系，整合GA4與內部數據，建立即時Dashboard</p>
+                            <p>建立完整的數據追蹤體系，整合GA4與內部數據，建立即時Dashboard與自動化報告</p>
                         </div>
                         <div class="project-section impact">
                             <h4>成果</h4>
-                            <p>決策效率提升，產品迭代週期從2個月縮短至3週</p>
+                            <p>決策效率提升，產品迭代週期從2個月縮短至3週，功能成功率提升40%</p>
                             <span class="impact-metric">ROI +45%</span>
                         </div>
-                        <div class="learning">
+                        <div class="learning-box">
                             <h4>關鍵學習</h4>
-                            <p>數據不是答案，而是幫助我們問對問題的工具</p>
+                            <p>數據不是答案，而是幫助我們問對問題的工具。重要的是建立數據文化，不是技術</p>
                         </div>
                     </div>
                 </div>
@@ -1099,20 +922,20 @@
                     <div class="project-content">
                         <div class="project-section challenge">
                             <h4>挑戰</h4>
-                            <p>新用戶流失率高達60%，onboarding體驗不佳</p>
+                            <p>新用戶流失率高達60%，onboarding體驗不佳，客服詢問量暴增</p>
                         </div>
                         <div class="project-section solution">
                             <h4>解決方案</h4>
-                            <p>重新設計用戶旅程，簡化註冊流程，加入互動式導覽</p>
+                            <p>重新設計用戶旅程，簡化註冊流程，加入互動式導覽與即時幫助系統</p>
                         </div>
                         <div class="project-section impact">
                             <h4>成果</h4>
-                            <p>新用戶7日留存率從40%提升至75%</p>
+                            <p>新用戶7日留存率從40%提升至75%，客服詢問量減少30%</p>
                             <span class="impact-metric">轉換率 +85%</span>
                         </div>
-                        <div class="learning">
+                        <div class="learning-box">
                             <h4>關鍵學習</h4>
-                            <p>最好的設計往往是「看不見」的設計，讓用戶自然地完成任務</p>
+                            <p>最好的設計往往是「看不見」的設計，讓用戶自然地完成任務而不感到困惑</p>
                         </div>
                     </div>
                 </div>
@@ -1120,7 +943,7 @@
         </div>
     </section>
 
-    <!-- FAQ Section - 展現思考深度與公司了解 -->
+    <!-- FAQ Section -->
     <section class="faq">
         <div class="container">
             <h2>常見問題</h2>
@@ -1142,24 +965,14 @@
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>我相信衝突來自於目標不一致或溝通不足。我會先釐清各方的需求和顧慮，找出共同目標，然後提出能平衡各方利益的解決方案。例如在上個專案中，開發團隊和設計團隊對功能優先級有分歧，我透過數據分析和用戶訪談，幫助團隊達成共識。</p>
+                        <p>我相信衝突來自於目標不一致或溝通不足。我會先釐清各方的需求和顧慮，找出共同目標，然後提出能平衡各方利益的解決方案。例如在會員系統專案中，開發團隊和設計團隊對功能優先級有分歧，我透過數據分析和用戶訪談，幫助團隊達成共識。</p>
                     </div>
                 </div>
 
-                <div class="faq-category">關於貴公司</div>
-                <div class="faq-item highlight">
+                <div class="faq-category">關於未來發展</div>
+                <div class="faq-item">
                     <div class="faq-question">
-                        <span>為什麼想加入貴公司？</span>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>我研究了貴公司的產品發展策略，特別欣賞你們在[具體產品/服務]上的創新。我認為我在[相關經驗]的背景，能為團隊帶來新的視角。另外，貴公司重視[公司文化特點]的文化，也正是我所追求的工作環境。</p>
-                    </div>
-                </div>
-
-                <div class="faq-item highlight">
-                    <div class="faq-question">
-                        <span>我期待的團隊文化是什麼？</span>
+                        <span>期待的團隊文化是什麼？</span>
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
@@ -1167,7 +980,6 @@
                     </div>
                 </div>
 
-                <div class="faq-category">關於未來</div>
                 <div class="faq-item">
                     <div class="faq-question">
                         <span>對未來職涯的規劃？</span>
@@ -1181,27 +993,7 @@
         </div>
     </section>
 
-    <!-- CTA Section - 提供更多資訊 -->
-    <section class="cta-section" id="contact">
-        <div class="container">
-            <div class="cta-content">
-                <h2>讓我們聊聊如何創造價值</h2>
-                <p>我正在尋找能讓我「從使用者回饋出發設計產品」的職位</p>
-                
-                <div class="additional-info">
-                    📎 可提供推薦信 | 📄 完整作品集PDF | 🗣 可進行英文面試
-                </div>
-                
-                <div class="contact-buttons">
-                    <a href="mailto:your.email@example.com" class="contact-btn">📧 Email聯繫</a>
-                    <a href="https://linkedin.com/in/yourprofile" class="contact-btn">💼 LinkedIn</a>
-                    <a href="tel:+886912345678" class="contact-btn">📱 電話聯繫</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer - 實用資訊與透明度 -->
+    <!-- Footer -->
     <footer>
         <div class="container">
             <p class="footer-content">
@@ -1218,7 +1010,7 @@
     </footer>
 
     <script>
-        // FAQ Toggle with smooth animation
+        // FAQ Toggle
         document.querySelectorAll('.faq-question').forEach(question => {
             question.addEventListener('click', () => {
                 const faqItem = question.parentElement;
@@ -1253,7 +1045,7 @@
             });
         });
 
-        // Intersection Observer for animations
+        // Add animation effects
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -100px 0px'
@@ -1262,38 +1054,18 @@
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.style.animationPlayState = 'running';
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
                 }
             });
         }, observerOptions);
 
-        // Observe timeline items
-        document.querySelectorAll('.timeline-item').forEach(item => {
-            item.style.animationPlayState = 'paused';
-            observer.observe(item);
-        });
-
-        // Add parallax effect to hero
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const hero = document.querySelector('.hero');
-            
-            if (hero) {
-                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-            }
-        });
-
-        // Track page interactions
-        let startTime = new Date().getTime();
-        let interactions = 0;
-
-        document.addEventListener('click', () => {
-            interactions++;
-        });
-
-        window.addEventListener('beforeunload', () => {
-            const timeSpent = Math.round((new Date().getTime() - startTime) / 1000);
-            console.log(`Time spent: ${timeSpent}s, Interactions: ${interactions}`);
+        // Observe cards for animation
+        document.querySelectorAll('.summary-point, .timeline-item, .project-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(el);
         });
 
         // Schema.org structured data
@@ -1314,10 +1086,6 @@
                 "name": "[職稱]",
                 "occupationalCategory": "15-1199.00",
                 "skills": ["敏捷開發", "數據分析", "團隊領導"]
-            },
-            "alumniOf": {
-                "@type": "EducationalOrganization",
-                "name": "[學校名稱]"
             },
             "workExample": [
                 {
