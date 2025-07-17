@@ -532,82 +532,143 @@
             font-size: 0.95rem;
         }
 
-        /* Skills Section */
-        .skills-grid {
+        .recommendations {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .recommendation-item {
+            background: white;
+            padding: 24px;
+            border-radius: 16px;
+            box-shadow: var(--shadow-md);
+            position: relative;
+            border-left: 4px solid var(--success-color);
+        }
+
+        .recommendation-quote {
+            font-size: 1.125rem;
+            font-style: italic;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+            line-height: 1.6;
+        }
+
+        .recommendation-quote::before {
+            content: '"';
+            font-size: 2rem;
+            color: var(--success-color);
+            opacity: 0.3;
+            font-weight: 700;
+            position: absolute;
+            top: 10px;
+            left: 16px;
+        }
+
+        .recommendation-author {
+            color: var(--text-secondary);
+            font-weight: 500;
+            font-size: 0.95rem;
+            text-align: right;
+        }
+
+        /* Certifications Section */
+        .certifications-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 32px;
         }
 
-        .skill-category {
+        .cert-category {
             background: white;
             padding: 24px;
             border-radius: 16px;
             box-shadow: var(--shadow-md);
         }
 
-        .skill-category h3 {
+        .cert-category h3 {
             color: var(--text-primary);
             margin-bottom: 20px;
             font-size: 1.125rem;
             font-weight: 600;
         }
 
-        .skill-list {
+        .cert-list {
             display: flex;
             flex-direction: column;
             gap: 16px;
         }
 
-        .skill-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 12px 0;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .skill-item:last-child {
-            border-bottom: none;
-        }
-
-        .skill-name {
-            font-weight: 500;
-            color: var(--text-primary);
-        }
-
-        .skill-level {
-            display: flex;
-            gap: 4px;
-        }
-
-        .skill-dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: var(--border-color);
-            transition: all 0.3s ease;
-        }
-
-        .skill-dot.filled {
-            background: var(--primary-color);
-        }
-
-        .certification-list {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
         .cert-item {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 0;
             border-bottom: 1px solid var(--border-color);
         }
 
         .cert-item:last-child {
             border-bottom: none;
+        }
+
+        .cert-icon {
+            font-size: 1.125rem;
+            margin-right: 8px;
+        }
+
+        .cert-name {
+            flex: 1;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        .cert-year {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        /* Motivation Section */
+        .motivation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .motivation-card {
+            background: white;
+            padding: 24px;
+            border-radius: 16px;
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--primary-color);
+        }
+
+        .motivation-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .motivation-icon {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .motivation-card h3 {
+            color: var(--text-primary);
+            margin-bottom: 12px;
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+
+        .motivation-card p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            font-size: 0.95rem;
         }
 
         /* FAQ Section */
@@ -676,53 +737,7 @@
             border-color: var(--primary-color);
         }
 
-        /* Why Choose Me */
-        .reasons-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 24px;
-        }
 
-        .reason-card {
-            background: white;
-            padding: 24px;
-            border-radius: 16px;
-            box-shadow: var(--shadow-md);
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-
-        .reason-card:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .reason-number {
-            width: 40px;
-            height: 40px;
-            background: var(--gradient-primary);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 1.125rem;
-            margin: 0 auto 16px;
-        }
-
-        .reason-card h3 {
-            color: var(--text-primary);
-            margin-bottom: 12px;
-            font-size: 1.125rem;
-            font-weight: 600;
-        }
-
-        .reason-card p {
-            color: var(--text-secondary);
-            line-height: 1.6;
-            font-size: 0.95rem;
-        }
 
         /* CTA Section */
         .cta-section {
@@ -799,11 +814,15 @@
                 padding: 16px;
             }
 
-            .skills-grid {
+            .certifications-grid {
                 grid-template-columns: 1fr;
             }
 
-            .reasons-grid {
+            .recommendations {
+                grid-template-columns: 1fr;
+            }
+
+            .motivation-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
 
@@ -850,11 +869,11 @@
                 padding: 16px;
             }
 
-            .skill-category {
+            .cert-category {
                 padding: 16px;
             }
 
-            .reason-card {
+            .motivation-card {
                 padding: 16px;
             }
 
@@ -1004,8 +1023,23 @@
                                 </div>
                             </div>
                             
-                            <div class="core-value">
-                                "憑藉15年金融風控經驗，我能夠精準識別風險並建立有效防控機制，為企業創造安全可靠的金融環境"
+                            <div class="recommendations">
+                                <div class="recommendation-item">
+                                    <div class="recommendation-quote">
+                                        "企圖心強，能於工作環節中發現問題並提出建議方針。"
+                                    </div>
+                                    <div class="recommendation-author">
+                                        劉邦安 協理 | 台新國際商業銀行
+                                    </div>
+                                </div>
+                                <div class="recommendation-item">
+                                    <div class="recommendation-quote">
+                                        "以卓越的主動性和積極性，經常在工作中主動提出問題並提供建議方針。"
+                                    </div>
+                                    <div class="recommendation-author">
+                                        陳昭源 資深經理 | 裕融企業股份有限公司
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -1140,88 +1174,58 @@
 
                         <!-- Skills Section -->
                         <div class="cv-section">
-                            <h2>專業技能</h2>
-                            <div class="skills-grid">
-                                <div class="skill-category">
-                                    <h3>💻 專業技能</h3>
-                                    <div class="skill-list">
-                                        <div class="skill-item">
-                                            <span class="skill-name">風控系統操作</span>
-                                            <div class="skill-level">
-                                                <span class="skill-dot filled"></span>
-                                                <span class="skill-dot filled"></span>
-                                                <span class="skill-dot filled"></span>
-                                                <span class="skill-dot filled"></span>
-                                                <span class="skill-dot filled"></span>
-                                            </div>
+                            <h2>專業認證</h2>
+                            <div class="certifications-grid">
+                                <div class="cert-category">
+                                    <h3>🏅 金融專業認證</h3>
+                                    <div class="cert-list">
+                                        <div class="cert-item">
+                                            <span class="cert-icon">✅</span>
+                                            <span class="cert-name">防制洗錢與打擊資恐專業人員</span>
+                                            <span class="cert-year">2023</span>
                                         </div>
-                                        <div class="skill-item">
-                                            <span class="skill-name">數據分析 (Excel)</span>
-                                            <div class="skill-level">
-                                                <span class="skill-dot filled"></span>
-                                                <span class="skill-dot filled"></span>
-                                                <span class="skill-dot filled"></span>
-                                                <span class="skill-dot filled"></span>
-                                                <span class="skill-dot"></span>
-                                            </div>
+                                        <div class="cert-item">
+                                            <span class="cert-icon">✅</span>
+                                            <span class="cert-name">風險管理基本能力測試</span>
+                                            <span class="cert-year">2023</span>
                                         </div>
-                                        <div class="skill-item">
-                                            <span class="skill-name">法規遵循</span>
-                                            <div class="skill-level">
-                                                <span class="skill-dot filled"></span>
-                                                <span class="skill-dot filled"></span>
-                                                <span class="skill-dot filled"></span>
-                                                <span class="skill-dot filled"></span>
-                                                <span class="skill-dot filled"></span>
-                                            </div>
+                                        <div class="cert-item">
+                                            <span class="cert-icon">✅</span>
+                                            <span class="cert-name">銀行內部控制與內部稽核</span>
+                                            <span class="cert-year">2022</span>
+                                        </div>
+                                        <div class="cert-item">
+                                            <span class="cert-icon">✅</span>
+                                            <span class="cert-name">初階授信人員</span>
+                                            <span class="cert-year">2021</span>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="skill-category">
-                                    <h3>🗣 管理能力</h3>
-                                    <div class="skill-list">
-                                        <div class="skill-item">
-                                            <span class="skill-name">團隊領導</span>
-                                            <div class="skill-level">
-                                                <span class="skill-dot filled"></span>
-                                                <span class="skill-dot filled"></span>
-                                                <span class="skill-dot filled"></span>
-                                                <span class="skill-dot filled"></span>
-                                                <span class="skill-dot filled"></span>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item">
-                                            <span class="skill-name">跨部門協作</span>
-                                            <div class="skill-level">
-                                                <span class="skill-dot filled"></span>
-                                                <span class="skill-dot filled"></span>
-                                                <span class="skill-dot filled"></span>
-                                                <span class="skill-dot filled"></span>
-                                                <span class="skill-dot"></span>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item">
-                                            <span class="skill-name">問題解決</span>
-                                            <div class="skill-level">
-                                                <span class="skill-dot filled"></span>
-                                                <span class="skill-dot filled"></span>
-                                                <span class="skill-dot filled"></span>
-                                                <span class="skill-dot filled"></span>
-                                                <span class="skill-dot filled"></span>
-                                            </div>
+                                <div class="cert-category">
+                                    <h3>🎯 管理專業認證</h3>
+                                    <div class="cert-list">
+                                        <div class="cert-item">
+                                            <span class="cert-icon">✅</span>
+                                            <span class="cert-name">PMP專案管理師認證</span>
+                                            <span class="cert-year">2022</span>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="skill-category">
-                                    <h3>🎯 專業認證</h3>
-                                    <div class="certification-list">
-                                        <div class="cert-item">✅ 防制洗錢與打擊資恐專業人員</div>
-                                        <div class="cert-item">✅ PMP專案管理師認證</div>
-                                        <div class="cert-item">✅ 風險管理基本能力測試</div>
-                                        <div class="cert-item">✅ 銀行內部控制與內部稽核</div>
-                                        <div class="cert-item">✅ 初階授信人員</div>
+                                <div class="cert-category">
+                                    <h3>🎓 學歷進修</h3>
+                                    <div class="cert-list">
+                                        <div class="cert-item">
+                                            <span class="cert-icon">🎓</span>
+                                            <span class="cert-name">國立台灣大學進修推廣部 法律系</span>
+                                            <span class="cert-year">2012</span>
+                                        </div>
+                                        <div class="cert-item">
+                                            <span class="cert-icon">🎓</span>
+                                            <span class="cert-name">私立○○技術學院 企業管理系</span>
+                                            <span class="cert-year">2004</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1273,39 +1277,29 @@
                             </div>
                         </div>
 
-                        <!-- Why Choose Me -->
+                        <!-- Why This Role -->
                         <div class="cv-section">
-                            <h2>為什麼選擇我？</h2>
-                            <div class="reasons-grid">
-                                <div class="reason-card">
-                                    <div class="reason-number">1</div>
-                                    <h3>實戰經驗豐富</h3>
-                                    <p>15年金融風控經驗，處理過各種複雜案件，具備完整的實戰能力</p>
+                            <h2>為什麼我應徵此職務？</h2>
+                            <div class="motivation-grid">
+                                <div class="motivation-card">
+                                    <div class="motivation-icon">🎯</div>
+                                    <h3>前主管的建議</h3>
+                                    <p>台新銀行劉協理建議我：「以你的風控專業和問題解決能力，應該挑戰更大規模的金融機構，發揮更大影響力。」</p>
                                 </div>
-                                <div class="reason-card">
-                                    <div class="reason-number">2</div>
-                                    <h3>學習能力強</h3>
-                                    <p>持續進修和考取認證，能快速適應新環境和新技術</p>
+                                <div class="motivation-card">
+                                    <div class="motivation-icon">💡</div>
+                                    <h3>客戶的認可</h3>
+                                    <p>裕融企業陳經理表示：「你的主動性和創新思維，很適合需要開拓新業務的環境，建議往更具挑戰性的職位發展。」</p>
                                 </div>
-                                <div class="reason-card">
-                                    <div class="reason-number">3</div>
-                                    <h3>團隊協作佳</h3>
-                                    <p>擅長跨部門溝通協調，能有效整合資源達成目標</p>
+                                <div class="motivation-card">
+                                    <div class="motivation-icon">🚀</div>
+                                    <h3>職涯規劃考量</h3>
+                                    <p>希望在更大的平台上，運用15年累積的風控經驗，協助企業建立更完善的風險管理制度，並帶領更大規模的團隊。</p>
                                 </div>
-                                <div class="reason-card">
-                                    <div class="reason-number">4</div>
-                                    <h3>創新思維</h3>
-                                    <p>能識別新型風險並提出創新解決方案，為公司創造價值</p>
-                                </div>
-                                <div class="reason-card">
-                                    <div class="reason-number">5</div>
-                                    <h3>責任感強</h3>
-                                    <p>對工作負責任，重視風險控制的重要性和社會責任</p>
-                                </div>
-                                <div class="reason-card">
-                                    <div class="reason-number">6</div>
-                                    <h3>成長潛力大</h3>
-                                    <p>具備管理經驗和專業能力，可承擔更大的責任和挑戰</p>
+                                <div class="motivation-card">
+                                    <div class="motivation-icon">🏆</div>
+                                    <h3>專業成長動機</h3>
+                                    <p>期待能在新環境中接觸更多元的風控挑戰，持續精進專業技能，為金融業的風控標準提升做出貢獻。</p>
                                 </div>
                             </div>
                         </div>
@@ -1359,7 +1353,7 @@
         }, observerOptions);
 
         // 添加動畫效果
-        document.querySelectorAll('.project-card, .reason-card, .skill-category, .summary-card').forEach(el => {
+        document.querySelectorAll('.project-card, .motivation-card, .cert-category, .summary-card, .recommendation-item').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(20px)';
             el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
