@@ -645,10 +645,80 @@
             text-align: right;
         }
 
+        /* Expert Insights Section */
+        .expert-insights {
+            padding: var(--section-padding) 0;
+            background: var(--bg-white);
+        }
+
+        .videos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .video-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.4s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .video-header {
+            background: var(--gradient-info);
+            color: white;
+            padding: 24px;
+            text-align: center;
+        }
+
+        .video-header h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .video-header p {
+            opacity: 0.9;
+            font-size: 0.9rem;
+        }
+
+        .video-embed {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        }
+
+        .video-embed iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-content {
+            padding: 24px;
+        }
+
+        .video-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
         /* FAQ Section */
         .faq {
             padding: var(--section-padding) 0;
-            background: var(--bg-white);
+            background: var(--bg-light);
         }
 
         .faq-container {
@@ -895,6 +965,11 @@
                 grid-template-columns: 1fr;
             }
 
+            .videos-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
             .final-cta .cta-buttons {
                 flex-direction: column;
                 align-items: center;
@@ -936,6 +1011,14 @@
 
             .testimonial-card {
                 padding: 24px;
+            }
+
+            .video-header {
+                padding: 20px;
+            }
+
+            .video-content {
+                padding: 20px;
             }
         }
     </style>
@@ -1142,6 +1225,60 @@
                     </div>
                     <div class="testimonial-author">
                         — 教育業老師
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expert Insights Section -->
+    <section class="expert-insights">
+        <div class="container">
+            <div class="section-header">
+                <h2>企業主分享</h2>
+                <p class="subtitle">來自企業端的求職建議與面試要點</p>
+            </div>
+            
+            <div class="videos-grid">
+                <div class="video-card">
+                    <div class="video-header">
+                        <h3>🎯 企業主談履歷篩選標準</h3>
+                        <p>從企業端角度分析履歷撰寫要點</p>
+                    </div>
+                    <div class="video-embed">
+                        <iframe 
+                            src="https://www.youtube.com/embed/9zJYi-R82dM" 
+                            title="企業主談履歷篩選標準"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-content">
+                        <p class="video-description">
+                            專業企業主分享在履歷篩選過程中最重視的要素，以及求職者常見的履歷撰寫盲點。
+                            了解企業端的真實需求，讓你的履歷更具說服力。
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-header">
+                        <h3>💼 面試官眼中的理想候選人</h3>
+                        <p>面試技巧與注意事項深度解析</p>
+                    </div>
+                    <div class="video-embed">
+                        <iframe 
+                            src="https://www.youtube.com/embed/1vxDXYsVSEI" 
+                            title="面試官眼中的理想候選人"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-content">
+                        <p class="video-description">
+                            深入了解面試官在面試過程中的評估重點，以及如何在面試中有效展現自己的專業能力。
+                            掌握面試成功的關鍵要素，提升錄取機會。
+                        </p>
                     </div>
                 </div>
             </div>
@@ -1359,7 +1496,7 @@
         }, observerOptions);
 
         // Observe cards for animation
-        document.querySelectorAll('.benefit-card, .service-card, .step-card, .testimonial-card').forEach(el => {
+        document.querySelectorAll('.benefit-card, .service-card, .step-card, .testimonial-card, .video-card').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(20px)';
             el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
