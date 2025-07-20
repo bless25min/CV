@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="關於好說｜廖天佑Bless創立的履歷服務品牌，專注幫助專業工作者說清楚專業、談出更好薪水與錄取率。">
+    <meta property="og:title" content="關於好說｜廖天佑Bless創立的履歷服務品牌">
+    <meta property="og:description" content="了解好說的創立故事，我們如何透過專業服務幫助求職者整理職涯亮點，打造說服力強的職涯簡報。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cv.25min.co/about.html">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/133640701?v=4">
+    <title>關於好說｜廖天佑Bless創立的履歷服務品牌 - 好說</title>
+    
+    <!-- Person Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "廖天佑",
+        "alternateName": "Bless Liao",
+        "url": "https://blessliao.25min.co/",
+        "image": "https://avatars.githubusercontent.com/u/133640701?v=4",
+        "sameAs": [
+            "https://www.facebook.com/d2x123/",
+            "https://blessliao.25min.co/"
+        ],
+        "jobTitle": "好說創辦人",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "好說"
+        },
+        "description": "好說創辦人，專注於履歷撰寫與職涯簡報服務，幫助專業工作者說清楚專業、談出更好薪水與錄取率。"
+    }
+    </script>
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "好說",
+        "url": "https://cv.25min.co",
+        "description": "專注於履歷撰寫與職涯簡報服務的專業品牌，幫助專業工作者說清楚專業、談出更好薪水與錄取率。",
+        "founder": {
+            "@type": "Person",
+            "name": "廖天佑",
+            "alternateName": "Bless Liao"
+        },
+        "foundingDate": "2023",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "02-2272-4261",
+            "contactType": "客服",
+            "availableLanguage": "zh-TW"
+        },
+        "sameAs": [
+            "https://www.facebook.com/d2x123/",
+            "https://line.me/R/ti/p/@25mincv"
+        ]
+    }
+    </script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700;800;900&display=swap');
+
+        :root {
+            --primary-color: #2563EB;
+            --primary-dark: #1E40AF;
+            --primary-light: #3B82F6;
+            --secondary-color: #10B981;
+            --accent-color: #F59E0B;
+            --success-color: #059669;
+            --warning-color: #DC2626;
+            --info-color: #0EA5E9;
+            --text-primary: #111827;
+            --text-secondary: #4B5563;
+            --text-light: #6B7280;
+            --bg-white: #FFFFFF;
+            --bg-light: #F9FAFB;
+            --bg-gray: #F3F4F6;
+            --border-color: #E5E7EB;
+            --gradient-primary: linear-gradient(135deg, #2563EB 0%, #10B981 100%);
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --font-brand: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-brand);
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--bg-white);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        ::selection {
+            background-color: var(--primary-light);
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+        }
+
+        header.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: var(--shadow-md);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 900;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+            letter-spacing: -0.02em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a.current {
+            color: var(--primary-color);
+        }
+
+        .nav-links a.current::after {
+            width: 100%;
+        }
+
+        .header-cta {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 12px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+        }
+
+        .header-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+        }
+
+        /* Page Header */
+        .page-header {
+            background: var(--gradient-primary);
+            color: white;
+            padding: calc(80px + 80px) 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+            z-index: 0;
+        }
+
+        .page-header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-header h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        .page-header .subtitle {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Brand Story */
+        .brand-story {
+            padding: 100px 0;
+            background: var(--bg-white);
+        }
+
+        .story-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .story-content h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 32px;
+            color: var(--text-primary);
+        }
+
+        .story-content .lead {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            line-height: 1.7;
+        }
+
+        .story-content p {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+            text-align: left;
+        }
+
+        /* Founder Section */
+        .founder-section {
+            padding: 100px 0;
+            background: var(--bg-light);
+        }
+
+        .founder-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .founder-image {
+            text-align: center;
+        }
+
+        .founder-image img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: var(--shadow-xl);
+            border: 8px solid white;
+        }
+
+        .founder-image h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 24px 0 8px;
+            color: var(--text-primary);
+        }
+
+        .founder-image .title {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .founder-image .links {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+        }
+
+        .founder-image .links a {
+            color: var(--text-light);
+            font-size: 1.25rem;
+            transition: color 0.3s ease;
+        }
+
+        .founder-image .links a:hover {
+            color: var(--primary-color);
+        }
+
+        .founder-story {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .founder-story h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+            color: var(--text-primary);
+        }
+
+        .founder-story p {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .founder-story blockquote {
+            background: var(--bg-light);
+            border-left: 4px solid var(--primary-color);
+            padding: 20px;
+            margin: 24px 0;
+            border-radius: 8px;
+            font-style: italic;
+            color: var(--text-primary);
+        }
+
+        /* Mission Section */
+        .mission-section {
+            padding: 100px 0;
+            background: var(--bg-white);
+        }
+
+        .mission-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .mission-content h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 32px;
+            color: var(--text-primary);
+        }
+
+        .mission-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 32px;
+            margin-top: 60px;
+        }
+
+        .mission-card {
+            background: white;
+            padding: 32px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            transition: all 0.4s ease;
+        }
+
+        .mission-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .mission-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .mission-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+
+        .mission-card p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Values Section */
+        .values-section {
+            padding: 100px 0;
+            background: var(--bg-light);
+        }
+
+        .values-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+
+        .section-header .subtitle {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+        }
+
+        .value-card {
+            background: white;
+            padding: 32px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-md);
+            border-top: 4px solid var(--primary-color);
+            transition: all 0.3s ease;
+        }
+
+        .value-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .value-card h3 {
+            font-size: 1.375rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--primary-color);
+        }
+
+        .value-card p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 100px 0;
+            background: var(--gradient-primary);
+            color: white;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 24px;
+        }
+
+        .contact-section .subtitle {
+            font-size: 1.25rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .contact-buttons {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-btn {
+            background: white;
+            color: var(--primary-color);
+            padding: 16px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Footer */
+        footer {
+            padding: 80px 0 40px;
+            background: var(--text-primary);
+            color: white;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+
+        .footer-brand {
+            max-width: 400px;
+        }
+
+        .footer-brand .logo {
+            font-size: 2rem;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 24px;
+            display: block;
+        }
+
+        .footer-brand .tagline {
+            font-size: 1.125rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 24px;
+        }
+
+        .footer-brand .description {
+            color: rgba(255, 255, 255, 0.6);
+            line-height: 1.7;
+        }
+
+        .footer-links h4 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .mobile-menu-btn span {
+            width: 24px;
+            height: 2px;
+            background: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            .founder-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
+
+            .founder-image img {
+                width: 200px;
+                height: 200px;
+            }
+
+            .mission-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-btn {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .founder-story {
+                padding: 24px;
+            }
+
+            .mission-card {
+                padding: 24px;
+            }
+
+            .value-card {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav class="container">
+            <a href="index.html" class="logo">好說</a>
+            <div class="nav-links">
+                <a href="resume-writing-guide.html">履歷教學</a>
+                <a href="resume-service.html">代寫服務</a>
+                <a href="resume-templates.html">範本下載</a>
+                <a href="self-intro-optimization.html">自我介紹</a>
+                <a href="about.html" class="current">關於我們</a>
+                <a href="https://line.me/R/ti/p/@25mincv" class="header-cta">立即開始</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>關於好說</h1>
+                <p class="subtitle">幫助每位專業者說清楚自己，爭取更好的職涯與待遇</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Story -->
+    <section class="brand-story">
+        <div class="container">
+            <div class="story-content">
+                <h2>我們的故事</h2>
+                <p class="lead">我們相信，只要你說得好，職涯的機會就會多很多。</p>
+                
+                <p>「好說」誕生於一個簡單的信念：每個專業工作者都有自己的價值，但不是每個人都知道如何表達。</p>
+                
+                <p>在這個競爭激烈的時代，履歷不再只是經歷的條列，而是你專業價值的戰略性呈現。我們看到太多優秀的專業者因為不懂得如何包裝自己，而錯失了應得的機會。</p>
+                
+                <p>「好說」不是幫你說假話，而是幫你把原本就有的價值，用更有邏輯、更能打動人的方式，說出來。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="founder-section">
+        <div class="container">
+            <div class="founder-content">
+                <div class="founder-image">
+                    <img src="https://avatars.githubusercontent.com/u/133640701?v=4" alt="廖天佑 Bless Liao">
+                    <h3>廖天佑 Bless</h3>
+                    <div class="title">好說創辦人</div>
+                    <div class="links">
+                        <a href="https://www.facebook.com/d2x123/" target="_blank">📘</a>
+                        <a href="https://blessliao.25min.co/" target="_blank">🌐</a>
+                    </div>
+                </div>
+                
+                <div class="founder-story">
+                    <h2>創辦人的話</h2>
+                    
+                    <p>我是天佑，一個曾經很猶豫要不要「站到台前」的人。</p>
+                    
+                    <p>這些年創業、做專案，幾乎都在幕後。偶爾主持講座，也多半是在比較封閉的小圈子。平常生活很單純，大多時間花在打電動、經營我自己的遊戲社群。那才是我熟悉、安心的世界。</p>
+                    
+                    <blockquote>
+                        「不是要想你能做什麼，而是你想成為什麼樣的人。」
+                    </blockquote>
+                    
+                    <p>這句話是我問GPT時，它給我的回答，讓我有點愣住。</p>
+                    
+                    <p>老實說，我其實沒什麼「想成為」的目標。我沒什麼物慾，不太花錢。如果不是因為老婆想生小孩、買房子，我可能會一直宅在自己的宇宙裡打電動、研究新東西、寫工具、維護社群。</p>
+                    
+                    <p>但結婚後，很多事就不是只關我一個人了。</p>
+                    
+                    <p>這波AI浪潮，讓我重新看見那些過去投入很多、失敗很多、讓我一路背債的事情，現在，好像真的有可能做得出來了。</p>
+                    
+                    <p>我想起幾年前開工作室的經驗。那時候我幫人改履歷、寫書審資料，服務對象很多是轉職或在職進修的大叔大姊。雖然最後賠錢收掉了，但那是我人生第一次聽到這麼多發自內心的「謝謝你」，感覺自己的專業真的有幫上別人。</p>
+                    
+                    <p>於是，我把當年的客戶案例及流程整理起來，重新打磨，做成了現在的「好說」。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission-section">
+        <div class="container">
+            <div class="mission-content">
+                <h2>我們的使命</h2>
+                <p class="lead">幫你說清楚專業，談出更好薪水與錄取率</p>
+                
+                <div class="mission-cards">
+                    <div class="mission-card">
+                        <div class="mission-icon">💡</div>
+                        <h3>挖掘價值</h3>
+                        <p>透過專業訪談，從你覺得平凡的經歷中挖掘出獨特價值和專業亮點</p>
+                    </div>
+                    
+                    <div class="mission-card">
+                        <div class="mission-icon">📝</div>
+                        <h3>邏輯包裝</h3>
+                        <p>將散亂經歷整理成有邏輯的職涯故事，讓HR能快速理解你的價值</p>
+                    </div>
+                    
+                    <div class="mission-card">
+                        <div class="mission-icon">🎯</div>
+                        <h3>精準表達</h3>
+                        <p>用更有說服力的方式呈現你的專業，提升面試成功率與談薪能力</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>我們的價值觀</h2>
+                <p class="subtitle">這些原則指導著我們的每一個決定</p>
+            </div>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>誠實專業</h3>
+                    <p>我們不幫你編造假履歷，而是幫你把真實的價值用更好的方式表達出來。每一個案例都基於真實經歷，用專業方法包裝。</p>
+                </div>
+                
+                <div class="value-card">
+                    <h3>深度理解</h3>
+                    <p>透過60分鐘深度訪談，我們會花時間真正了解你的經歷和價值，而不是套用模板或公式化處理。</p>
+                </div>
+                
+                <div class="value-card">
+                    <h3>持續精進</h3>
+                    <p>我們持續研究最新的求職趨勢和HR需求，確保我們的服務始終符合市場期待，幫客戶獲得最好的結果。</p>
+                </div>
+                
+                <div class="value-card">
+                    <h3>實用導向</h3>
+                    <p>我們專注於能帶來實際效果的服務，而不是花俏的包裝。目標就是幫你獲得更多面試機會和更好的談薪結果。</p>
+                </div>
+                
+                <div class="value-card">
+                    <h3>個人化服務</h3>
+                    <p>每個人的職涯都是獨特的，我們不用一套標準流程服務所有人，而是針對每個客戶的背景和目標客製化內容。</p>
+                </div>
+                
+                <div class="value-card">
+                    <h3>長期關係</h3>
+                    <p>我們希望與客戶建立長期的信任關係，不只是一次性的服務，而是在你職涯發展路上的可靠夥伴。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2>準備好說出你的價值了嗎？</h2>
+            <p class="subtitle">讓我們幫你打造專屬的職涯簡報</p>
+            
+            <div class="contact-buttons">
+                <a href="https://line.me/R/ti/p/@25mincv" class="contact-btn">
+                    💬 LINE 諮詢
+                </a>
+                <a href="mailto:bless@25min.co" class="contact-btn">
+                    📧 Email 聯繫
+                </a>
+                <a href="tel:02-2272-4261" class="contact-btn">
+                    📞 電話諮詢
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">好說</div>
+                    <div class="tagline">幫你說清楚專業，談出更好薪水與錄取率</div>
+                    <div class="description">
+                        我們相信，只要你說得好，職涯的機會就會多很多。
+                        「好說」不是幫你說假話，而是幫你把原本就有的價值，
+                        用更有邏輯、更能打動人的方式，說出來。
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>履歷攻略</h4>
+                    <ul>
+                        <li><a href="resume-writing-guide.html">履歷撰寫教學</a></li>
+                        <li><a href="resume-templates.html">履歷範本下載</a></li>
+                        <li><a href="self-intro-optimization.html">自我介紹技巧</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>專業服務</h4>
+                    <ul>
+                        <li><a href="resume-service.html">履歷代寫服務</a></li>
+                        <li><a href="professional-template.html">客戶成果展示</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>聯絡我們</h4>
+                    <ul>
+                        <li><a href="https://line.me/R/ti/p/@25mincv">LINE@ 官方帳號</a></li>
+                        <li><a href="mailto:bless@25min.co">Email 聯繫</a></li>
+                        <li><a href="tel:02-2272-4261">客服電話</a></li>
+                        <li><a href="https://www.facebook.com/d2x123/">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 好說 - 讓你說清楚，也讓對方想錄用你</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenuBtn?.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.classList.toggle('active');
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe cards for animation
+        document.querySelectorAll('.mission-card, .value-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
