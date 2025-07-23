@@ -100,6 +100,14 @@
                     "@type": "Answer",
                     "text": "交付HTML網頁格式，可貼在履歷、LinkedIn、面試用，甚至談薪時出示。一次製作，多重用途。"
                 }
+            },
+            {
+                "@type": "Question",
+                "name": "可以加購針對特定職缺的客製化頁面嗎？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "可以！我們提供職缺客製化服務，每個職缺NT$2,000。根據目標職缺的要求，調整內容重點和展現方式，讓你的簡報頁更精準對應職缺需求。"
+                }
             }
         ]
     }
@@ -599,6 +607,91 @@
             box-shadow: var(--shadow-md);
         }
 
+        /* Add-on Services Section */
+        .addon-services {
+            margin-top: 60px;
+        }
+
+        .addon-banner {
+            background: var(--gradient-warm);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: var(--shadow-xl);
+        }
+
+        .addon-banner h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .addon-banner .addon-subtitle {
+            font-size: 1.125rem;
+            margin-bottom: 32px;
+            opacity: 0.9;
+        }
+
+        .addon-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            max-width: 900px;
+            margin: 0 auto 32px;
+        }
+
+        .addon-feature {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .addon-feature-icon {
+            background: rgba(255, 255, 255, 0.2);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+        }
+
+        .addon-feature-text {
+            text-align: left;
+        }
+
+        .addon-price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .addon-price-period {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .addon-cta {
+            background: white;
+            color: var(--accent-color);
+            padding: 16px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.125rem;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-md);
+        }
+
+        .addon-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
         /* Testimonials Section */
         .testimonials {
             padding: var(--section-padding) 0;
@@ -961,6 +1054,14 @@
                 grid-template-columns: 1fr;
             }
 
+            .addon-features {
+                grid-template-columns: 1fr;
+            }
+
+            .addon-banner {
+                padding: 32px 24px;
+            }
+
             .testimonials-grid {
                 grid-template-columns: 1fr;
             }
@@ -1002,6 +1103,14 @@
 
             .service-content {
                 padding: 24px;
+            }
+
+            .addon-banner h3 {
+                font-size: 1.5rem;
+            }
+
+            .addon-price {
+                font-size: 2rem;
             }
 
             .faq-question {
@@ -1198,6 +1307,43 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Add-on Services -->
+            <div class="addon-services">
+                <div class="addon-banner">
+                    <h3>🎯 職缺客製化加購服務</h3>
+                    <p class="addon-subtitle">針對特定職缺，打造最精準的職涯簡報頁</p>
+                    
+                    <div class="addon-features">
+                        <div class="addon-feature">
+                            <div class="addon-feature-icon">📊</div>
+                            <div class="addon-feature-text">
+                                深度分析目標職缺要求<br>
+                                精準匹配關鍵字與技能
+                            </div>
+                        </div>
+                        <div class="addon-feature">
+                            <div class="addon-feature-icon">✨</div>
+                            <div class="addon-feature-text">
+                                調整內容展現重點<br>
+                                突出最相關的經歷與成就
+                            </div>
+                        </div>
+                        <div class="addon-feature">
+                            <div class="addon-feature-icon">🔧</div>
+                            <div class="addon-feature-text">
+                                客製化FAQ與亮點<br>
+                                預先準備職缺相關問答
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="addon-price">NT$ 2,000</div>
+                    <div class="addon-price-period">每個職缺頁面</div>
+                    
+                    <a href="https://line.me/R/ti/p/@25mincv" class="addon-cta">了解加購服務</a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -1353,6 +1499,16 @@
                         <p>特別適合跨領域、PM、設計、工程、BD、自由接案者等需要展現專業價值的職位。任何想要在求職時脫穎而出的專業工作者都適用。</p>
                     </div>
                 </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>可以加購針對特定職缺的客製化頁面嗎？</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>可以！我們提供職缺客製化服務，每個職缺NT$2,000。根據目標職缺的要求，調整內容重點和展現方式，讓你的簡報頁更精準對應職缺需求。這對同時應徵多個職位的求職者特別有幫助。</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1496,7 +1652,7 @@
         }, observerOptions);
 
         // Observe cards for animation
-        document.querySelectorAll('.benefit-card, .service-card, .step-card, .testimonial-card, .video-card').forEach(el => {
+        document.querySelectorAll('.benefit-card, .service-card, .step-card, .testimonial-card, .video-card, .addon-banner').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(20px)';
             el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
