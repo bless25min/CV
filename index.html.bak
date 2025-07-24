@@ -1,0 +1,1723 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="好說是一項專業履歷代寫與職涯簡報服務，透過60分鐘深度訪談將職涯經歷轉化成一頁精簡有力的職涯簡報頁，幫助提高面試成功率並在薪資談判中更具優勢。">
+    <meta property="og:title" content="好說｜專業履歷代寫與職涯簡報服務">
+    <meta property="og:description" content="透過結構化訪談引導，把散亂的工作經歷整理出清晰的價值脈絡，轉換成讓HR願意推薦、主管容易記住的故事。標準版NT$4,980，急件版NT$8,800。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cv.25min.co">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/133640701?v=4">
+    <title>好說｜專業履歷代寫與職涯簡報服務 - 幫你說清楚專業，談出更好薪水</title>
+   
+    <!-- Schema.org 結構化資料 - Website -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "好說 - 專業履歷代寫與職涯簡報服務",
+        "url": "https://cv.25min.co",
+        "description": "專業履歷代寫與職涯簡報服務，透過60分鐘深度訪談將職涯經歷轉化成一頁精簡有力的職涯簡報頁，幫助求職者提高面試成功率並在薪資談判中更具優勢。",
+        "publisher": {
+            "@type": "Person",
+            "name": "廖天佑",
+            "alternateName": "Bless Liao",
+            "url": "https://blessliao.25min.co/",
+            "image": "https://avatars.githubusercontent.com/u/133640701?v=4"
+        }
+    }
+    </script>
+
+    <!-- 服務提供者 Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "好說 - 履歷代寫與職涯簡報服務",
+        "description": "專為需要在求職過程中清楚展現專業價值的求職者和專業人士而設計，透過60分鐘深度訪談，將散亂的工作經歷整理出清晰的價值脈絡。",
+        "serviceType": "履歷代寫與職涯簡報服務",
+        "provider": {
+            "@type": "Person",
+            "name": "廖天佑",
+            "alternateName": "Bless Liao"
+        },
+        "areaServed": "台灣",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "20"
+        },
+        "availableChannel": [
+            {
+                "@type": "ServiceChannel",
+                "serviceUrl": "https://line.me/R/ti/p/@25mincv",
+                "serviceType": "LINE客服"
+            },
+            {
+                "@type": "ServiceChannel",
+                "servicePhone": "02-2272-4261",
+                "serviceType": "電話諮詢"
+            }
+        ]
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "為什麼不是傳統履歷，而是一頁簡報？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "履歷上雖然可以列出很多經歷，但如果說不出來就等於沒說。我們透過深度訪談，幫你從看似雜亂的職涯經歷中整理出有價值的邏輯，轉換成說服HR與主管的一頁簡報格式，讓用人主管快速記住你。簡報式的呈現更能突出重點，使閱讀的人在短時間內理解你的核心價值。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "HR看到這頁會怎麼想？會不會覺得內容太浮誇？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "我們的頁面設計是為了讓HR容易推薦你，讓主管容易記得你。內容完全基於你的真實經歷，經由專業包裝呈現重點，並不是誇大其詞，而是凸顯重點價值。許多HR反而喜歡這種清楚呈現候選人價值的格式，因為它節省了篩選時間，效果更佳。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "如果我自己講不出亮點怎麼辦？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "這正是我們的專業所在！透過60分鐘結構化訪談，我們的顧問會循序善誘地引導你回顧整個職涯，幫你挖掘不易察覺的亮點並整理出故事脈絡。即使你覺得自己的經驗很普通，我們也能找到你與眾不同的獨特價值並將其放大呈現。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "沒有現成履歷，可以直接透過對談提供經歷嗎？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "可以的！我們的服務對於沒有傳統履歷的客戶也很友好。我們會用提問對談的方式幫你從頭梳理職涯，將工作經驗、專案成果到技能專長一一挖掘出來。整個過程就像聊天，你只需說出你的故事，我們來替你整理成有條理的內容。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "最後產出的頁面是什麼形式？我該怎麼使用？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "我們交付的最終成果是HTML網頁格式的一頁簡報。你可以直接打開這個檔案在瀏覽器中查看，或上傳到自己的網站/部落格。不管是附在電子履歷中、放在LinkedIn個人檔案裡，還是面試時當場展示，這個頁面都有很高的使用彈性。一次製作，多平台、多場合使用。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "什麼樣的職缺特別適合使用好說的職涯簡報頁？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "好說服務適用於各行各業的專業人才，特別是那些需要凸顯個人價值的職位類型。例如：轉換跑道的跨領域求職者、產品經理或專案經理（PM）、設計師、工程師、商業開發（BD）人員、自由接案者等。我們的一頁簡報能幫助這些專業人士清晰展現自身優勢。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "是否可以加購針對特定職缺的客製化頁面？費用怎麼算？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "當然可以！我們提供職缺客製化服務，針對每個額外的目標職缺加製一頁專屬簡報。加購價格為每個職缺NT$2,000。我們會根據該職缺的要求調整內容重點和呈現方式，確保你的簡報頁精準對應職缺需求。這對於同時應徵多個職位的求職者特別有幫助。"
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <style>
+        /* Import Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700;800;900&display=swap');
+
+        :root {
+            /* Brand Colors */
+            --primary-color: #2563EB;
+            --primary-dark: #1E40AF;
+            --primary-light: #3B82F6;
+            --secondary-color: #10B981;
+            --accent-color: #F59E0B;
+            --success-color: #059669;
+            --warning-color: #DC2626;
+            --info-color: #0EA5E9;
+            
+            /* Neutral Colors */
+            --text-primary: #111827;
+            --text-secondary: #4B5563;
+            --text-light: #6B7280;
+            --bg-white: #FFFFFF;
+            --bg-light: #F9FAFB;
+            --bg-gray: #F3F4F6;
+            --border-color: #E5E7EB;
+            
+            /* Brand Gradients */
+            --gradient-primary: linear-gradient(135deg, #2563EB 0%, #10B981 100%);
+            --gradient-warm: linear-gradient(135deg, #F59E0B 0%, #DC2626 100%);
+            --gradient-success: linear-gradient(135deg, #10B981 0%, #059669 100%);
+            --gradient-info: linear-gradient(135deg, #0EA5E9 0%, #3B82F6 100%);
+            
+            /* Shadows */
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --shadow-brand: 0 20px 40px -15px rgba(37, 99, 235, 0.3);
+            
+            /* Typography */
+            --font-brand: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            
+            /* Spacing */
+            --container-max: 1200px;
+            --section-padding: 100px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-brand);
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--bg-white);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        ::selection {
+            background-color: var(--primary-light);
+            color: white;
+        }
+
+        .container {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+        }
+
+        header.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: var(--shadow-md);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 900;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+            letter-spacing: -0.02em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .header-cta {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 12px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+        }
+
+        .header-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: calc(80px + 120px) 0 120px;
+            background: linear-gradient(135deg, #F8FAFC 0%, #E2E8F0 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 20% 20%, rgba(37, 99, 235, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 6vw, 5rem);
+            font-weight: 900;
+            margin-bottom: 24px;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+        }
+
+        .hero .highlight {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero .subtitle {
+            font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        .hero .description {
+            font-size: clamp(1rem, 2vw, 1.125rem);
+            color: var(--text-secondary);
+            margin-bottom: 48px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 80px;
+        }
+
+        .cta-primary {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 20px 48px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.125rem;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-brand);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .cta-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 25px 50px -15px rgba(37, 99, 235, 0.4);
+        }
+
+        .cta-secondary {
+            background: white;
+            color: var(--text-primary);
+            padding: 20px 48px;
+            border: 2px solid var(--border-color);
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.125rem;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .cta-secondary:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Benefits Section */
+        .benefits {
+            padding: var(--section-padding) 0;
+            background: var(--bg-white);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .section-header h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        .section-header .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            border-top: 4px solid var(--success-color);
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 24px;
+            display: inline-block;
+        }
+
+        .benefit-card h3 {
+            font-size: 1.375rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+
+        .benefit-card p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+
+        /* How It Works Section */
+        .how-it-works {
+            padding: var(--section-padding) 0;
+            background: var(--bg-light);
+        }
+
+        .steps-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .step-card {
+            background: white;
+            padding: 32px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-md);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .step-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .step-number {
+            position: absolute;
+            top: -15px;
+            left: 32px;
+            background: var(--gradient-primary);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.125rem;
+        }
+
+        .step-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 16px 0;
+            color: var(--text-primary);
+        }
+
+        .step-card p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Services Section */
+        .services {
+            padding: var(--section-padding) 0;
+            background: var(--bg-white);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .service-card.featured {
+            border: 3px solid var(--primary-color);
+        }
+
+        .service-card.featured::before {
+            content: "推薦方案";
+            position: absolute;
+            top: -1px;
+            right: 32px;
+            background: var(--primary-color);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 0 0 12px 12px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .service-header {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 32px;
+            text-align: center;
+        }
+
+        .service-header h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .service-price {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .service-period {
+            opacity: 0.8;
+            font-size: 0.875rem;
+        }
+
+        .service-content {
+            padding: 32px;
+        }
+
+        .service-features {
+            list-style: none;
+            margin-bottom: 32px;
+        }
+
+        .service-features li {
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--text-secondary);
+        }
+
+        .service-features li::before {
+            content: "✓";
+            color: var(--success-color);
+            font-weight: bold;
+            font-size: 1.125rem;
+        }
+
+        .service-cta {
+            width: 100%;
+            padding: 16px;
+            background: var(--gradient-primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            text-align: center;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .service-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Add-on Services Section */
+        .addon-services {
+            margin-top: 60px;
+        }
+
+        .addon-banner {
+            background: var(--gradient-warm);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: var(--shadow-xl);
+        }
+
+        .addon-banner h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .addon-banner .addon-subtitle {
+            font-size: 1.125rem;
+            margin-bottom: 32px;
+            opacity: 0.9;
+        }
+
+        .addon-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            max-width: 900px;
+            margin: 0 auto 32px;
+        }
+
+        .addon-feature {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .addon-feature-icon {
+            background: rgba(255, 255, 255, 0.2);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+        }
+
+        .addon-feature-text {
+            text-align: left;
+        }
+
+        .addon-price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .addon-price-period {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .addon-cta {
+            background: white;
+            color: var(--accent-color);
+            padding: 16px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.125rem;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-md);
+        }
+
+        .addon-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: var(--section-padding) 0;
+            background: var(--bg-light);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 32px;
+            margin-top: 60px;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 32px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-md);
+            position: relative;
+        }
+
+        .testimonial-quote {
+            font-size: 1.125rem;
+            font-style: italic;
+            color: var(--text-primary);
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        .testimonial-quote::before {
+            content: '"';
+            font-size: 3rem;
+            color: var(--primary-color);
+            opacity: 0.3;
+            font-weight: 700;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+
+        .testimonial-author {
+            color: var(--text-secondary);
+            font-weight: 500;
+            text-align: right;
+        }
+
+        .testimonial-description {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-top: 16px;
+        }
+
+        /* Expert Insights Section */
+        .expert-insights {
+            padding: var(--section-padding) 0;
+            background: var(--bg-white);
+        }
+
+        .videos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .video-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.4s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .video-header {
+            background: var(--gradient-info);
+            color: white;
+            padding: 24px;
+            text-align: center;
+        }
+
+        .video-header h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .video-header p {
+            opacity: 0.9;
+            font-size: 0.9rem;
+        }
+
+        .video-embed {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        }
+
+        .video-embed iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-content {
+            padding: 24px;
+        }
+
+        .video-description {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: var(--section-padding) 0;
+            background: var(--bg-light);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            border: 2px solid var(--border-color);
+            border-radius: 16px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow-md);
+        }
+
+        .faq-question {
+            padding: 28px 32px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 1.125rem;
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            color: var(--primary-color);
+        }
+
+        .faq-toggle {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-answer {
+            padding: 0 32px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 32px 28px;
+            max-height: 500px;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+
+        .faq-item.active {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+        }
+
+        /* CTA Section */
+        .final-cta {
+            padding: var(--section-padding) 0;
+            background: var(--gradient-primary);
+            color: white;
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            margin-bottom: 24px;
+        }
+
+        .final-cta .subtitle {
+            font-size: 1.25rem;
+            margin-bottom: 24px;
+            opacity: 0.9;
+        }
+
+        .final-cta .description {
+            font-size: 1.125rem;
+            margin-bottom: 48px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+            opacity: 0.95;
+        }
+
+        .final-cta .cta-buttons {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-white {
+            background: white;
+            color: var(--primary-color);
+            padding: 20px 48px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.125rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-white:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Footer */
+        footer {
+            padding: 80px 0 40px;
+            background: var(--text-primary);
+            color: white;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+
+        .footer-brand {
+            max-width: 400px;
+        }
+
+        .footer-brand .logo {
+            font-size: 2rem;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 24px;
+            display: block;
+        }
+
+        .footer-brand .tagline {
+            font-size: 1.125rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 24px;
+        }
+
+        .footer-brand .description {
+            color: rgba(255, 255, 255, 0.6);
+            line-height: 1.7;
+        }
+
+        .footer-links h4 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .mobile-menu-btn span {
+            width: 24px;
+            height: 2px;
+            background: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            :root {
+                --section-padding: 80px;
+            }
+
+            .container {
+                padding: 0 16px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            .hero-ctas {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cta-primary,
+            .cta-secondary {
+                width: 100%;
+                max-width: 300px;
+                text-align: center;
+                justify-content: center;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .steps-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .addon-features {
+                grid-template-columns: 1fr;
+            }
+
+            .addon-banner {
+                padding: 32px 24px;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .videos-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .final-cta .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cta-white {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .benefit-card {
+                padding: 24px;
+            }
+
+            .step-card {
+                padding: 24px;
+            }
+
+            .service-header {
+                padding: 24px;
+            }
+
+            .service-content {
+                padding: 24px;
+            }
+
+            .addon-banner h3 {
+                font-size: 1.5rem;
+            }
+
+            .addon-price {
+                font-size: 2rem;
+            }
+
+            .faq-question {
+                padding: 20px;
+                font-size: 1rem;
+            }
+
+            .testimonial-card {
+                padding: 24px;
+            }
+
+            .video-header {
+                padding: 20px;
+            }
+
+            .video-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRM9J6MW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <!-- Header -->
+    <header id="header">
+        <nav class="container">
+            <a href="index.html" class="logo">好說</a>
+            <div class="nav-links">
+                <a href="resume-writing-guide.html">履歷教學</a>
+                <a href="resume-service.html">代寫服務</a>
+                <a href="resume-templates.html">範本下載</a>
+                <a href="self-intro-optimization.html">自我介紹</a>
+                <a href="about.html">關於我們</a>
+                <a onclick="trackLineClick("general")" href="https://line.me/R/ti/p/@25mincv" class="header-cta">立即開始</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>
+                    <span class="highlight">專業履歷代寫與職涯簡報服務</span><br>
+                    幫你說清楚專業，談出更好薪水
+                </h1>
+                
+                <p class="subtitle">
+                    透過60分鐘深度訪談，將職涯經歷轉化成一頁精簡有力的職涯簡報頁
+                </p>
+                
+                <p class="description">
+                    專為需要在求職過程中清楚展現專業價值的求職者和專業人士而設計。<br>
+                    我們透過結構化的訪談引導，把原本散亂的工作經歷整理出清晰的價值脈絡，<br>
+                    轉換成讓HR願意推薦、用人主管容易記住你的故事。
+                </p>
+                
+                <div class="hero-ctas">
+                    <a onclick="trackLineClick("general")" href="https://line.me/R/ti/p/@25mincv" class="cta-primary">
+                        🚀 開始製作我的職涯簡報頁
+                    </a>
+                    <a href="https://cv.25min.co/professional-template.html" class="cta-secondary">
+                        🤝 查看客戶成果展示
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2>好說服務為求職者帶來三大核心好處</h2>
+                <p class="subtitle">履歷列一堆，說不出來就等於沒說；我們幫你說得清楚、好、讓人願意回應</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">📈</div>
+                    <h3>提升面試成功率</h3>
+                    <p>將混亂的經歷梳理出清晰的價值邏輯，轉化為一頁說服HR與主管的專業簡報。這種聚焦重點的呈現方式能顯著提高你的面試通過率，讓你在眾多候選人中脫穎而出。</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>談薪更有底氣</h3>
+                    <p>清楚展示你的專業價值和具體成果，為你提供充分的談判籌碼。在薪資談判時，你有實實在在的成就數據與案例支持，使你更有說服力和自信爭取理想薪水。</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>HR樂於推薦，主管記得你</h3>
+                    <p>採用專業簡報格式製作的履歷頁面，讓HR能快速抓取重點並樂於將你推薦給用人主管；而主管在短時間瀏覽後也能記住你的突出亮點。這種清晰有條理的表現形式有效提高了內部推薦和最終錄用的機率。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>好說服務的製作流程</h2>
+                <p class="subtitle">結合AI工具與人工訪談，確保產出高品質的職涯簡報頁</p>
+            </div>
+            
+            <div class="steps-container">
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>提供履歷連結或PDF</h3>
+                        <p>首先，你可以上傳現有的履歷檔案（連結或PDF）供我們參考。如果沒有現成履歷，也沒關係——你可以透過LINE提供基本個人資料和工作背景。我們會先了解你的職涯概況，為後續訪談做好準備。</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>選擇方案並付款</h3>
+                        <p>接下來，選擇適合你的服務方案（可選標準版或急件版）。我們提供多種付款方式，方便又安全，你可以使用LINE Pay或銀行轉帳完成付款。確認款項後，我們的團隊將立即與你聯繫，進入後續流程。</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>預約60分鐘深度訪談</h3>
+                        <p>付款完成後，我們會與你協調預約一場約1小時的深度訪談。在這場結構化訪談中，專業顧問透過系統性的提問，引導你回顧工作經歷、挖掘專案亮點和個人成就。即使你一時想不到特別的經歷，我們也會協助你發掘出過去忽略的專業強項。</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <h3>AI與顧問整理內容</h3>
+                        <p>訪談結束後，我們運用AI技術輔助內容整理，並由經驗豐富的顧問進行細緻編輯。這個步驟會將你的敘述整理成有邏輯的故事脈絡，採取簡報形式強調重點。AI的速度結合人員的專業判斷，確保產出的內容既精準又具有說服力。</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">5</div>
+                        <h3>交付HTML網頁頁面</h3>
+                        <p>我們會在承諾的時間內將完成的職涯簡報以HTML網頁檔案格式交付給你。你將會收到一個製作完善的單頁網站檔案，只需在電腦上雙擊開啟即可查看效果。如果需要，你也可以輕鬆將這個HTML頁面上傳到求職網站、個人部落格或作品集平台。</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">6</div>
+                        <h3>多重應用場景</h3>
+                        <p>一頁完成的職涯簡報有多種用途。你可以將頁面連結或截圖附在傳統履歷中，或在LinkedIn頭條放上此頁連結。在面試時，你也能主動出示這頁內容作為輔助講稿。甚至在談判薪資時，這份簡報頁也能作為有力證明，展現你的價值。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>服務方案與價格</h2>
+                <p class="subtitle">依交付速度和服務層級不同，以滿足不同求職者的需求</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-header">
+                        <h3>好說・標準版</h3>
+                        <div class="service-price">NT$ 4,980</div>
+                        <div class="service-period">一次付清，無續收</div>
+                    </div>
+                    <div class="service-content">
+                        <ul class="service-features">
+                            <li>60分鐘深度訪談</li>
+                            <li>專業內容精修</li>
+                            <li>專業頁面設計</li>
+                            <li>一次免費修改</li>
+                            <li>HTML網頁格式交付</li>
+                            <li>7天內完整交付</li>
+                            <li>適合時間充裕、追求高品質細節的求職者</li>
+                        </ul>
+                        <a onclick="trackLineClick("general")" href="https://line.me/R/ti/p/@25mincv" class="service-cta">選擇標準版</a>
+                    </div>
+                </div>
+                
+                <div class="service-card featured">
+                    <div class="service-header">
+                        <h3>好說・急件版</h3>
+                        <div class="service-price">NT$ 8,800</div>
+                        <div class="service-period">一次付清，無續收</div>
+                    </div>
+                    <div class="service-content">
+                        <ul class="service-features">
+                            <li>60分鐘深度訪談</li>
+                            <li>48小時內急件交付</li>
+                            <li>優先客服支援</li>
+                            <li>專業頁面設計</li>
+                            <li>一次免費修改</li>
+                            <li>HTML網頁格式交付</li>
+                            <li>適合有緊急求職時限、需要快速完成頁面的求職者</li>
+                        </ul>
+                        <a onclick="trackLineClick("general")" href="https://line.me/R/ti/p/@25mincv" class="service-cta">選擇急件版</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add-on Services -->
+            <div class="addon-services">
+                <div class="addon-banner">
+                    <h3>🎯 職缺客製化加購服務</h3>
+                    <p class="addon-subtitle">如果你正在應徵多個職位，或特別在意某個目標工作的契合度</p>
+                    
+                    <div class="addon-features">
+                        <div class="addon-feature">
+                            <div class="addon-feature-icon">📊</div>
+                            <div class="addon-feature-text">
+                                深度分析目標職缺要求<br>
+                                仔細研究職缺描述，提取關鍵字和技能要求
+                            </div>
+                        </div>
+                        <div class="addon-feature">
+                            <div class="addon-feature-icon">✨</div>
+                            <div class="addon-feature-text">
+                                調整內容呈現重點<br>
+                                突出最相關的經歷與成就，完全對應核心要求
+                            </div>
+                        </div>
+                        <div class="addon-feature">
+                            <div class="addon-feature-icon">🔧</div>
+                            <div class="addon-feature-text">
+                                客製化FAQ與亮點準備<br>
+                                預先準備該職缺可能關注的問題和重點說明
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="addon-price">NT$ 2,000</div>
+                    <div class="addon-price-period">每個職缺頁面</div>
+                    
+                    <a onclick="trackLineClick("general")" href="https://line.me/R/ti/p/@25mincv" class="addon-cta">了解加購服務</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>真實客戶見證</h2>
+                <p class="subtitle">來自好說服務用戶的真實反饋</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        我都不知道，原來專案跟推薦人能夠透過這樣挖掘出來
+                    </div>
+                    <div class="testimonial-author">
+                        — 製程工程師
+                    </div>
+                    <p class="testimonial-description">
+                        對於好說服務在訪談過程中挖掘他專案亮點和推薦人價值的深度感到驚喜。這位工程師過去沒有意識到自己的專業故事可以如此被整理包裝，透過服務他看見了自身經歷的新價值，對結果十分滿意。
+                    </p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        真的很感謝你，我同事說她未來也想找你幫忙寫
+                    </div>
+                    <div class="testimonial-author">
+                        — 教育業老師
+                    </div>
+                    <p class="testimonial-description">
+                        她在收到完成的職涯簡報頁後表示感謝，不但對服務成果感到滿意，感謝我們幫助她清晰呈現了教育領域的經歷，她的同事看過頁面後也立刻表達了尋求協助的意願。客戶的口碑相傳顯示出我們服務的品質與價值。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expert Insights Section -->
+    <section class="expert-insights">
+        <div class="container">
+            <div class="section-header">
+                <h2>企業端觀點分享</h2>
+                <p class="subtitle">讓求職者更了解用人單位的想法</p>
+            </div>
+            
+            <div class="videos-grid">
+                <div class="video-card">
+                    <div class="video-header">
+                        <h3>🎯 企業主談履歷篩選標準</h3>
+                        <p>從企業端角度分析履歷撰寫要點</p>
+                    </div>
+                    <div class="video-embed">
+                        <iframe 
+                            src="https://www.youtube.com/embed/9zJYi-R82dM" 
+                            title="企業主談履歷篩選標準"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-content">
+                        <p class="video-description">
+                            這段影片中，一位具有豐富招聘經驗的企業主分享了篩選履歷時最看重的要素，以及常見的履歷撰寫盲點。透過企業主的分析，你可以了解HR和主管真正想在履歷中看到什麼，進而調整你的職涯簡報頁內容以貼近這些標準。掌握企業端的真實需求，能讓你的履歷更具針對性與說服力。
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-header">
+                        <h3>💼 面試官眼中的理想候選人</h3>
+                        <p>面試技巧與注意事項深度解析</p>
+                    </div>
+                    <div class="video-embed">
+                        <iframe 
+                            src="https://www.youtube.com/embed/1vxDXYsVSEI" 
+                            title="面試官眼中的理想候選人"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-content">
+                        <p class="video-description">
+                            這支影片提供了面試官視角的深入解析，說明在面試過程中他們評估候選人的核心重點。內容涵蓋如何在面試中有效展現自己的專業能力、溝通技巧以及解決問題的思維。瞭解面試官眼中的理想條件有助於你針對這些關鍵要素做準備，在實際面試時對症下藥，提升錄取機會。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>常見問題與解答</h2>
+                <p class="subtitle">幫助你進一步了解我們的服務細節</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>為什麼不是傳統履歷，而是一頁簡報？</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>履歷上雖然可以列出很多經歷，但如果說不出來就等於沒說。我們透過深度訪談，幫你從看似雜亂的職涯經歷中整理出有價值的邏輯，轉換成說服HR與主管的一頁簡報格式，讓用人主管快速記住你。簡報式的呈現更能突出重點，使閱讀的人在短時間內理解你的核心價值。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>HR看到這頁會怎麼想？會不會覺得內容太浮誇？</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>我們的頁面設計是為了讓HR容易推薦你，讓主管容易記得你。內容完全基於你的真實經歷，經由專業包裝呈現重點，並不是誇大其詞，而是凸顯重點價值。許多HR反而喜歡這種清楚呈現候選人價值的格式，因為它節省了篩選時間，效果更佳。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>如果我自己講不出亮點怎麼辦？</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>這正是我們的專業所在！透過60分鐘結構化訪談，我們的顧問會循序善誘地引導你回顧整個職涯，幫你挖掘不易察覺的亮點並整理出故事脈絡。即使你覺得自己的經驗很普通，我們也能找到你與眾不同的獨特價值並將其放大呈現。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>沒有現成履歷，可以直接透過對談提供經歷嗎？</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>可以的！我們的服務對於沒有傳統履歷的客戶也很友好。我們會用提問對談的方式幫你從頭梳理職涯，將工作經驗、專案成果到技能專長一一挖掘出來。整個過程就像聊天，你只需說出你的故事，我們來替你整理成有條理的內容。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>最後產出的頁面是什麼形式？我該怎麼使用？</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>我們交付的最終成果是HTML網頁格式的一頁簡報。你可以直接打開這個檔案在瀏覽器中查看，或上傳到自己的網站/部落格。不管是附在電子履歷中、放在LinkedIn個人檔案裡，還是面試時當場展示，這個頁面都有很高的使用彈性。一次製作，多平台、多場合使用，幫助你的求職過程更順利。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>什麼樣的職缺特別適合使用好說的職涯簡報頁？</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>好說服務適用於各行各業的專業人才，特別是那些需要凸顯個人價值的職位類型。例如：轉換跑道的跨領域求職者、產品經理或專案經理（PM）、設計師、工程師、商業開發（BD）人員、自由接案者等。在這些職位中，求職者往往需要展示多元且具體的成果與能力。我們的一頁簡報能幫助這些專業人士清晰展現自身優勢，讓各類專業背景的求職者在競爭中脫穎而出。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>是否可以加購針對特定職缺的客製化頁面？費用怎麼算？</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>當然可以！我們提供職缺客製化服務，針對每個額外的目標職缺加製一頁專屬簡報。加購價格為每個職缺NT$2,000。我們會根據該職缺的要求調整內容重點和呈現方式，確保你的簡報頁精準對應職缺需求。這對於同時應徵多個職位的求職者特別有幫助，可以讓你針對不同工作給出量身打造的內容，大幅提高各別投遞的成功率。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>準備好讓用人主管對你印象深刻了嗎？</h2>
+            <p class="subtitle">說得好，你就拿得好</p>
+            <p class="description">
+                現在就開始打造你的專業履歷簡報頁，用清晰有力的方式呈現你的專業背景，<br>
+                在激烈的求職市場中脫穎而出，為自己的面試錄取率和未來薪資談判增加勝算。
+            </p>
+            
+            <div class="cta-buttons">
+                <a onclick="trackLineClick("general")" href="https://line.me/R/ti/p/@25mincv" class="cta-white">
+                    🚀 開始製作我的簡報頁
+                </a>
+                <a href="professional-template.html" class="cta-white">
+                    👁️ 查看客戶成果展示
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">好說</div>
+                    <div class="tagline">幫你說清楚專業，談出更好薪水與錄取率</div>
+                    <div class="description">
+                        我們堅信只要你能清楚傳達自己的專業價值，職涯機會自然會大幅增加，薪酬待遇也會隨之提升。「好說」不是幫你捏造事實或包裝浮誇，而是幫助你將原本就具備的實力以更有邏輯、更加動人的方式說出來。
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>服務項目</h4>
+                    <ul>
+                        <li><a href="resume-service.html">履歷代寫服務</a></li>
+                        <li><a href="resume-writing-guide.html">履歷撰寫教學</a></li>
+                        <li><a href="resume-templates.html">範本下載</a></li>
+                        <li><a href="self-intro-optimization.html">自我介紹技巧</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>聯絡我們</h4>
+                    <ul>
+                        <li><a onclick="trackLineClick("general")" href="https://line.me/R/ti/p/@25mincv">LINE@ 官方帳號</a></li>
+                        <li><a href="mailto:bless@25min.co">Email 聯繫</a></li>
+                        <li><a href="tel:02-2272-4261">客服電話</a></li>
+                        <li><a href="https://www.facebook.com/d2x123/">Facebook</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>關於好說</h4>
+                    <ul>
+                        <li><a href="about.html">關於我們</a></li>
+                        <li><a href="professional-template.html">客戶成果展示</a></li>
+                        <li><a href="privacy.html">隱私權政策</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 好說 - 讓你說清楚，也讓對方想錄用你</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Toggle current item
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenuBtn?.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.classList.toggle('active');
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe cards for animation
+        document.querySelectorAll('.benefit-card, .service-card, .step-card, .testimonial-card, .video-card, .addon-banner').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="自我介紹撰寫與履歷優化指南｜學會用SOAR與PPP架構寫出具說服力的自我介紹，掌握履歷優化技巧，讓你脫穎而出。">
+    <meta property="og:title" content="自我介紹撰寫與履歷優化指南｜讓你在求職中脫穎而出">
+    <meta property="og:description" content="專業自我介紹撰寫技巧，包含SOAR架構、PPP方法等實用技巧。同時提供履歷優化策略，幫你提升求職成功率。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cv.25min.co/self-intro-optimization.html">
+    <title>自我介紹撰寫與履歷優化指南｜讓你在求職中脫穎而出 - 好說</title>
+    
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "自我介紹應該包含哪些要素？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "自我介紹應包含：1) 姓名和職業背景 2) 核心技能與經驗 3) 主要成就或亮點 4) 職涯目標與價值主張。建議控制在30秒到2分鐘內，依場合調整長度。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "SOAR架構是什麼？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "SOAR架構是自我介紹的結構化方法：Situation(背景情況)、Objective(目標)、Action(行動)、Result(結果)。這個架構幫助你有邏輯地組織自我介紹內容。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "如何讓履歷內容更有說服力？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "使用量化數據、具體事例、行動動詞開頭、關鍵字匹配職缺需求。重點是展現你的價值和成果，而不只是列出職責。"
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Article Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "自我介紹撰寫與履歷優化指南",
+        "description": "專業自我介紹撰寫技巧，包含SOAR架構、PPP方法等實用技巧。同時提供履歷優化策略，幫你提升求職成功率。",
+        "author": {
+            "@type": "Person",
+            "name": "廖天佑",
+            "alternateName": "Bless Liao"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "好說"
+        },
+        "datePublished": "2024-01-15",
+        "dateModified": "2024-01-15",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://cv.25min.co/self-intro-optimization.html"
+        }
+    }
+    </script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700;800;900&display=swap');
+
+        :root {
+            --primary-color: #2563EB;
+            --primary-dark: #1E40AF;
+            --primary-light: #3B82F6;
+            --secondary-color: #10B981;
+            --accent-color: #F59E0B;
+            --success-color: #059669;
+            --warning-color: #DC2626;
+            --info-color: #0EA5E9;
+            --text-primary: #111827;
+            --text-secondary: #4B5563;
+            --text-light: #6B7280;
+            --bg-white: #FFFFFF;
+            --bg-light: #F9FAFB;
+            --bg-gray: #F3F4F6;
+            --border-color: #E5E7EB;
+            --gradient-primary: linear-gradient(135deg, #2563EB 0%, #10B981 100%);
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --font-brand: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-brand);
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--bg-white);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        ::selection {
+            background-color: var(--primary-light);
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+        }
+
+        header.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: var(--shadow-md);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 900;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+            letter-spacing: -0.02em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a.current {
+            color: var(--primary-color);
+        }
+
+        .nav-links a.current::after {
+            width: 100%;
+        }
+
+        .header-cta {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 12px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+        }
+
+        .header-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+        }
+
+        /* Page Header */
+        .page-header {
+            background: var(--gradient-primary);
+            color: white;
+            padding: calc(80px + 60px) 0 60px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            margin-bottom: 20px;
+            letter-spacing: -0.02em;
+        }
+
+        .page-header .subtitle {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Summary Section */
+        .summary-section {
+            padding: 60px 0;
+            background: var(--bg-light);
+        }
+
+        .summary-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-md);
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .summary-card h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .summary-card p {
+            font-size: 1.125rem;
+            line-height: 1.7;
+            color: var(--text-secondary);
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 80px 0;
+            background: var(--bg-white);
+        }
+
+        .content-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 60px;
+        }
+
+        .article-content {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .article-content h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 40px 0 24px 0;
+            color: var(--text-primary);
+        }
+
+        .article-content h2:first-child {
+            margin-top: 0;
+        }
+
+        .article-content h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 32px 0 16px 0;
+            color: var(--primary-color);
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+
+        .article-content ul, .article-content ol {
+            margin: 20px 0;
+            padding-left: 24px;
+        }
+
+        .article-content li {
+            margin-bottom: 8px;
+            line-height: 1.7;
+            color: var(--text-secondary);
+        }
+
+        .highlight-box {
+            background: var(--bg-light);
+            border-left: 4px solid var(--primary-color);
+            padding: 24px;
+            margin: 32px 0;
+            border-radius: 8px;
+        }
+
+        .highlight-box h4 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--primary-color);
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+
+        /* Framework Cards */
+        .framework-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            margin: 40px 0;
+        }
+
+        .framework-card {
+            background: white;
+            border: 2px solid var(--border-color);
+            border-radius: 20px;
+            padding: 32px;
+            transition: all 0.3s ease;
+        }
+
+        .framework-card:hover {
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .framework-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--primary-color);
+            text-align: center;
+        }
+
+        .framework-card .framework-steps {
+            margin: 24px 0;
+        }
+
+        .framework-step {
+            background: var(--bg-light);
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .framework-step h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .framework-step p {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        /* Example Box */
+        .example-box {
+            background: var(--bg-gray);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .example-box h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--success-color);
+        }
+
+        .example-box .good-example {
+            background: rgba(5, 150, 105, 0.1);
+            border-left: 4px solid var(--success-color);
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+
+        .example-box .bad-example {
+            background: rgba(220, 38, 38, 0.1);
+            border-left: 4px solid var(--warning-color);
+            padding: 16px;
+            border-radius: 8px;
+        }
+
+        .example-box .good-example::before {
+            content: '✓ 好的範例：';
+            font-weight: 600;
+            color: var(--success-color);
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .example-box .bad-example::before {
+            content: '✗ 不好的範例：';
+            font-weight: 600;
+            color: var(--warning-color);
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        /* Optimization Tips */
+        .optimization-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin: 40px 0;
+        }
+
+        .optimization-card {
+            background: white;
+            border: 2px solid var(--border-color);
+            border-radius: 16px;
+            padding: 24px;
+            transition: all 0.3s ease;
+        }
+
+        .optimization-card:hover {
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow-md);
+        }
+
+        .optimization-icon {
+            background: var(--gradient-primary);
+            color: white;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+        }
+
+        .optimization-card h4 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+
+        .optimization-card p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: sticky;
+            top: 120px;
+            height: fit-content;
+        }
+
+        .sidebar-card {
+            background: white;
+            padding: 32px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-md);
+            margin-bottom: 24px;
+        }
+
+        .sidebar-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        .sidebar-links {
+            list-style: none;
+        }
+
+        .sidebar-links li {
+            margin-bottom: 12px;
+        }
+
+        .sidebar-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 0;
+            display: block;
+            transition: color 0.3s ease;
+        }
+
+        .sidebar-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .cta-sidebar {
+            background: var(--gradient-primary);
+            color: white;
+            text-align: center;
+        }
+
+        .cta-sidebar h3 {
+            color: white;
+        }
+
+        .cta-sidebar p {
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .cta-sidebar .btn {
+            background: white;
+            color: var(--primary-color);
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .cta-sidebar .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 80px 0;
+            background: var(--bg-light);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+
+        .section-header .subtitle {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            border: 2px solid var(--border-color);
+            border-radius: 16px;
+            margin-bottom: 16px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow-md);
+        }
+
+        .faq-question {
+            padding: 24px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            color: var(--primary-color);
+        }
+
+        .faq-toggle {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-answer {
+            padding: 0 24px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 24px 24px;
+            max-height: 300px;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+
+        .faq-item.active {
+            border-color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            padding: 80px 0 40px;
+            background: var(--text-primary);
+            color: white;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+
+        .footer-brand {
+            max-width: 400px;
+        }
+
+        .footer-brand .logo {
+            font-size: 2rem;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 24px;
+            display: block;
+        }
+
+        .footer-brand .tagline {
+            font-size: 1.125rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 24px;
+        }
+
+        .footer-brand .description {
+            color: rgba(255, 255, 255, 0.6);
+            line-height: 1.7;
+        }
+
+        .footer-links h4 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .mobile-menu-btn span {
+            width: 24px;
+            height: 2px;
+            background: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .content-wrapper {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .sidebar {
+                position: static;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 24px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            .article-content {
+                padding: 24px;
+            }
+
+            .sidebar-card {
+                padding: 24px;
+            }
+
+            .framework-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .optimization-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRM9J6MW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <!-- Header -->
+    <header id="header">
+        <nav class="container">
+            <a href="index.html" class="logo">好說</a>
+            <div class="nav-links">
+                <a href="resume-writing-guide.html">履歷教學</a>
+                <a href="resume-service.html">代寫服務</a>
+                <a href="resume-templates.html">範本下載</a>
+                <a href="self-intro-optimization.html" class="current">自我介紹</a>
+                <a href="about.html">關於我們</a>
+                <a onclick="trackLineClick("general")" href="https://line.me/R/ti/p/@25mincv" class="header-cta">立即開始</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>自我介紹與履歷優化</h1>
+            <p class="subtitle">學會用SOAR與PPP架構寫出具說服力的自我介紹，掌握履歷優化技巧</p>
+        </div>
+    </section>
+
+    <!-- Summary Section -->
+    <section class="summary-section">
+        <div class="container">
+            <div class="summary-card">
+                <h2>為什麼自我介紹這麼重要？</h2>
+                <p>自我介紹是你給人的第一印象，無論是在履歷的專業摘要、面試開場、或是職場社交場合，一個好的自我介紹能讓對方快速理解你的價值。本指南將教你如何用結構化的方法撰寫自我介紹，同時提供履歷優化策略，讓你在求職過程中更有競爭力。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="article-content">
+                    <h2>自我介紹撰寫架構</h2>
+                    
+                    <p>好的自我介紹需要有清楚的結構，讓聽者能夠快速抓到重點。以下介紹兩個實用的架構：</p>
+                    
+                    <div class="framework-grid">
+                        <div class="framework-card">
+                            <h3>SOAR 架構</h3>
+                            <p>適合用於展現解決問題的能力和具體成果</p>
+                            
+                            <div class="framework-steps">
+                                <div class="framework-step">
+                                    <h4>S - Situation (背景情況)</h4>
+                                    <p>簡述你的職業背景或當時面對的情況</p>
+                                </div>
+                                <div class="framework-step">
+                                    <h4>O - Objective (目標)</h4>
+                                    <p>說明你想要達成的目標或解決的問題</p>
+                                </div>
+                                <div class="framework-step">
+                                    <h4>A - Action (行動)</h4>
+                                    <p>描述你採取了哪些具體行動</p>
+                                </div>
+                                <div class="framework-step">
+                                    <h4>R - Result (結果)</h4>
+                                    <p>展現你達成的具體成果和影響</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="framework-card">
+                            <h3>PPP 架構</h3>
+                            <p>適合用於一般場合的簡潔自我介紹</p>
+                            
+                            <div class="framework-steps">
+                                <div class="framework-step">
+                                    <h4>P - Past (過去)</h4>
+                                    <p>簡述你的專業背景和主要經驗</p>
+                                </div>
+                                <div class="framework-step">
+                                    <h4>P - Present (現在)</h4>
+                                    <p>說明你目前的角色和核心能力</p>
+                                </div>
+                                <div class="framework-step">
+                                    <h4>P - Potential (未來)</h4>
+                                    <p>表達你的職涯目標和能為公司帶來的價值</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>自我介紹範例對比</h2>
+                    
+                    <div class="example-box">
+                        <h4>履歷專業摘要範例</h4>
+                        <div class="good-example">
+                            我是李小明，擁有5年數位行銷經驗的專業人士。過去在科技公司負責品牌推廣，成功將網站流量提升150%，並建立了完整的社群行銷策略。目前專精於SEO優化和內容行銷，熟悉Google Analytics和各種行銷工具。希望在貴公司發揮我的數位行銷專長，協助品牌在競爭激烈的市場中脫穎而出。
+                        </div>
+                        <div class="bad-example">
+                            我叫李小明，今年28歲，畢業於某某大學行銷系。我的興趣是看電影和旅遊，個性開朗活潑。我很努力工作，希望能在貴公司學到更多東西，也希望公司能給我機會發揮。
+                        </div>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>面試自我介紹範例</h4>
+                        <div class="good-example">
+                            您好，我是王美華，有8年財務管理經驗。在前一家公司擔任財務經理期間，我主導了成本控制專案，成功為公司節省年度營運成本20%。我專精於財務分析和預算規劃，具備CPA證照，熟悉國際會計準則。我希望能在貴公司運用我的財務專業，協助公司達成更好的營運績效。
+                        </div>
+                        <div class="bad-example">
+                            我是王美華，我覺得自己很適合這個工作，因為我有相關經驗。我很認真負責，而且學習能力很強，希望你們能給我這個機會。我會很努力的。
+                        </div>
+                    </div>
+
+                    <h2>履歷優化技巧</h2>
+                    
+                    <p>除了自我介紹，整體履歷的優化也很重要。以下是一些實用的優化策略：</p>
+                    
+                    <div class="optimization-grid">
+                        <div class="optimization-card">
+                            <div class="optimization-icon">📊</div>
+                            <h4>量化成果</h4>
+                            <p>用具體數字展現你的成就，如「提升銷售額30%」「管理15人團隊」「縮短處理時間50%」，讓成果更有說服力。</p>
+                        </div>
+                        
+                        <div class="optimization-card">
+                            <div class="optimization-icon">🎯</div>
+                            <h4>關鍵字匹配</h4>
+                            <p>研究目標職缺的要求，將相關技能和關鍵字自然地融入履歷中，提高通過ATS系統的機率。</p>
+                        </div>
+                        
+                        <div class="optimization-card">
+                            <div class="optimization-icon">⚡</div>
+                            <h4>動作動詞</h4>
+                            <p>用「領導」「開發」「優化」「建立」等強有力的動詞開頭，展現你的主動性和影響力。</p>
+                        </div>
+                        
+                        <div class="optimization-card">
+                            <div class="optimization-icon">🎨</div>
+                            <h4>視覺層次</h4>
+                            <p>使用一致的格式、適當的留白和清楚的段落標題，讓履歷易讀且專業。重點資訊要突出顯示。</p>
+                        </div>
+                        
+                        <div class="optimization-card">
+                            <div class="optimization-icon">🔍</div>
+                            <h4>客製化內容</h4>
+                            <p>針對不同職缺調整履歷重點，突出最相關的經驗和技能，讓每份履歷都精準對應目標職位。</p>
+                        </div>
+                        
+                        <div class="optimization-card">
+                            <div class="optimization-icon">✅</div>
+                            <h4>完整性檢查</h4>
+                            <p>確保所有重要資訊完整，包括聯絡方式、工作經歷、技能證照等，避免遺漏關鍵資訊。</p>
+                        </div>
+                    </div>
+
+                    <h2>不同場合的自我介紹技巧</h2>
+                    
+                    <h3>1. 履歷專業摘要</h3>
+                    <p>履歷開頭的專業摘要是你的「電梯簡報」，要在2-3句話內讓HR理解你的價值：</p>
+                    <ul>
+                        <li>第一句：你的專業身份和年資</li>
+                        <li>第二句：你的核心技能和主要成就</li>
+                        <li>第三句：你的職涯目標和能帶來的價值</li>
+                    </ul>
+
+                    <h3>2. 面試開場自我介紹</h3>
+                    <p>面試時的自我介紹建議控制在1-2分鐘內：</p>
+                    <ul>
+                        <li>開場問候，簡述姓名和應徵職位</li>
+                        <li>重點說明相關工作經驗</li>
+                        <li>舉出1-2個具體成就</li>
+                        <li>表達對職位的興趣和期待</li>
+                    </ul>
+
+                    <h3>3. 職場社交場合</h3>
+                    <p>在networking或職場社交場合，自我介紹要更簡潔有趣：</p>
+                    <ul>
+                        <li>姓名和職業</li>
+                        <li>一句話描述你做什麼</li>
+                        <li>一個有趣的細節或成就</li>
+                        <li>開放性問題引導對話</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <h4>重要提醒</h4>
+                        <p><strong>定義：</strong>自我介紹是展示您個人品牌的簡潔陳述，應該針對不同場合和聽眾調整內容和長度。<br><br>
+                        記住，自我介紹的目的不是詳述你的完整經歷，而是讓對方對你產生興趣，願意進一步了解。每個字都要有價值，每句話都要為「為什麼選擇你」提供答案。</p>
+                    </div>
+
+                    <h2>常見錯誤與改善建議</h2>
+                    
+                    <h3>避免這些常見錯誤</h3>
+                    <ul>
+                        <li><strong>太過冗長：</strong>內容過多，重點不突出</li>
+                        <li><strong>過於籠統：</strong>用「很努力」「學習能力強」等空泛詞彙</li>
+                        <li><strong>缺乏重點：</strong>沒有針對目標職位調整內容</li>
+                        <li><strong>過於謙虛：</strong>不敢展現自己的成就和能力</li>
+                        <li><strong>背稿感重：</strong>聽起來像在背書，缺乏自然感</li>
+                    </ul>
+
+                    <h3>改善建議</h3>
+                    <ul>
+                        <li>多練習，直到能自然流暢地說出</li>
+                        <li>準備不同長度的版本（30秒、1分鐘、2分鐘）</li>
+                        <li>錄音練習，檢查語速和語調</li>
+                        <li>請朋友聽聽並給予回饋</li>
+                        <li>根據不同場合準備不同版本</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar">
+                    <div class="sidebar-card">
+                        <h3>相關資源</h3>
+                        <ul class="sidebar-links">
+                            <li><a href="resume-writing-guide.html">履歷撰寫教學</a></li>
+                            <li><a href="resume-templates.html">履歷範本下載</a></li>
+                            <li><a href="resume-service.html">專業代寫服務</a></li>
+                            <li><a href="professional-template.html">客戶成果展示</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card cta-sidebar">
+                        <h3>需要專業協助？</h3>
+                        <p>讓專業顧問幫你優化自我介紹和履歷內容，60分鐘訪談打造完美職涯簡報。</p>
+                        <a onclick="trackLineClick("general")" href="https://line.me/R/ti/p/@25mincv" class="btn">立即諮詢</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>自我介紹常見問題</h2>
+                <p class="subtitle">關於自我介紹撰寫的常見疑問解答</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>自我介紹應該包含哪些要素？</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>自我介紹應包含：1) 姓名和職業背景 2) 核心技能與經驗 3) 主要成就或亮點 4) 職涯目標與價值主張。建議控制在30秒到2分鐘內，依場合調整長度。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>SOAR架構是什麼？</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>SOAR架構是自我介紹的結構化方法：Situation(背景情況)、Objective(目標)、Action(行動)、Result(結果)。這個架構幫助你有邏輯地組織自我介紹內容。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>如何讓履歷內容更有說服力？</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>使用量化數據、具體事例、行動動詞開頭、關鍵字匹配職缺需求。重點是展現你的價值和成果，而不只是列出職責。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>面試時自我介紹應該多長？</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>建議控制在1-2分鐘內。包含姓名、相關經驗、具體成就和對職位的興趣。太短會顯得準備不足，太長會讓面試官失去耐心。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>如何避免自我介紹聽起來像在背書？</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>多練習到熟練為止，準備不同版本應對不同場合，使用自然的語調和節奏，適時加入互動元素，避免完全照稿唸讀。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">好說</div>
+                    <div class="tagline">幫你說清楚專業，談出更好薪水與錄取率</div>
+                    <div class="description">
+                        我們相信，只要你說得好，職涯的機會就會多很多。
+                        「好說」不是幫你說假話，而是幫你把原本就有的價值，
+                        用更有邏輯、更能打動人的方式，說出來。
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>履歷攻略</h4>
+                    <ul>
+                        <li><a href="resume-writing-guide.html">履歷撰寫教學</a></li>
+                        <li><a href="resume-templates.html">履歷範本下載</a></li>
+                        <li><a href="self-intro-optimization.html">自我介紹技巧</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>專業服務</h4>
+                    <ul>
+                        <li><a href="resume-service.html">履歷代寫服務</a></li>
+                        <li><a href="professional-template.html">客戶成果展示</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>聯絡我們</h4>
+                    <ul>
+                        <li><a onclick="trackLineClick("general")" href="https://line.me/R/ti/p/@25mincv">LINE@ 官方帳號</a></li>
+                        <li><a href="mailto:bless@25min.co">Email 聯繫</a></li>
+                        <li><a href="tel:02-2272-4261">客服電話</a></li>
+                        <li><a href="https://www.facebook.com/d2x123/">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 好說 - 讓你說清楚，也讓對方想錄用你</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Toggle current item
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenuBtn?.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.classList.toggle('active');
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe cards for animation
+        document.querySelectorAll('.framework-card, .optimization-card, .sidebar-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
