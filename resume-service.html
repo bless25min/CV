@@ -845,12 +845,41 @@
             }
         }
     </style>
+
 </head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WRM9J6MW');</script>
+    <!-- End Google Tag Manager -->
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GN4RL3TTRR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GN4RL3TTRR');
+      
+      function trackLineClick(source) {
+        gtag('event', 'line_click', {
+          'event_category': 'conversion',
+          'event_label': source,
+          'value': 1
+        });
+        window.dataLayer.push({
+          'event': 'line_button_click',
+          'click_source': source
+        });
+      }
+    </script>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRM9J6MW"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRM9J6MW"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- Header -->
     <header id="header">
         <nav class="container">
@@ -861,7 +890,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <a href="resume-templates.html">範本下載</a>
                 <a href="self-intro-optimization.html">自我介紹</a>
                 <a href="about.html">關於我們</a>
-                <a onclick="trackLineClick("general")" href="https://line.me/R/ti/p/@25mincv" class="header-cta">立即開始</a>
+                <a  onclick="trackLineClick('header')" href="https://line.me/R/ti/p/@25mincv" class="header-cta">立即開始</a>
             </div>
             <button class="mobile-menu-btn">
                 <span></span>
@@ -1024,7 +1053,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <li>HTML網頁格式</li>
                             <li>終身使用權</li>
                         </ul>
-                        <a onclick="trackLineClick("general")" href="https://line.me/R/ti/p/@25mincv" class="plan-cta">選擇標準版</a>
+                        <a  href="https://line.me/R/ti/p/@25mincv" class="plan-cta">選擇標準版</a>
                     </div>
                 </div>
                 
@@ -1045,7 +1074,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <li>終身使用權</li>
                             <li>適合快速轉職需求</li>
                         </ul>
-                        <a onclick="trackLineClick("general")" href="https://line.me/R/ti/p/@25mincv" class="plan-cta">選擇急件版</a>
+                        <a  href="https://line.me/R/ti/p/@25mincv" class="plan-cta">選擇急件版</a>
                     </div>
                 </div>
             </div>
@@ -1161,7 +1190,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p class="subtitle">60分鐘訪談，讓專業顧問幫你說出價值</p>
             
             <div class="cta-buttons">
-                <a onclick="trackLineClick("general")" href="https://line.me/R/ti/p/@25mincv" class="cta-white">
+                <a  onclick="trackLineClick('cta')" href="https://line.me/R/ti/p/@25mincv" class="cta-white">
                     🚀 立即開始製作
                 </a>
                 <a href="professional-template.html" class="cta-white">
@@ -1205,7 +1234,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="footer-links">
                     <h4>聯絡我們</h4>
                     <ul>
-                        <li><a onclick="trackLineClick("general")" href="https://line.me/R/ti/p/@25mincv">LINE@ 官方帳號</a></li>
+                        <li><a  onclick="trackLineClick('footer')" href="https://line.me/R/ti/p/@25mincv">LINE@ 官方帳號</a></li>
                         <li><a href="mailto:bless@25min.co">Email 聯繫</a></li>
                         <li><a href="tel:02-2272-4261">客服電話</a></li>
                         <li><a href="https://www.facebook.com/d2x123/">Facebook</a></li>
