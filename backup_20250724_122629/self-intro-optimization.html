@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="履歷撰寫教學指南｜如何寫出一份好履歷？10個實用技巧幫你寫出具競爭力的專業履歷，提升面試成功率。">
-    <meta property="og:title" content="履歷撰寫教學指南｜如何寫出一份好履歷？">
-    <meta property="og:description" content="專業履歷撰寫指南，包含格式選擇、內容撰寫、關鍵字優化等進階技巧。10個實用要點幫你寫出讓HR印象深刻的履歷。">
+    <meta name="description" content="自我介紹撰寫與履歷優化指南｜學會用SOAR與PPP架構寫出具說服力的自我介紹，掌握履歷優化技巧，讓你脫穎而出。">
+    <meta property="og:title" content="自我介紹撰寫與履歷優化指南｜讓你在求職中脫穎而出">
+    <meta property="og:description" content="專業自我介紹撰寫技巧，包含SOAR架構、PPP方法等實用技巧。同時提供履歷優化策略，幫你提升求職成功率。">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://cv.25min.co/resume-writing-guide.html">
-    <title>履歷撰寫教學指南｜如何寫出一份好履歷？- 好說</title>
+    <meta property="og:url" content="https://cv.25min.co/self-intro-optimization.html">
+    <title>自我介紹撰寫與履歷優化指南｜讓你在求職中脫穎而出 - 好說</title>
     
     <!-- FAQ Schema -->
     <script type="application/ld+json">
@@ -18,26 +18,26 @@
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "履歷應該寫多長？",
+                "name": "自我介紹應該包含哪些要素？",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "建議控制在1-2頁，突出重點經歷與技能。新鮮人可以1頁為主，有豐富經驗者可到2頁，但要確保內容精煉有價值。"
+                    "text": "自我介紹應包含：1) 姓名和職業背景 2) 核心技能與經驗 3) 主要成就或亮點 4) 職涯目標與價值主張。建議控制在30秒到2分鐘內，依場合調整長度。"
                 }
             },
             {
                 "@type": "Question",
-                "name": "履歷要包含哪些要素？",
+                "name": "SOAR架構是什麼？",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "應包含聯絡資訊、專業摘要、工作經歷、學歷、技能證照和重要專案成果。每個部分都要與目標職位相關。"
+                    "text": "SOAR架構是自我介紹的結構化方法：Situation(背景情況)、Objective(目標)、Action(行動)、Result(結果)。這個架構幫助你有邏輯地組織自我介紹內容。"
                 }
             },
             {
                 "@type": "Question",
-                "name": "如何讓履歷通過ATS系統？",
+                "name": "如何讓履歷內容更有說服力？",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "使用標準格式、包含職缺關鍵字、避免特殊字體和複雜排版、使用標準的段落標題如『工作經歷』『技能』等。"
+                    "text": "使用量化數據、具體事例、行動動詞開頭、關鍵字匹配職缺需求。重點是展現你的價值和成果，而不只是列出職責。"
                 }
             }
         ]
@@ -49,8 +49,8 @@
     {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "履歷撰寫教學指南：如何寫出一份好履歷？",
-        "description": "專業履歷撰寫指南，包含格式選擇、內容撰寫、關鍵字優化等進階技巧。10個實用要點幫你寫出讓HR印象深刻的履歷。",
+        "headline": "自我介紹撰寫與履歷優化指南",
+        "description": "專業自我介紹撰寫技巧，包含SOAR架構、PPP方法等實用技巧。同時提供履歷優化策略，幫你提升求職成功率。",
         "author": {
             "@type": "Person",
             "name": "廖天佑",
@@ -64,7 +64,7 @@
         "dateModified": "2024-01-15",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://cv.25min.co/resume-writing-guide.html"
+            "@id": "https://cv.25min.co/self-intro-optimization.html"
         }
     }
     </script>
@@ -339,15 +339,115 @@
             margin-bottom: 0;
         }
 
-        /* Tips Grid */
-        .tips-grid {
+        /* Framework Cards */
+        .framework-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            margin: 40px 0;
+        }
+
+        .framework-card {
+            background: white;
+            border: 2px solid var(--border-color);
+            border-radius: 20px;
+            padding: 32px;
+            transition: all 0.3s ease;
+        }
+
+        .framework-card:hover {
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .framework-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--primary-color);
+            text-align: center;
+        }
+
+        .framework-card .framework-steps {
+            margin: 24px 0;
+        }
+
+        .framework-step {
+            background: var(--bg-light);
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .framework-step h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .framework-step p {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        /* Example Box */
+        .example-box {
+            background: var(--bg-gray);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .example-box h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--success-color);
+        }
+
+        .example-box .good-example {
+            background: rgba(5, 150, 105, 0.1);
+            border-left: 4px solid var(--success-color);
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+
+        .example-box .bad-example {
+            background: rgba(220, 38, 38, 0.1);
+            border-left: 4px solid var(--warning-color);
+            padding: 16px;
+            border-radius: 8px;
+        }
+
+        .example-box .good-example::before {
+            content: '✓ 好的範例：';
+            font-weight: 600;
+            color: var(--success-color);
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .example-box .bad-example::before {
+            content: '✗ 不好的範例：';
+            font-weight: 600;
+            color: var(--warning-color);
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        /* Optimization Tips */
+        .optimization-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 24px;
             margin: 40px 0;
         }
 
-        .tip-card {
+        .optimization-card {
             background: white;
             border: 2px solid var(--border-color);
             border-radius: 16px;
@@ -355,32 +455,32 @@
             transition: all 0.3s ease;
         }
 
-        .tip-card:hover {
+        .optimization-card:hover {
             border-color: var(--primary-color);
             box-shadow: var(--shadow-md);
         }
 
-        .tip-number {
+        .optimization-icon {
             background: var(--gradient-primary);
             color: white;
-            width: 32px;
-            height: 32px;
+            width: 48px;
+            height: 48px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: 700;
+            font-size: 1.5rem;
             margin-bottom: 16px;
         }
 
-        .tip-card h4 {
+        .optimization-card h4 {
             font-size: 1.125rem;
             font-weight: 600;
             margin-bottom: 12px;
             color: var(--text-primary);
         }
 
-        .tip-card p {
+        .optimization-card p {
             font-size: 0.95rem;
             line-height: 1.6;
             color: var(--text-secondary);
@@ -669,7 +769,11 @@
                 padding: 24px;
             }
 
-            .tips-grid {
+            .framework-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .optimization-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -691,12 +795,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <nav class="container">
             <a href="index.html" class="logo">好說</a>
             <div class="nav-links">
-                <a href="resume-writing-guide.html" class="current">履歷教學</a>
+                <a href="resume-writing-guide.html">履歷教學</a>
                 <a href="resume-service.html">代寫服務</a>
                 <a href="resume-templates.html">範本下載</a>
-                <a href="self-intro-optimization.html">自我介紹</a>
+                <a href="self-intro-optimization.html" class="current">自我介紹</a>
                 <a href="about.html">關於我們</a>
-                <a onclick="trackLineClick("general")" onclick="trackLineClick("general")" href="https://line.me/R/ti/p/@25mincv" class="header-cta">立即開始</a>
+                <a onclick="trackLineClick("general")" href="https://line.me/R/ti/p/@25mincv" class="header-cta">立即開始</a>
             </div>
             <button class="mobile-menu-btn">
                 <span></span>
@@ -709,8 +813,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1>履歷撰寫教學指南</h1>
-            <p class="subtitle">如何寫出一份好履歷？10個實用技巧讓你脫穎而出</p>
+            <h1>自我介紹與履歷優化</h1>
+            <p class="subtitle">學會用SOAR與PPP架構寫出具說服力的自我介紹，掌握履歷優化技巧</p>
         </div>
     </section>
 
@@ -718,8 +822,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section class="summary-section">
         <div class="container">
             <div class="summary-card">
-                <h2>什麼是好履歷？</h2>
-                <p>好履歷就是能在6-7秒內讓HR快速理解你的價值，並願意進一步了解的履歷。它不只是經歷的條列，更是你專業價值的戰略性呈現。本指南將教你如何寫出具競爭力的專業履歷，從格式選擇到內容優化，讓你在求職市場中脫穎而出。</p>
+                <h2>為什麼自我介紹這麼重要？</h2>
+                <p>自我介紹是你給人的第一印象，無論是在履歷的專業摘要、面試開場、或是職場社交場合，一個好的自我介紹能讓對方快速理解你的價值。本指南將教你如何用結構化的方法撰寫自我介紹，同時提供履歷優化策略，讓你在求職過程中更有競爭力。</p>
             </div>
         </div>
     </section>
@@ -729,145 +833,181 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="container">
             <div class="content-wrapper">
                 <div class="article-content">
-                    <h2>履歷撰寫的10個關鍵要點</h2>
+                    <h2>自我介紹撰寫架構</h2>
                     
-                    <div class="tips-grid">
-                        <div class="tip-card">
-                            <div class="tip-number">1</div>
-                            <h4>客製化專業摘要</h4>
-                            <p>針對每個職缺調整你的專業摘要，在開頭就明確展現你的價值主張和相關經驗。</p>
+                    <p>好的自我介紹需要有清楚的結構，讓聽者能夠快速抓到重點。以下介紹兩個實用的架構：</p>
+                    
+                    <div class="framework-grid">
+                        <div class="framework-card">
+                            <h3>SOAR 架構</h3>
+                            <p>適合用於展現解決問題的能力和具體成果</p>
+                            
+                            <div class="framework-steps">
+                                <div class="framework-step">
+                                    <h4>S - Situation (背景情況)</h4>
+                                    <p>簡述你的職業背景或當時面對的情況</p>
+                                </div>
+                                <div class="framework-step">
+                                    <h4>O - Objective (目標)</h4>
+                                    <p>說明你想要達成的目標或解決的問題</p>
+                                </div>
+                                <div class="framework-step">
+                                    <h4>A - Action (行動)</h4>
+                                    <p>描述你採取了哪些具體行動</p>
+                                </div>
+                                <div class="framework-step">
+                                    <h4>R - Result (結果)</h4>
+                                    <p>展現你達成的具體成果和影響</p>
+                                </div>
+                            </div>
                         </div>
                         
-                        <div class="tip-card">
-                            <div class="tip-number">2</div>
-                            <h4>量化工作成果</h4>
-                            <p>用具體數字說話，如「提升效率30%」「管理50人團隊」，讓成就更有說服力。</p>
-                        </div>
-                        
-                        <div class="tip-card">
-                            <div class="tip-number">3</div>
-                            <h4>使用動作動詞</h4>
-                            <p>以「領導」「開發」「優化」等強有力的動詞開頭，展現你的主動性和影響力。</p>
-                        </div>
-                        
-                        <div class="tip-card">
-                            <div class="tip-number">4</div>
-                            <h4>關鍵字優化</h4>
-                            <p>研究職缺描述，將相關技能和關鍵字自然地融入履歷中，提高ATS通過率。</p>
-                        </div>
-                        
-                        <div class="tip-card">
-                            <div class="tip-number">5</div>
-                            <h4>清晰的排版格式</h4>
-                            <p>使用一致的字體、適當的留白和清楚的段落標題，讓履歷易讀且專業。</p>
-                        </div>
-                        
-                        <div class="tip-card">
-                            <div class="tip-number">6</div>
-                            <h4>突出相關技能</h4>
-                            <p>將與目標職位最相關的技能放在顯眼位置，技術技能和軟技能並重。</p>
-                        </div>
-                        
-                        <div class="tip-card">
-                            <div class="tip-number">7</div>
-                            <h4>展現持續學習</h4>
-                            <p>列出相關證照、課程或專業發展活動，顯示你的成長心態和專業精進。</p>
-                        </div>
-                        
-                        <div class="tip-card">
-                            <div class="tip-number">8</div>
-                            <h4>避免常見錯誤</h4>
-                            <p>仔細檢查拼字、文法，避免使用過時資訊或不相關的個人詳細資料。</p>
-                        </div>
-                        
-                        <div class="tip-card">
-                            <div class="tip-number">9</div>
-                            <h4>適當的長度</h4>
-                            <p>新鮮人1頁，經驗豐富者最多2頁，確保每一行都有價值且與職位相關。</p>
-                        </div>
-                        
-                        <div class="tip-card">
-                            <div class="tip-number">10</div>
-                            <h4>專業聯絡資訊</h4>
-                            <p>使用專業的email地址，確保聯絡資訊完整且容易找到，包含LinkedIn檔案連結。</p>
+                        <div class="framework-card">
+                            <h3>PPP 架構</h3>
+                            <p>適合用於一般場合的簡潔自我介紹</p>
+                            
+                            <div class="framework-steps">
+                                <div class="framework-step">
+                                    <h4>P - Past (過去)</h4>
+                                    <p>簡述你的專業背景和主要經驗</p>
+                                </div>
+                                <div class="framework-step">
+                                    <h4>P - Present (現在)</h4>
+                                    <p>說明你目前的角色和核心能力</p>
+                                </div>
+                                <div class="framework-step">
+                                    <h4>P - Potential (未來)</h4>
+                                    <p>表達你的職涯目標和能為公司帶來的價值</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <h2>履歷必備要素</h2>
-                    <p>一份完整的履歷應該包含以下核心要素：</p>
+                    <h2>自我介紹範例對比</h2>
                     
-                    <h3>1. 個人資訊與聯絡方式</h3>
-                    <ul>
-                        <li>姓名（大字體顯示）</li>
-                        <li>專業email地址</li>
-                        <li>電話號碼</li>
-                        <li>LinkedIn檔案連結</li>
-                        <li>所在城市（不需要完整地址）</li>
-                    </ul>
-
-                    <h3>2. 專業摘要或目標</h3>
-                    <p>2-3句話概述你的專業背景、核心技能和職涯目標，要針對特定職位客製化。</p>
-
-                    <div class="highlight-box">
-                        <h4>專業摘要範例</h4>
-                        <p>「擁有5年數位行銷經驗的專業人士，專精於SEO優化和社群媒體策略。曾成功提升品牌網站流量150%，尋求在成長型公司發揮數位行銷專長的機會。」</p>
+                    <div class="example-box">
+                        <h4>履歷專業摘要範例</h4>
+                        <div class="good-example">
+                            我是李小明，擁有5年數位行銷經驗的專業人士。過去在科技公司負責品牌推廣，成功將網站流量提升150%，並建立了完整的社群行銷策略。目前專精於SEO優化和內容行銷，熟悉Google Analytics和各種行銷工具。希望在貴公司發揮我的數位行銷專長，協助品牌在競爭激烈的市場中脫穎而出。
+                        </div>
+                        <div class="bad-example">
+                            我叫李小明，今年28歲，畢業於某某大學行銷系。我的興趣是看電影和旅遊，個性開朗活潑。我很努力工作，希望能在貴公司學到更多東西，也希望公司能給我機會發揮。
+                        </div>
                     </div>
 
-                    <h3>3. 工作經歷</h3>
-                    <p>按時間倒序排列，每個職位包含：</p>
+                    <div class="example-box">
+                        <h4>面試自我介紹範例</h4>
+                        <div class="good-example">
+                            您好，我是王美華，有8年財務管理經驗。在前一家公司擔任財務經理期間，我主導了成本控制專案，成功為公司節省年度營運成本20%。我專精於財務分析和預算規劃，具備CPA證照，熟悉國際會計準則。我希望能在貴公司運用我的財務專業，協助公司達成更好的營運績效。
+                        </div>
+                        <div class="bad-example">
+                            我是王美華，我覺得自己很適合這個工作，因為我有相關經驗。我很認真負責，而且學習能力很強，希望你們能給我這個機會。我會很努力的。
+                        </div>
+                    </div>
+
+                    <h2>履歷優化技巧</h2>
+                    
+                    <p>除了自我介紹，整體履歷的優化也很重要。以下是一些實用的優化策略：</p>
+                    
+                    <div class="optimization-grid">
+                        <div class="optimization-card">
+                            <div class="optimization-icon">📊</div>
+                            <h4>量化成果</h4>
+                            <p>用具體數字展現你的成就，如「提升銷售額30%」「管理15人團隊」「縮短處理時間50%」，讓成果更有說服力。</p>
+                        </div>
+                        
+                        <div class="optimization-card">
+                            <div class="optimization-icon">🎯</div>
+                            <h4>關鍵字匹配</h4>
+                            <p>研究目標職缺的要求，將相關技能和關鍵字自然地融入履歷中，提高通過ATS系統的機率。</p>
+                        </div>
+                        
+                        <div class="optimization-card">
+                            <div class="optimization-icon">⚡</div>
+                            <h4>動作動詞</h4>
+                            <p>用「領導」「開發」「優化」「建立」等強有力的動詞開頭，展現你的主動性和影響力。</p>
+                        </div>
+                        
+                        <div class="optimization-card">
+                            <div class="optimization-icon">🎨</div>
+                            <h4>視覺層次</h4>
+                            <p>使用一致的格式、適當的留白和清楚的段落標題，讓履歷易讀且專業。重點資訊要突出顯示。</p>
+                        </div>
+                        
+                        <div class="optimization-card">
+                            <div class="optimization-icon">🔍</div>
+                            <h4>客製化內容</h4>
+                            <p>針對不同職缺調整履歷重點，突出最相關的經驗和技能，讓每份履歷都精準對應目標職位。</p>
+                        </div>
+                        
+                        <div class="optimization-card">
+                            <div class="optimization-icon">✅</div>
+                            <h4>完整性檢查</h4>
+                            <p>確保所有重要資訊完整，包括聯絡方式、工作經歷、技能證照等，避免遺漏關鍵資訊。</p>
+                        </div>
+                    </div>
+
+                    <h2>不同場合的自我介紹技巧</h2>
+                    
+                    <h3>1. 履歷專業摘要</h3>
+                    <p>履歷開頭的專業摘要是你的「電梯簡報」，要在2-3句話內讓HR理解你的價值：</p>
                     <ul>
-                        <li>職位名稱和公司名稱</li>
-                        <li>任職時間</li>
-                        <li>3-5個主要職責或成就</li>
-                        <li>使用量化數據展現影響力</li>
+                        <li>第一句：你的專業身份和年資</li>
+                        <li>第二句：你的核心技能和主要成就</li>
+                        <li>第三句：你的職涯目標和能帶來的價值</li>
                     </ul>
 
-                    <h3>4. 技能部分</h3>
-                    <p>分為技術技能和軟技能兩類，只列出與目標職位相關的技能。</p>
-
-                    <h3>5. 學歷</h3>
-                    <p>包含學位、學校名稱、畢業年份。如果是新鮮人，可以加入相關課程或專題。</p>
-
-                    <h3>6. 證照與專業發展</h3>
-                    <p>列出相關的專業證照、線上課程完成證書或重要的專業發展活動。</p>
-
-                    <h2>如何通過ATS系統</h2>
-                    <p>許多公司使用申請者追蹤系統（ATS）來篩選履歷。要提高通過率：</p>
-                    
+                    <h3>2. 面試開場自我介紹</h3>
+                    <p>面試時的自我介紹建議控制在1-2分鐘內：</p>
                     <ul>
-                        <li><strong>使用標準格式：</strong>避免過於複雜的設計或表格</li>
-                        <li><strong>包含關鍵字：</strong>使用職缺描述中的重要詞彙</li>
-                        <li><strong>標準檔案格式：</strong>優先使用.docx或.pdf格式</li>
-                        <li><strong>清楚的段落標題：</strong>使用「工作經歷」「技能」等標準標題</li>
-                        <li><strong>避免特殊字體：</strong>使用標準字體如Arial或Calibri</li>
+                        <li>開場問候，簡述姓名和應徵職位</li>
+                        <li>重點說明相關工作經驗</li>
+                        <li>舉出1-2個具體成就</li>
+                        <li>表達對職位的興趣和期待</li>
                     </ul>
 
-                    <h2>常見履歷錯誤</h2>
-                    <p>避免這些常見的履歷錯誤，提升你的專業形象：</p>
-                    
+                    <h3>3. 職場社交場合</h3>
+                    <p>在networking或職場社交場合，自我介紹要更簡潔有趣：</p>
                     <ul>
-                        <li>拼字或文法錯誤</li>
-                        <li>使用過時或不相關的資訊</li>
-                        <li>履歷過長或過短</li>
-                        <li>缺乏量化成果</li>
-                        <li>使用不專業的email地址</li>
-                        <li>履歷格式不一致</li>
-                        <li>包含過多個人資訊</li>
-                        <li>沒有針對職位客製化</li>
+                        <li>姓名和職業</li>
+                        <li>一句話描述你做什麼</li>
+                        <li>一個有趣的細節或成就</li>
+                        <li>開放性問題引導對話</li>
                     </ul>
 
                     <div class="highlight-box">
                         <h4>重要提醒</h4>
-                        <p>記住，履歷的目的是獲得面試機會，不是詳述你的完整職涯故事。每一行都應該為「為什麼要選擇你」這個問題提供答案。</p>
+                        <p><strong>定義：</strong>自我介紹是展示您個人品牌的簡潔陳述，應該針對不同場合和聽眾調整內容和長度。<br><br>
+                        記住，自我介紹的目的不是詳述你的完整經歷，而是讓對方對你產生興趣，願意進一步了解。每個字都要有價值，每句話都要為「為什麼選擇你」提供答案。</p>
                     </div>
+
+                    <h2>常見錯誤與改善建議</h2>
+                    
+                    <h3>避免這些常見錯誤</h3>
+                    <ul>
+                        <li><strong>太過冗長：</strong>內容過多，重點不突出</li>
+                        <li><strong>過於籠統：</strong>用「很努力」「學習能力強」等空泛詞彙</li>
+                        <li><strong>缺乏重點：</strong>沒有針對目標職位調整內容</li>
+                        <li><strong>過於謙虛：</strong>不敢展現自己的成就和能力</li>
+                        <li><strong>背稿感重：</strong>聽起來像在背書，缺乏自然感</li>
+                    </ul>
+
+                    <h3>改善建議</h3>
+                    <ul>
+                        <li>多練習，直到能自然流暢地說出</li>
+                        <li>準備不同長度的版本（30秒、1分鐘、2分鐘）</li>
+                        <li>錄音練習，檢查語速和語調</li>
+                        <li>請朋友聽聽並給予回饋</li>
+                        <li>根據不同場合準備不同版本</li>
+                    </ul>
                 </div>
 
                 <div class="sidebar">
                     <div class="sidebar-card">
                         <h3>相關資源</h3>
                         <ul class="sidebar-links">
+                            <li><a href="resume-writing-guide.html">履歷撰寫教學</a></li>
                             <li><a href="resume-templates.html">履歷範本下載</a></li>
-                            <li><a href="self-intro-optimization.html">自我介紹撰寫</a></li>
                             <li><a href="resume-service.html">專業代寫服務</a></li>
                             <li><a href="professional-template.html">客戶成果展示</a></li>
                         </ul>
@@ -875,8 +1015,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     <div class="sidebar-card cta-sidebar">
                         <h3>需要專業協助？</h3>
-                        <p>讓專業顧問幫你打造完美履歷，60分鐘訪談整理成職涯簡報。</p>
-                        <a onclick="trackLineClick("general")" onclick="trackLineClick("general")" href="https://line.me/R/ti/p/@25mincv" class="btn">立即諮詢</a>
+                        <p>讓專業顧問幫你優化自我介紹和履歷內容，60分鐘訪談打造完美職涯簡報。</p>
+                        <a onclick="trackLineClick("general")" href="https://line.me/R/ti/p/@25mincv" class="btn">立即諮詢</a>
                     </div>
                 </div>
             </div>
@@ -887,58 +1027,58 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section class="faq-section">
         <div class="container">
             <div class="section-header">
-                <h2>履歷撰寫常見問題</h2>
-                <p class="subtitle">關於履歷撰寫的常見疑問解答</p>
+                <h2>自我介紹常見問題</h2>
+                <p class="subtitle">關於自我介紹撰寫的常見疑問解答</p>
             </div>
             
             <div class="faq-container">
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>履歷應該寫多長？</span>
+                        <span>自我介紹應該包含哪些要素？</span>
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>建議控制在1-2頁，突出重點經歷與技能。新鮮人可以1頁為主，有豐富經驗者可到2頁，但要確保內容精煉有價值。</p>
+                        <p>自我介紹應包含：1) 姓名和職業背景 2) 核心技能與經驗 3) 主要成就或亮點 4) 職涯目標與價值主張。建議控制在30秒到2分鐘內，依場合調整長度。</p>
                     </div>
                 </div>
                 
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>履歷要包含哪些要素？</span>
+                        <span>SOAR架構是什麼？</span>
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>應包含聯絡資訊、專業摘要、工作經歷、學歷、技能證照和重要專案成果。每個部分都要與目標職位相關。</p>
+                        <p>SOAR架構是自我介紹的結構化方法：Situation(背景情況)、Objective(目標)、Action(行動)、Result(結果)。這個架構幫助你有邏輯地組織自我介紹內容。</p>
                     </div>
                 </div>
                 
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>如何讓履歷通過ATS系統？</span>
+                        <span>如何讓履歷內容更有說服力？</span>
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>使用標準格式、包含職缺關鍵字、避免特殊字體和複雜排版、使用標準的段落標題如『工作經歷』『技能』等。</p>
+                        <p>使用量化數據、具體事例、行動動詞開頭、關鍵字匹配職缺需求。重點是展現你的價值和成果，而不只是列出職責。</p>
                     </div>
                 </div>
                 
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>需要為不同公司調整履歷嗎？</span>
+                        <span>面試時自我介紹應該多長？</span>
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>是的，建議根據職缺要求客製化履歷內容，每次投遞前調整關鍵字和技能順序，突出最相關的經驗。</p>
+                        <p>建議控制在1-2分鐘內。包含姓名、相關經驗、具體成就和對職位的興趣。太短會顯得準備不足，太長會讓面試官失去耐心。</p>
                     </div>
                 </div>
                 
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>如何量化工作成果？</span>
+                        <span>如何避免自我介紹聽起來像在背書？</span>
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>使用具體數字說明你的貢獻，如「提升銷售額20%」「管理15人團隊」「縮短處理時間50%」。如果沒有數字，可以用百分比、頻率或規模來描述。</p>
+                        <p>多練習到熟練為止，準備不同版本應對不同場合，使用自然的語調和節奏，適時加入互動元素，避免完全照稿唸讀。</p>
                     </div>
                 </div>
             </div>
@@ -979,7 +1119,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="footer-links">
                     <h4>聯絡我們</h4>
                     <ul>
-                        <li><a onclick="trackLineClick("general")" onclick="trackLineClick("general")" href="https://line.me/R/ti/p/@25mincv">LINE@ 官方帳號</a></li>
+                        <li><a onclick="trackLineClick("general")" href="https://line.me/R/ti/p/@25mincv">LINE@ 官方帳號</a></li>
                         <li><a href="mailto:bless@25min.co">Email 聯繫</a></li>
                         <li><a href="tel:02-2272-4261">客服電話</a></li>
                         <li><a href="https://www.facebook.com/d2x123/">Facebook</a></li>
@@ -1065,7 +1205,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         }, observerOptions);
 
         // Observe cards for animation
-        document.querySelectorAll('.tip-card, .sidebar-card').forEach(el => {
+        document.querySelectorAll('.framework-card, .optimization-card, .sidebar-card').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(20px)';
             el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
